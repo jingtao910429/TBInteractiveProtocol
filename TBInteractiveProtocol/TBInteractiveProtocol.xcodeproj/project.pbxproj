@@ -42,7 +42,7 @@
 		04850EC4200F2B3E00E1C51D /* TBUploadEventRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E9E200F2B3E00E1C51D /* TBUploadEventRegisterHandler.swift */; };
 		04850EC5200F2B3E00E1C51D /* TBSharePicRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E9F200F2B3E00E1C51D /* TBSharePicRegisterHandler.swift */; };
 		04850EC6200F2B3E00E1C51D /* TBEvaluateJSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850EA1200F2B3E00E1C51D /* TBEvaluateJSHandler.swift */; };
-		04850EC7200F2B3E00E1C51D /* JSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850EA2200F2B3E00E1C51D /* JSHandler.swift */; };
+		04850EC7200F2B3E00E1C51D /* TBJSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850EA2200F2B3E00E1C51D /* TBJSHandler.swift */; };
 		04850EC8200F2B3E00E1C51D /* TBShareDataCallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850EA4200F2B3E00E1C51D /* TBShareDataCallHandler.swift */; };
 		04850EC9200F2B3E00E1C51D /* TBGoBackHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850EA5200F2B3E00E1C51D /* TBGoBackHandler.swift */; };
 		04850ECA200F2B3E00E1C51D /* TBCallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850EA6200F2B3E00E1C51D /* TBCallHandler.swift */; };
@@ -92,7 +92,7 @@
 		04850E9E200F2B3E00E1C51D /* TBUploadEventRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUploadEventRegisterHandler.swift; sourceTree = "<group>"; };
 		04850E9F200F2B3E00E1C51D /* TBSharePicRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBSharePicRegisterHandler.swift; sourceTree = "<group>"; };
 		04850EA1200F2B3E00E1C51D /* TBEvaluateJSHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBEvaluateJSHandler.swift; sourceTree = "<group>"; };
-		04850EA2200F2B3E00E1C51D /* JSHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSHandler.swift; sourceTree = "<group>"; };
+		04850EA2200F2B3E00E1C51D /* TBJSHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBJSHandler.swift; sourceTree = "<group>"; };
 		04850EA4200F2B3E00E1C51D /* TBShareDataCallHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBShareDataCallHandler.swift; sourceTree = "<group>"; };
 		04850EA5200F2B3E00E1C51D /* TBGoBackHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBGoBackHandler.swift; sourceTree = "<group>"; };
 		04850EA6200F2B3E00E1C51D /* TBCallHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallHandler.swift; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 			children = (
 				04850E95200F2B3E00E1C51D /* RegisterHandlers */,
 				04850EA0200F2B3E00E1C51D /* EvaluateJSHandlers */,
-				04850EA2200F2B3E00E1C51D /* JSHandler.swift */,
+				04850EA2200F2B3E00E1C51D /* TBJSHandler.swift */,
 				04850EA3200F2B3E00E1C51D /* CallHandlers */,
 			);
 			path = Handlers;
@@ -448,7 +448,7 @@
 				04850EC5200F2B3E00E1C51D /* TBSharePicRegisterHandler.swift in Sources */,
 				04985D02200C844100808D26 /* TestViewController.swift in Sources */,
 				04850EBC200F2B3E00E1C51D /* TBShareLinkRegisterHandler.swift in Sources */,
-				04850EC7200F2B3E00E1C51D /* JSHandler.swift in Sources */,
+				04850EC7200F2B3E00E1C51D /* TBJSHandler.swift in Sources */,
 				04850EB0200F2B3E00E1C51D /* TBTitlePlugin.swift in Sources */,
 				04850EC0200F2B3E00E1C51D /* TBRegisterHandler.swift in Sources */,
 				04850EC4200F2B3E00E1C51D /* TBUploadEventRegisterHandler.swift in Sources */,
