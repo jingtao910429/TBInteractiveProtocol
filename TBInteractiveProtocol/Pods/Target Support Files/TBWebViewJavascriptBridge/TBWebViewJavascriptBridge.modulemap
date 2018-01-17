@@ -1,0 +1,6 @@
+framework module TBWebViewJavascriptBridge {
+  umbrella header "TBWebViewJavascriptBridge-umbrella.h"
+
+  export *
+  module * { export * }
+}

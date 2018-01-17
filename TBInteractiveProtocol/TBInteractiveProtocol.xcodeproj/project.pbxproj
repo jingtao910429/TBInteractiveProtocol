@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04248DA3200C7B170037C6B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04248DA2200C7B170037C6B3 /* AppDelegate.m */; };
+		04248DA6200C7B170037C6B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04248DA5200C7B170037C6B3 /* ViewController.m */; };
+		04248DA9200C7B170037C6B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04248DA7200C7B170037C6B3 /* Main.storyboard */; };
+		04248DAB200C7B170037C6B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04248DAA200C7B170037C6B3 /* Assets.xcassets */; };
+		04248DAE200C7B170037C6B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04248DAC200C7B170037C6B3 /* LaunchScreen.storyboard */; };
+		04248DB1200C7B170037C6B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04248DB0200C7B170037C6B3 /* main.m */; };
+		04850EAA200F2B3E00E1C51D /* TBWebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E7C200F2B3E00E1C51D /* TBWebViewManager.swift */; };
+		04850EAB200F2B3E00E1C51D /* TBWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E7D200F2B3E00E1C51D /* TBWebViewController.swift */; };
+		04850EAC200F2B3E00E1C51D /* TBUserInfoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E81200F2B3E00E1C51D /* TBUserInfoPlugin.swift */; };
+		04850EAD200F2B3E00E1C51D /* TBCityInfoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E82200F2B3E00E1C51D /* TBCityInfoPlugin.swift */; };
+		04850EAE200F2B3E00E1C51D /* TBShareLinkPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E83200F2B3E00E1C51D /* TBShareLinkPlugin.swift */; };
+		04850EAF200F2B3E00E1C51D /* TBSharePicPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E84200F2B3E00E1C51D /* TBSharePicPlugin.swift */; };
+		04850EB0200F2B3E00E1C51D /* TBTitlePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E85200F2B3E00E1C51D /* TBTitlePlugin.swift */; };
+		04850EB1200F2B3E00E1C51D /* TBOpenMapPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E86200F2B3E00E1C51D /* TBOpenMapPlugin.swift */; };
+		04850EB2200F2B3E00E1C51D /* TBCallBackPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E87200F2B3E00E1C51D /* TBCallBackPlugin.swift */; };
+		04850EB3200F2B3E00E1C51D /* TBUploadEventPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E88200F2B3E00E1C51D /* TBUploadEventPlugin.swift */; };
+		04850EB4200F2B3E00E1C51D /* TBRegisterPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E89200F2B3E00E1C51D /* TBRegisterPlugin.swift */; };
+		04850EB5200F2B3E00E1C51D /* TBShareDataPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E8B200F2B3E00E1C51D /* TBShareDataPlugin.swift */; };
+		04850EB6200F2B3E00E1C51D /* TBCallPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E8C200F2B3E00E1C51D /* TBCallPlugin.swift */; };
+		04850EB7200F2B3E00E1C51D /* TBGoBackPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E8D200F2B3E00E1C51D /* TBGoBackPlugin.swift */; };
+		04850EB8200F2B3E00E1C51D /* TBCityInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E8F200F2B3E00E1C51D /* TBCityInfoModel.swift */; };
+		04850EB9200F2B3E00E1C51D /* TBUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E90200F2B3E00E1C51D /* TBUserInfoModel.swift */; };
+		04850EBA200F2B3E00E1C51D /* TBWebViewConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E91200F2B3E00E1C51D /* TBWebViewConfigurationManager.swift */; };
+		04850EBB200F2B3E00E1C51D /* TBWebViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E93200F2B3E00E1C51D /* TBWebViewHelper.swift */; };
+		04850EBC200F2B3E00E1C51D /* TBShareLinkRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E96200F2B3E00E1C51D /* TBShareLinkRegisterHandler.swift */; };
+		04850EBD200F2B3E00E1C51D /* TBCallBackRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E97200F2B3E00E1C51D /* TBCallBackRegisterHandler.swift */; };
+		04850EBE200F2B3E00E1C51D /* TBOpenMapRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E98200F2B3E00E1C51D /* TBOpenMapRegisterHandler.swift */; };
+		04850EBF200F2B3E00E1C51D /* TBRegisterCommond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E99200F2B3E00E1C51D /* TBRegisterCommond.swift */; };
+		04850EC0200F2B3E00E1C51D /* TBRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E9A200F2B3E00E1C51D /* TBRegisterHandler.swift */; };
+		04850EC1200F2B3E00E1C51D /* TBUserInfoRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E9B200F2B3E00E1C51D /* TBUserInfoRegisterHandler.swift */; };
+		04850EC2200F2B3E00E1C51D /* TBTitleRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E9C200F2B3E00E1C51D /* TBTitleRegisterHandler.swift */; };
+		04850EC3200F2B3E00E1C51D /* TBCityInfoRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E9D200F2B3E00E1C51D /* TBCityInfoRegisterHandler.swift */; };
+		04850EC4200F2B3E00E1C51D /* TBUploadEventRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E9E200F2B3E00E1C51D /* TBUploadEventRegisterHandler.swift */; };
+		04850EC5200F2B3E00E1C51D /* TBSharePicRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850E9F200F2B3E00E1C51D /* TBSharePicRegisterHandler.swift */; };
+		04850EC6200F2B3E00E1C51D /* TBEvaluateJSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850EA1200F2B3E00E1C51D /* TBEvaluateJSHandler.swift */; };
+		04850EC7200F2B3E00E1C51D /* JSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850EA2200F2B3E00E1C51D /* JSHandler.swift */; };
+		04850EC8200F2B3E00E1C51D /* TBShareDataCallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850EA4200F2B3E00E1C51D /* TBShareDataCallHandler.swift */; };
+		04850EC9200F2B3E00E1C51D /* TBGoBackHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850EA5200F2B3E00E1C51D /* TBGoBackHandler.swift */; };
+		04850ECA200F2B3E00E1C51D /* TBCallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850EA6200F2B3E00E1C51D /* TBCallHandler.swift */; };
+		04850ECB200F2B3E00E1C51D /* TBCallCommond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850EA7200F2B3E00E1C51D /* TBCallCommond.swift */; };
+		04850ECC200F2B3E00E1C51D /* TBWebProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04850EA9200F2B3E00E1C51D /* TBWebProgressView.swift */; };
+		04985D02200C844100808D26 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04985D01200C844100808D26 /* TestViewController.swift */; };
+		E08F18BDD96F7BAED7BC9454 /* Pods_TBInteractiveProtocol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF11CB0591DC99EA096299A7 /* Pods_TBInteractiveProtocol.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04248D9E200C7B170037C6B3 /* TBInteractiveProtocol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBInteractiveProtocol.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04248DA1200C7B170037C6B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04248DA2200C7B170037C6B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04248DA4200C7B170037C6B3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04248DA5200C7B170037C6B3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04248DA8200C7B170037C6B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04248DAA200C7B170037C6B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04248DAD200C7B170037C6B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04248DAF200C7B170037C6B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04248DB0200C7B170037C6B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04850E7C200F2B3E00E1C51D /* TBWebViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBWebViewManager.swift; sourceTree = "<group>"; };
+		04850E7D200F2B3E00E1C51D /* TBWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBWebViewController.swift; sourceTree = "<group>"; };
+		04850E81200F2B3E00E1C51D /* TBUserInfoPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUserInfoPlugin.swift; sourceTree = "<group>"; };
+		04850E82200F2B3E00E1C51D /* TBCityInfoPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCityInfoPlugin.swift; sourceTree = "<group>"; };
+		04850E83200F2B3E00E1C51D /* TBShareLinkPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBShareLinkPlugin.swift; sourceTree = "<group>"; };
+		04850E84200F2B3E00E1C51D /* TBSharePicPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBSharePicPlugin.swift; sourceTree = "<group>"; };
+		04850E85200F2B3E00E1C51D /* TBTitlePlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBTitlePlugin.swift; sourceTree = "<group>"; };
+		04850E86200F2B3E00E1C51D /* TBOpenMapPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBOpenMapPlugin.swift; sourceTree = "<group>"; };
+		04850E87200F2B3E00E1C51D /* TBCallBackPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallBackPlugin.swift; sourceTree = "<group>"; };
+		04850E88200F2B3E00E1C51D /* TBUploadEventPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUploadEventPlugin.swift; sourceTree = "<group>"; };
+		04850E89200F2B3E00E1C51D /* TBRegisterPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBRegisterPlugin.swift; sourceTree = "<group>"; };
+		04850E8B200F2B3E00E1C51D /* TBShareDataPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBShareDataPlugin.swift; sourceTree = "<group>"; };
+		04850E8C200F2B3E00E1C51D /* TBCallPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallPlugin.swift; sourceTree = "<group>"; };
+		04850E8D200F2B3E00E1C51D /* TBGoBackPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBGoBackPlugin.swift; sourceTree = "<group>"; };
+		04850E8F200F2B3E00E1C51D /* TBCityInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCityInfoModel.swift; sourceTree = "<group>"; };
+		04850E90200F2B3E00E1C51D /* TBUserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUserInfoModel.swift; sourceTree = "<group>"; };
+		04850E91200F2B3E00E1C51D /* TBWebViewConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBWebViewConfigurationManager.swift; sourceTree = "<group>"; };
+		04850E93200F2B3E00E1C51D /* TBWebViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBWebViewHelper.swift; sourceTree = "<group>"; };
+		04850E96200F2B3E00E1C51D /* TBShareLinkRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBShareLinkRegisterHandler.swift; sourceTree = "<group>"; };
+		04850E97200F2B3E00E1C51D /* TBCallBackRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallBackRegisterHandler.swift; sourceTree = "<group>"; };
+		04850E98200F2B3E00E1C51D /* TBOpenMapRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBOpenMapRegisterHandler.swift; sourceTree = "<group>"; };
+		04850E99200F2B3E00E1C51D /* TBRegisterCommond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBRegisterCommond.swift; sourceTree = "<group>"; };
+		04850E9A200F2B3E00E1C51D /* TBRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBRegisterHandler.swift; sourceTree = "<group>"; };
+		04850E9B200F2B3E00E1C51D /* TBUserInfoRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUserInfoRegisterHandler.swift; sourceTree = "<group>"; };
+		04850E9C200F2B3E00E1C51D /* TBTitleRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBTitleRegisterHandler.swift; sourceTree = "<group>"; };
+		04850E9D200F2B3E00E1C51D /* TBCityInfoRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCityInfoRegisterHandler.swift; sourceTree = "<group>"; };
+		04850E9E200F2B3E00E1C51D /* TBUploadEventRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUploadEventRegisterHandler.swift; sourceTree = "<group>"; };
+		04850E9F200F2B3E00E1C51D /* TBSharePicRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBSharePicRegisterHandler.swift; sourceTree = "<group>"; };
+		04850EA1200F2B3E00E1C51D /* TBEvaluateJSHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBEvaluateJSHandler.swift; sourceTree = "<group>"; };
+		04850EA2200F2B3E00E1C51D /* JSHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSHandler.swift; sourceTree = "<group>"; };
+		04850EA4200F2B3E00E1C51D /* TBShareDataCallHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBShareDataCallHandler.swift; sourceTree = "<group>"; };
+		04850EA5200F2B3E00E1C51D /* TBGoBackHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBGoBackHandler.swift; sourceTree = "<group>"; };
+		04850EA6200F2B3E00E1C51D /* TBCallHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallHandler.swift; sourceTree = "<group>"; };
+		04850EA7200F2B3E00E1C51D /* TBCallCommond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallCommond.swift; sourceTree = "<group>"; };
+		04850EA9200F2B3E00E1C51D /* TBWebProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBWebProgressView.swift; sourceTree = "<group>"; };
+		04985D00200C844000808D26 /* TBInteractiveProtocol-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBInteractiveProtocol-Bridging-Header.h"; sourceTree = "<group>"; };
+		04985D01200C844100808D26 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		2280A055C4D1827C39A36A2B /* Pods-TBInteractiveProtocol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBInteractiveProtocol.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBInteractiveProtocol/Pods-TBInteractiveProtocol.release.xcconfig"; sourceTree = "<group>"; };
+		D3581758F72616A82FAAC5B1 /* Pods-TBInteractiveProtocol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBInteractiveProtocol.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TBInteractiveProtocol/Pods-TBInteractiveProtocol.debug.xcconfig"; sourceTree = "<group>"; };
+		EF11CB0591DC99EA096299A7 /* Pods_TBInteractiveProtocol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TBInteractiveProtocol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04248D9B200C7B170037C6B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E08F18BDD96F7BAED7BC9454 /* Pods_TBInteractiveProtocol.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04248D95200C7B170037C6B3 = {
+			isa = PBXGroup;
+			children = (
+				04248DA0200C7B170037C6B3 /* TBInteractiveProtocol */,
+				04248D9F200C7B170037C6B3 /* Products */,
+				4510C2C5FC54F40979888D2D /* Pods */,
+				65807B500491BE1F2DD53328 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04248D9F200C7B170037C6B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04248D9E200C7B170037C6B3 /* TBInteractiveProtocol.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04248DA0200C7B170037C6B3 /* TBInteractiveProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				04850E7A200F2B3E00E1C51D /* Source */,
+				04248DA1200C7B170037C6B3 /* AppDelegate.h */,
+				04248DA2200C7B170037C6B3 /* AppDelegate.m */,
+				04248DA4200C7B170037C6B3 /* ViewController.h */,
+				04248DA5200C7B170037C6B3 /* ViewController.m */,
+				04248DA7200C7B170037C6B3 /* Main.storyboard */,
+				04248DAA200C7B170037C6B3 /* Assets.xcassets */,
+				04248DAC200C7B170037C6B3 /* LaunchScreen.storyboard */,
+				04248DAF200C7B170037C6B3 /* Info.plist */,
+				04248DB0200C7B170037C6B3 /* main.m */,
+				04985D01200C844100808D26 /* TestViewController.swift */,
+				04985D00200C844000808D26 /* TBInteractiveProtocol-Bridging-Header.h */,
+			);
+			path = TBInteractiveProtocol;
+			sourceTree = "<group>";
+		};
+		04850E7A200F2B3E00E1C51D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				04850E7B200F2B3E00E1C51D /* TBInteractiveProtocol */,
+			);
+			name = Source;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		04850E7B200F2B3E00E1C51D /* TBInteractiveProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				04850E7C200F2B3E00E1C51D /* TBWebViewManager.swift */,
+				04850E7D200F2B3E00E1C51D /* TBWebViewController.swift */,
+				04850E7E200F2B3E00E1C51D /* WeakBusiness */,
+				04850E91200F2B3E00E1C51D /* TBWebViewConfigurationManager.swift */,
+				04850E92200F2B3E00E1C51D /* Helper */,
+				04850E94200F2B3E00E1C51D /* Handlers */,
+				04850EA8200F2B3E00E1C51D /* ProgressView */,
+			);
+			path = TBInteractiveProtocol;
+			sourceTree = "<group>";
+		};
+		04850E7E200F2B3E00E1C51D /* WeakBusiness */ = {
+			isa = PBXGroup;
+			children = (
+				04850E7F200F2B3E00E1C51D /* Plugins */,
+				04850E8E200F2B3E00E1C51D /* Models */,
+			);
+			path = WeakBusiness;
+			sourceTree = "<group>";
+		};
+		04850E7F200F2B3E00E1C51D /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				04850E80200F2B3E00E1C51D /* RegisterHandlerPlugins */,
+				04850E8A200F2B3E00E1C51D /* CallHandlerPlugins */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		04850E80200F2B3E00E1C51D /* RegisterHandlerPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				04850E81200F2B3E00E1C51D /* TBUserInfoPlugin.swift */,
+				04850E82200F2B3E00E1C51D /* TBCityInfoPlugin.swift */,
+				04850E83200F2B3E00E1C51D /* TBShareLinkPlugin.swift */,
+				04850E84200F2B3E00E1C51D /* TBSharePicPlugin.swift */,
+				04850E85200F2B3E00E1C51D /* TBTitlePlugin.swift */,
+				04850E86200F2B3E00E1C51D /* TBOpenMapPlugin.swift */,
+				04850E87200F2B3E00E1C51D /* TBCallBackPlugin.swift */,
+				04850E88200F2B3E00E1C51D /* TBUploadEventPlugin.swift */,
+				04850E89200F2B3E00E1C51D /* TBRegisterPlugin.swift */,
+			);
+			path = RegisterHandlerPlugins;
+			sourceTree = "<group>";
+		};
+		04850E8A200F2B3E00E1C51D /* CallHandlerPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				04850E8B200F2B3E00E1C51D /* TBShareDataPlugin.swift */,
+				04850E8C200F2B3E00E1C51D /* TBCallPlugin.swift */,
+				04850E8D200F2B3E00E1C51D /* TBGoBackPlugin.swift */,
+			);
+			path = CallHandlerPlugins;
+			sourceTree = "<group>";
+		};
+		04850E8E200F2B3E00E1C51D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04850E8F200F2B3E00E1C51D /* TBCityInfoModel.swift */,
+				04850E90200F2B3E00E1C51D /* TBUserInfoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04850E92200F2B3E00E1C51D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				04850E93200F2B3E00E1C51D /* TBWebViewHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		04850E94200F2B3E00E1C51D /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				04850E95200F2B3E00E1C51D /* RegisterHandlers */,
+				04850EA0200F2B3E00E1C51D /* EvaluateJSHandlers */,
+				04850EA2200F2B3E00E1C51D /* JSHandler.swift */,
+				04850EA3200F2B3E00E1C51D /* CallHandlers */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		04850E95200F2B3E00E1C51D /* RegisterHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				04850E96200F2B3E00E1C51D /* TBShareLinkRegisterHandler.swift */,
+				04850E97200F2B3E00E1C51D /* TBCallBackRegisterHandler.swift */,
+				04850E98200F2B3E00E1C51D /* TBOpenMapRegisterHandler.swift */,
+				04850E99200F2B3E00E1C51D /* TBRegisterCommond.swift */,
+				04850E9A200F2B3E00E1C51D /* TBRegisterHandler.swift */,
+				04850E9B200F2B3E00E1C51D /* TBUserInfoRegisterHandler.swift */,
+				04850E9C200F2B3E00E1C51D /* TBTitleRegisterHandler.swift */,
+				04850E9D200F2B3E00E1C51D /* TBCityInfoRegisterHandler.swift */,
+				04850E9E200F2B3E00E1C51D /* TBUploadEventRegisterHandler.swift */,
+				04850E9F200F2B3E00E1C51D /* TBSharePicRegisterHandler.swift */,
+			);
+			path = RegisterHandlers;
+			sourceTree = "<group>";
+		};
+		04850EA0200F2B3E00E1C51D /* EvaluateJSHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				04850EA1200F2B3E00E1C51D /* TBEvaluateJSHandler.swift */,
+			);
+			path = EvaluateJSHandlers;
+			sourceTree = "<group>";
+		};
+		04850EA3200F2B3E00E1C51D /* CallHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				04850EA4200F2B3E00E1C51D /* TBShareDataCallHandler.swift */,
+				04850EA5200F2B3E00E1C51D /* TBGoBackHandler.swift */,
+				04850EA6200F2B3E00E1C51D /* TBCallHandler.swift */,
+				04850EA7200F2B3E00E1C51D /* TBCallCommond.swift */,
+			);
+			path = CallHandlers;
+			sourceTree = "<group>";
+		};
+		04850EA8200F2B3E00E1C51D /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				04850EA9200F2B3E00E1C51D /* TBWebProgressView.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		4510C2C5FC54F40979888D2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3581758F72616A82FAAC5B1 /* Pods-TBInteractiveProtocol.debug.xcconfig */,
+				2280A055C4D1827C39A36A2B /* Pods-TBInteractiveProtocol.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		65807B500491BE1F2DD53328 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF11CB0591DC99EA096299A7 /* Pods_TBInteractiveProtocol.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04248D9D200C7B170037C6B3 /* TBInteractiveProtocol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04248DB4200C7B170037C6B3 /* Build configuration list for PBXNativeTarget "TBInteractiveProtocol" */;
+			buildPhases = (
+				CD21352445E232E64CCC78FA /* [CP] Check Pods Manifest.lock */,
+				04248D9A200C7B170037C6B3 /* Sources */,
+				04248D9B200C7B170037C6B3 /* Frameworks */,
+				04248D9C200C7B170037C6B3 /* Resources */,
+				55CF83EBEC3E4FEB3DDCF643 /* [CP] Embed Pods Frameworks */,
+				66D5820E232D5F5F06EE298F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBInteractiveProtocol;
+			productName = TBInteractiveProtocol;
+			productReference = 04248D9E200C7B170037C6B3 /* TBInteractiveProtocol.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04248D96200C7B170037C6B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = LiYou;
+				TargetAttributes = {
+					04248D9D200C7B170037C6B3 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 04248D99200C7B170037C6B3 /* Build configuration list for PBXProject "TBInteractiveProtocol" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04248D95200C7B170037C6B3;
+			productRefGroup = 04248D9F200C7B170037C6B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04248D9D200C7B170037C6B3 /* TBInteractiveProtocol */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04248D9C200C7B170037C6B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04248DAE200C7B170037C6B3 /* LaunchScreen.storyboard in Resources */,
+				04248DAB200C7B170037C6B3 /* Assets.xcassets in Resources */,
+				04248DA9200C7B170037C6B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55CF83EBEC3E4FEB3DDCF643 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TBInteractiveProtocol/Pods-TBInteractiveProtocol-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NJKWebViewProgress/NJKWebViewProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/TBWebViewJavascriptBridge/TBWebViewJavascriptBridge.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NJKWebViewProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBWebViewJavascriptBridge.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TBInteractiveProtocol/Pods-TBInteractiveProtocol-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66D5820E232D5F5F06EE298F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TBInteractiveProtocol/Pods-TBInteractiveProtocol-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD21352445E232E64CCC78FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TBInteractiveProtocol-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04248D9A200C7B170037C6B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04850EB8200F2B3E00E1C51D /* TBCityInfoModel.swift in Sources */,
+				04850EAC200F2B3E00E1C51D /* TBUserInfoPlugin.swift in Sources */,
+				04850EC5200F2B3E00E1C51D /* TBSharePicRegisterHandler.swift in Sources */,
+				04985D02200C844100808D26 /* TestViewController.swift in Sources */,
+				04850EBC200F2B3E00E1C51D /* TBShareLinkRegisterHandler.swift in Sources */,
+				04850EC7200F2B3E00E1C51D /* JSHandler.swift in Sources */,
+				04850EB0200F2B3E00E1C51D /* TBTitlePlugin.swift in Sources */,
+				04850EC0200F2B3E00E1C51D /* TBRegisterHandler.swift in Sources */,
+				04850EC4200F2B3E00E1C51D /* TBUploadEventRegisterHandler.swift in Sources */,
+				04850EB2200F2B3E00E1C51D /* TBCallBackPlugin.swift in Sources */,
+				04850EBF200F2B3E00E1C51D /* TBRegisterCommond.swift in Sources */,
+				04850ECA200F2B3E00E1C51D /* TBCallHandler.swift in Sources */,
+				04850EC9200F2B3E00E1C51D /* TBGoBackHandler.swift in Sources */,
+				04850EB5200F2B3E00E1C51D /* TBShareDataPlugin.swift in Sources */,
+				04850EB7200F2B3E00E1C51D /* TBGoBackPlugin.swift in Sources */,
+				04850ECB200F2B3E00E1C51D /* TBCallCommond.swift in Sources */,
+				04850EBD200F2B3E00E1C51D /* TBCallBackRegisterHandler.swift in Sources */,
+				04850EBA200F2B3E00E1C51D /* TBWebViewConfigurationManager.swift in Sources */,
+				04850EAB200F2B3E00E1C51D /* TBWebViewController.swift in Sources */,
+				04850ECC200F2B3E00E1C51D /* TBWebProgressView.swift in Sources */,
+				04850EAD200F2B3E00E1C51D /* TBCityInfoPlugin.swift in Sources */,
+				04850EB1200F2B3E00E1C51D /* TBOpenMapPlugin.swift in Sources */,
+				04850EC2200F2B3E00E1C51D /* TBTitleRegisterHandler.swift in Sources */,
+				04850EB9200F2B3E00E1C51D /* TBUserInfoModel.swift in Sources */,
+				04850EB6200F2B3E00E1C51D /* TBCallPlugin.swift in Sources */,
+				04850EC3200F2B3E00E1C51D /* TBCityInfoRegisterHandler.swift in Sources */,
+				04850EAA200F2B3E00E1C51D /* TBWebViewManager.swift in Sources */,
+				04850EAF200F2B3E00E1C51D /* TBSharePicPlugin.swift in Sources */,
+				04850EBE200F2B3E00E1C51D /* TBOpenMapRegisterHandler.swift in Sources */,
+				04248DA6200C7B170037C6B3 /* ViewController.m in Sources */,
+				04850EAE200F2B3E00E1C51D /* TBShareLinkPlugin.swift in Sources */,
+				04850EBB200F2B3E00E1C51D /* TBWebViewHelper.swift in Sources */,
+				04850EC8200F2B3E00E1C51D /* TBShareDataCallHandler.swift in Sources */,
+				04850EC6200F2B3E00E1C51D /* TBEvaluateJSHandler.swift in Sources */,
+				04248DB1200C7B170037C6B3 /* main.m in Sources */,
+				04850EB4200F2B3E00E1C51D /* TBRegisterPlugin.swift in Sources */,
+				04850EB3200F2B3E00E1C51D /* TBUploadEventPlugin.swift in Sources */,
+				04850EC1200F2B3E00E1C51D /* TBUserInfoRegisterHandler.swift in Sources */,
+				04248DA3200C7B170037C6B3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04248DA7200C7B170037C6B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04248DA8200C7B170037C6B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04248DAC200C7B170037C6B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04248DAD200C7B170037C6B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04248DB2200C7B170037C6B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04248DB3200C7B170037C6B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04248DB5200C7B170037C6B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3581758F72616A82FAAC5B1 /* Pods-TBInteractiveProtocol.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E2MHYTRHEB;
+				INFOPLIST_FILE = TBInteractiveProtocol/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiYou.TBInteractiveProtocol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TBInteractiveProtocol/TBInteractiveProtocol-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04248DB6200C7B170037C6B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2280A055C4D1827C39A36A2B /* Pods-TBInteractiveProtocol.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E2MHYTRHEB;
+				INFOPLIST_FILE = TBInteractiveProtocol/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiYou.TBInteractiveProtocol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TBInteractiveProtocol/TBInteractiveProtocol-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04248D99200C7B170037C6B3 /* Build configuration list for PBXProject "TBInteractiveProtocol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04248DB2200C7B170037C6B3 /* Debug */,
+				04248DB3200C7B170037C6B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04248DB4200C7B170037C6B3 /* Build configuration list for PBXNativeTarget "TBInteractiveProtocol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04248DB5200C7B170037C6B3 /* Debug */,
+				04248DB6200C7B170037C6B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04248D96200C7B170037C6B3 /* Project object */;
+}
