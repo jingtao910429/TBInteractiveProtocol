@@ -9,7 +9,7 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-class TBGoBackPlugin: NSObject {
+public class TBGoBackPlugin: NSObject {
     func registerHandler(manager: TBWebViewManager) {
         
         var cancelGoBack = true
@@ -30,22 +30,14 @@ class TBGoBackPlugin: NSObject {
                         //获取类型
                         if let type = _jsonData["backAction"] {
                             if type as! Int == 0 {
-                                if (manager.webView.canGoBack) {
-                                    manager.webView.goBack()
-                                } else {
-                                    TBWebViewHelper.currentViewController()?.navigationController?.popViewController(animated: false)
-                                }
+                                self.goback(manager: manager)
                             } else if type as! Int == 1 {//分享图片
                                 TBWebViewHelper.currentViewController()?.navigationController?.popViewController(animated: false)
                             }
                         }
                     }
                 } else {
-                    if (manager.webView.canGoBack) {
-                        manager.webView.goBack()
-                    } else {
-                        TBWebViewHelper.currentViewController()?.navigationController?.popViewController(animated: false)
-                    }
+                    self.goback(manager: manager)
                 }
             }
         }
@@ -57,11 +49,16 @@ class TBGoBackPlugin: NSObject {
             guard cancelGoBack else {
                 return
             }
-            if manager.webView.canGoBack {
-                manager.webView.goBack()
-            } else {
-                TBWebViewHelper.currentViewController()?.navigationController?.popViewController(animated: false)
-            }
+            self.goback(manager: manager)
         }
     }
+    
+    func goback(manager: TBWebViewManager) {
+        if (manager.webView.canGoBack) {
+            manager.webView.goBack()
+        } else {
+            TBWebViewHelper.currentViewController()?.navigationController?.popViewController(animated: false)
+        }
+    }
+    
 }

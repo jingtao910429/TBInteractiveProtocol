@@ -9,6 +9,6 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-class TBJSHandler: NSObject {
+class JSHandler: NSObject {
     var bridge: WKWebViewJavascriptBridge?
 }

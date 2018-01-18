@@ -35,7 +35,7 @@ typealias CallBackRegisterCallBack    = (_ isClosePage: Int) -> Void
 //uploadEvent
 typealias UploadEventRegisterCallBack = (_ eventId: String, _ params: [String: Any]) -> Void
 
-class TBRegisterPlugin: NSObject {
+public class TBRegisterPlugin: NSObject {
     
     //getUserInfo
     func registerUserInfo(model: TBUserInfoModel, manager: TBWebViewManager, loginRegisterCallBack: LoginRegisterCallBack?) {

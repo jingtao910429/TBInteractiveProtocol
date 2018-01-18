@@ -10,7 +10,7 @@ import UIKit
 import ObjectMapper
 import TBWebViewJavascriptBridge
 
-class TBUserInfoPlugin: NSObject {
+public class TBUserInfoPlugin: NSObject {
     
     var loginRegisterCallBack: LoginRegisterCallBack?
     

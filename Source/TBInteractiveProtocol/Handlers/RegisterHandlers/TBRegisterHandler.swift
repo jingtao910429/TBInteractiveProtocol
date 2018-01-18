@@ -9,7 +9,9 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-class TBRegisterHandler: TBJSHandler {
+class TBRegisterHandler: NSObject {
+    
+    var bridge: WKWebViewJavascriptBridge?
     
     func registerHandler(commond: TBRegisterCommond) {
         self.bridge = commond.bridge

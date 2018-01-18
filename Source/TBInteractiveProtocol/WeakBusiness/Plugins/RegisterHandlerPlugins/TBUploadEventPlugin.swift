@@ -9,7 +9,7 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-class TBUploadEventPlugin: NSObject {
+public class TBUploadEventPlugin: NSObject {
     
     var uploadEventRegisterCallBack: UploadEventRegisterCallBack?
     

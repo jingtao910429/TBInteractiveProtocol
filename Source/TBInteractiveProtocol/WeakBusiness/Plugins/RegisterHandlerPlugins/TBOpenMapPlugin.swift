@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 import TBWebViewJavascriptBridge
 
-class TBOpenMapPlugin: NSObject {
+public class TBOpenMapPlugin: NSObject {
     
     var openMapRegisterCallBack: OpenMapRegisterCallBack?
     

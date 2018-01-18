@@ -21,18 +21,19 @@ protocol TBWebViewNavigationDelegate {
     func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)
 }
 
-protocol TBWebViewURLDelegate {
+protocol TBWebViewDelegate {
     func webViewUrlDefault() -> String
+    func fetchDecidePolicyPrefixs() -> [(String, Bool)]
+    func decidePolicyCallBack(url: String, prefix: String)
 }
 
-class TBWebViewManager: NSObject {
+public class TBWebViewManager: NSObject {
     
     fileprivate(set) var webView: WKWebView!
     fileprivate(set) var bridge: WKWebViewJavascriptBridge!
-    fileprivate var progressView: TBWebProgressView!
     
-    var delegate: TBWebViewNavigationDelegate?
-    var urlDelegate: TBWebViewURLDelegate?
+    var navDelegate: TBWebViewNavigationDelegate?
+    var delegate: TBWebViewDelegate?
     
     fileprivate var originUrl: URL!
     fileprivate var url: String? {
@@ -40,7 +41,7 @@ class TBWebViewManager: NSObject {
             self.originUrl = TBWebViewHelper.handleUrl(url: url)
             if let _ = self.originUrl {
             } else {
-                self.originUrl = URL(string: (self.urlDelegate?.webViewUrlDefault())!)!
+                self.originUrl = URL(string: (self.delegate?.webViewUrlDefault())!)!
             }
         }
     }
@@ -49,21 +50,21 @@ class TBWebViewManager: NSObject {
         super.init()
     }
     
-    func loadView(frame: CGRect, configuration: WKWebViewConfiguration?) {
-        if let configuration = configuration {
-            self.webView = WKWebView(frame: frame, configuration: configuration)
-        } else {
-            self.webView = WKWebView(frame: frame)
-        }
+    func loadView(frame: CGRect) {
+        self.webView = WKWebView(frame: frame, configuration: TBWebViewConfigurationManager().configuration())
         setWebViewAttribute()
     }
     
-    func load(_ request: String?) -> WKNavigation? {
+    func load(_ url: String?) -> WKNavigation? {
         if self.webView == nil {
             print("请先加载WebView")
             return nil
         }
-        self.url = request
+        if url == nil || url == "" {
+            print("URL为空！")
+            return nil
+        }
+        self.url = url
         return self.webView.load(URLRequest(url: self.originUrl))
     }
     
@@ -115,7 +116,7 @@ class TBWebViewManager: NSObject {
         self.bridge.setWebViewDelegate(self)
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -136,27 +137,41 @@ class TBWebViewManager: NSObject {
 
 extension TBWebViewManager: WKNavigationDelegate {
     
-    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+    public func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         
     }
     
-    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-        self.delegate?.webView(webView, didCommit: navigation)
+    public func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        self.navDelegate?.webView(webView, didCommit: navigation)
     }
     
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        self.delegate?.webView(webView, didFinish: navigation)
+    public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        self.navDelegate?.webView(webView, didFinish: navigation)
     }
     
-    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        self.delegate?.webView(webView, didFail: navigation, withError: error)
+    public func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        self.navDelegate?.webView(webView, didFail: navigation, withError: error)
     }
     
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        self.delegate?.webView(webView, decidePolicyFor: navigationAction, decisionHandler: decisionHandler)
+    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        
+        self.navDelegate?.webView(webView, decidePolicyFor: navigationAction, decisionHandler: decisionHandler)
+        
+        if let urlString = navigationAction.request.url?.absoluteString {
+            let prefixs = self.delegate?.fetchDecidePolicyPrefixs()
+            if let prefixs = prefixs, prefixs.count != 0 {
+                TBWebViewConfigurationManager().decidePolicyDecisionHandler(url: urlString, prefixs: prefixs, callback: { (prefix) in
+                    self.delegate?.decidePolicyCallBack(url: urlString, prefix: prefix)
+                }, decisionHandler: decisionHandler)
+            } else {
+                decisionHandler(.allow)
+            }
+        } else {
+            decisionHandler(.allow)
+        }
     }
     
-    func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+    public func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
         if challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust {
             let credential = URLCredential(trust: challenge.protectionSpace.serverTrust!)
             completionHandler(URLSession.AuthChallengeDisposition.useCredential, credential)
@@ -167,7 +182,7 @@ extension TBWebViewManager: WKNavigationDelegate {
 
 extension TBWebViewManager: WKScriptMessageHandler {
     
-    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+    public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         
     }
     
@@ -175,11 +190,41 @@ extension TBWebViewManager: WKScriptMessageHandler {
 
 extension TBWebViewManager: WKUIDelegate {
     
-    func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
+    //Alert弹框
+    public func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "确定", style: .default, handler: { (action) in
             completionHandler()
         }))
+        if let current = TBWebViewHelper.currentViewController() {
+            current.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    //confirm弹框
+    public func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
+        let alert = UIAlertController(title: message, message: nil, preferredStyle: UIAlertControllerStyle.alert)
+        let action = UIAlertAction(title: "确定", style: UIAlertActionStyle.default) { (_) in
+            completionHandler(true)
+        }
+        let cancelAction = UIAlertAction(title: "取消", style: UIAlertActionStyle.cancel) { (_) in
+            completionHandler(false)
+        }
+        alert.addAction(action)
+        alert.addAction(cancelAction)
+        if let current = TBWebViewHelper.currentViewController() {
+            current.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    //TextInput弹框
+    public func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
+        let alert = UIAlertController(title: "", message: nil, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addTextField { (_) in}
+        let action = UIAlertAction(title: "确定", style: UIAlertActionStyle.default) { (_) in
+            completionHandler(alert.textFields?.last?.text)
+        }
+        alert.addAction(action)
         if let current = TBWebViewHelper.currentViewController() {
             current.present(alert, animated: true, completion: nil)
         }

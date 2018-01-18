@@ -9,7 +9,7 @@
 import UIKit
 import ObjectMapper
 
-struct TBUserInfoModel: Mappable {
+public struct TBUserInfoModel: Mappable {
     var userId = "0"
     var msg = ""
     var result = 0
@@ -20,14 +20,14 @@ struct TBUserInfoModel: Mappable {
     var accessToken = ""
     var data: Any?
     
-    init?(map: Map) {
+    public init?(map: Map) {
     }
     
     var nonnilMapProperties: [String] {
         return []
     }
     
-    mutating func mapping(map: Map) {
+    mutating public func mapping(map: Map) {
         userId <- map["userId"]
         msg <- map["msg"]
         result <- map["result"]

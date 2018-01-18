@@ -9,7 +9,7 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-class TBCallBackPlugin: NSObject {
+public class TBCallBackPlugin: NSObject {
     
     var callBackRegisterCallBack: CallBackRegisterCallBack?
     
@@ -24,16 +24,19 @@ class TBCallBackPlugin: NSObject {
                     if isClosePage as? Int == 1 {
                         TBWebViewHelper.currentViewController()?.navigationController?.popViewController(animated: true)
                     } else {
+                        self.goback(manager: manager)
                         if let callBackRegisterCallBack = self.callBackRegisterCallBack {
                             callBackRegisterCallBack(-1)
                         }
                     }
                 } else {
+                    self.goback(manager: manager)
                     if let callBackRegisterCallBack = self.callBackRegisterCallBack {
                         callBackRegisterCallBack(-1)
                     }
                 }
             } else {
+                self.goback(manager: manager)
                 if let callBackRegisterCallBack = self.callBackRegisterCallBack {
                     callBackRegisterCallBack(-1)
                 }
@@ -41,5 +44,13 @@ class TBCallBackPlugin: NSObject {
         }
         let callBack = TBCallBackRegisterHandler()
         callBack.callBackRegisterHandler(commond: commond)
+    }
+    
+    func goback(manager: TBWebViewManager) {
+        if (manager.webView.canGoBack) {
+            manager.webView.goBack()
+        } else {
+            TBWebViewHelper.currentViewController()?.navigationController?.popViewController(animated: false)
+        }
     }
 }

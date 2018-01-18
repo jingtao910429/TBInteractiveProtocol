@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import NJKWebViewProgress
 
-class TBWebProgressView: NSObject {
+public class TBWebProgressView: NSObject {
     
     fileprivate(set) var progressView: NJKWebViewProgressView!
     fileprivate(set) var progressProxy: NJKWebViewProgress!
@@ -44,7 +44,7 @@ extension TBWebProgressView: UIWebViewDelegate {
 }
 
 extension TBWebProgressView: NJKWebViewProgressDelegate {
-    func webViewProgress(_ webViewProgress: NJKWebViewProgress!, updateProgress progress: Float) {
+    public func webViewProgress(_ webViewProgress: NJKWebViewProgress!, updateProgress progress: Float) {
         self.progressView.progress = progress
     }
 }

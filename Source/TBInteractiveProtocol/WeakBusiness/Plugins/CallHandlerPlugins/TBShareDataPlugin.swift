@@ -9,7 +9,7 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-class TBShareDataPlugin: NSObject {
+public class TBShareDataPlugin: NSObject {
     
     var shareLinkRegisterCallBack: ShareLinkRegisterCallBack?
     var sharePicRegisterCallBack: SharePicRegisterCallBack?

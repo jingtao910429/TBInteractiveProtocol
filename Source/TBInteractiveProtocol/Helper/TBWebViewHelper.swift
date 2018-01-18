@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TBWebViewHelper: NSObject {
+public class TBWebViewHelper: NSObject {
     
     class func currentViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
         if let nav = base as? UINavigationController {

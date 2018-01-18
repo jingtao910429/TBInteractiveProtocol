@@ -9,7 +9,10 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-class TBCallHandler: TBJSHandler {
+class TBCallHandler: NSObject {
+    
+    var bridge: WKWebViewJavascriptBridge?
+    
     func callHandler(commond: TBCallCommond) {
         self.bridge = commond.bridge
         DispatchQueue.global().async {

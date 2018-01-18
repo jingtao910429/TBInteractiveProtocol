@@ -9,7 +9,7 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-class TBCityInfoPlugin: NSObject {
+public class TBCityInfoPlugin: NSObject {
     func registerHandler(model: TBCityInfoModel, manager: TBWebViewManager) {
         let commond = TBRegisterCommond()
         commond.bridge = manager.bridge

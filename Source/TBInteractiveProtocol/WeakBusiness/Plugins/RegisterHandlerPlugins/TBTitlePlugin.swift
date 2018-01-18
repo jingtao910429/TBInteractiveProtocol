@@ -9,7 +9,7 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-class TBTitlePlugin: NSObject {
+public class TBTitlePlugin: NSObject {
     
     var initTitleRegisterCallBack: InitTitleRegisterCallBack?
     

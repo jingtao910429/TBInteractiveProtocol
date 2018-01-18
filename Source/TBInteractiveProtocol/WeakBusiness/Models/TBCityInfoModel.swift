@@ -9,20 +9,20 @@
 import UIKit
 import ObjectMapper
 
-struct TBCityInfoModel: Mappable {
+public struct TBCityInfoModel: Mappable {
     var msg = ""
     var result = 0
     var cityId = ""
     var data: Any?
     
-    init?(map: Map) {
+    public init?(map: Map) {
     }
     
     var nonnilMapProperties: [String] {
         return []
     }
     
-    mutating func mapping(map: Map) {
+    mutating public func mapping(map: Map) {
         msg <- map["msg"]
         result <- map["result"]
         cityId <- map["cityId"]
