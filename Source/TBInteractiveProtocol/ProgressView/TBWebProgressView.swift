@@ -31,7 +31,7 @@ public class TBWebProgressView: NSObject {
         return progressProxy
     }
     
-    func loadView(container: UIView?, webviewY: CGFloat, width: CGFloat) {
+    public func loadProgressView(container: UIView?, webviewY: CGFloat, width: CGFloat) {
         self.progressView = self.createProgressView(webviewY: webviewY, width: width)
         self.progressView.progress = 0.05
         container?.addSubview(self.progressView)

@@ -32,8 +32,8 @@ public class TBWebViewManager: NSObject {
     fileprivate(set) var webView: WKWebView!
     fileprivate(set) var bridge: WKWebViewJavascriptBridge!
     
-    var navDelegate: TBWebViewNavigationDelegate?
-    var delegate: TBWebViewDelegate?
+    public var navDelegate: TBWebViewNavigationDelegate?
+    public var delegate: TBWebViewDelegate?
     
     fileprivate var originUrl: URL!
     fileprivate var url: String? {
@@ -46,7 +46,7 @@ public class TBWebViewManager: NSObject {
         }
     }
     
-    override init() {
+    override public init() {
         super.init()
     }
     

@@ -21,72 +21,72 @@ let kCityInfoPlugin    = "getCityInfo"
 let kUploadEventPlugin = "uploadEvent"
 
 //getUserInfo
-typealias LoginRegisterCallBack       = () -> Void
+public typealias LoginRegisterCallBack       = () -> Void
 //title
-typealias InitTitleRegisterCallBack   = (_ title: String, _ isShowShare: Int) -> Void
+public typealias InitTitleRegisterCallBack   = (_ title: String, _ isShowShare: Int) -> Void
 //shareLink
-typealias ShareLinkRegisterCallBack   = (_ title: String, _ content: String, _ link: String, _ icon: String, _ responseCallBack: WVJBResponseCallback?) -> Void
+public typealias ShareLinkRegisterCallBack   = (_ title: String, _ content: String, _ link: String, _ icon: String, _ responseCallBack: WVJBResponseCallback?) -> Void
 //sharePic
-typealias SharePicRegisterCallBack    = (_ isSuccess: Bool, _ imageData: NSData?, _ responseCallBack: WVJBResponseCallback?) -> Void
+public typealias SharePicRegisterCallBack    = (_ isSuccess: Bool, _ imageData: NSData?, _ responseCallBack: WVJBResponseCallback?) -> Void
 //openMap
-typealias OpenMapRegisterCallBack     = (_ locationCoordinate2D: CLLocationCoordinate2D, _ locationName: String) -> Void
+public typealias OpenMapRegisterCallBack     = (_ locationCoordinate2D: CLLocationCoordinate2D, _ locationName: String) -> Void
 //callBack
-typealias CallBackRegisterCallBack    = (_ isClosePage: Int) -> Void
+public typealias CallBackRegisterCallBack    = (_ isClosePage: Int) -> Void
 //uploadEvent
-typealias UploadEventRegisterCallBack = (_ eventId: String, _ params: [String: Any]) -> Void
+public typealias UploadEventRegisterCallBack = (_ eventId: String, _ params: [String: Any]) -> Void
 
 public class TBRegisterPlugin: NSObject {
     
     //getUserInfo
-    func registerUserInfo(model: TBUserInfoModel, manager: TBWebViewManager, loginRegisterCallBack: LoginRegisterCallBack?) {
+    public func registerUserInfo(model: TBUserInfoModel, manager: TBWebViewManager, loginRegisterCallBack: LoginRegisterCallBack?) {
         let userInfo = TBUserInfoPlugin()
         userInfo.loginRegisterCallBack = loginRegisterCallBack
         userInfo.registerHandler(model: model, manager: manager)
     }
     
     //cityInfo
-    func registerCityInfo(model: TBCityInfoModel, manager: TBWebViewManager) {
+    public func registerCityInfo(model: TBCityInfoModel, manager: TBWebViewManager) {
         let cityInfo = TBCityInfoPlugin()
         cityInfo.registerHandler(model: model, manager: manager)
     }
     
     //shareLink
-    func registerShareLink(manager: TBWebViewManager, shareLinkRegisterCallBack: ShareLinkRegisterCallBack?) {
+    public func registerShareLink(manager: TBWebViewManager, shareLinkRegisterCallBack: ShareLinkRegisterCallBack?) {
         let shareLink = TBShareLinkPlugin()
         shareLink.shareLinkRegisterCallBack = shareLinkRegisterCallBack
         shareLink.registerHandler(manager: manager)
     }
     
     //sharePic
-    func registerSharePic(manager: TBWebViewManager, sharePicRegisterCallBack: SharePicRegisterCallBack?) {
+    public func registerSharePic(manager: TBWebViewManager, sharePicRegisterCallBack: SharePicRegisterCallBack?) {
         let sharePic = TBSharePicPlugin()
         sharePic.sharePicRegisterCallBack = sharePicRegisterCallBack
         sharePic.registerHandler(manager: manager)
     }
     
     //title
-    func registerTitle(manager: TBWebViewManager, initTitleRegisterCallBack: InitTitleRegisterCallBack?) {
+    public func registerTitle(manager: TBWebViewManager, initTitleRegisterCallBack: InitTitleRegisterCallBack?) {
         let title = TBTitlePlugin()
         title.initTitleRegisterCallBack = initTitleRegisterCallBack
         title.registerHandler(manager: manager)
     }
     
     //openMap
-    func registerOpenMap(manager: TBWebViewManager, openMapRegisterCallBack: OpenMapRegisterCallBack?) {
+    public func registerOpenMap(manager: TBWebViewManager, openMapRegisterCallBack: OpenMapRegisterCallBack?) {
         let openMap = TBOpenMapPlugin()
         openMap.openMapRegisterCallBack = openMapRegisterCallBack
         openMap.registerHandler(manager: manager)
     }
     
     //callback
-    func registerCallBack(manager: TBWebViewManager, callBackRegisterCallBack: CallBackRegisterCallBack?) {
+    public func registerCallBack(manager: TBWebViewManager, callBackRegisterCallBack: CallBackRegisterCallBack?) {
         let callBack = TBCallBackPlugin()
         callBack.callBackRegisterCallBack = callBackRegisterCallBack
         callBack.registerHandler(manager: manager)
     }
     
     //uploadEvent
-    func registerUploadEvent(manager: TBWebViewManager, uploadEventRegisterCallBack: UploadEventRegisterCallBack?) {
+    public func registerUploadEvent(manager: TBWebViewManager, uploadEventRegisterCallBack: UploadEventRegisterCallBack?) {
         let uploadEvent = TBUploadEventPlugin()
         uploadEvent.uploadEventRegisterCallBack = uploadEventRegisterCallBack
         uploadEvent.registerHandler(manager: manager)
