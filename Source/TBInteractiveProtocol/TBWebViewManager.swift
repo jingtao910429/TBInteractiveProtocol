@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 import TBWebViewJavascriptBridge
 
-protocol TBWebViewNavigationDelegate {
+public protocol TBWebViewNavigationDelegate {
     
     //WKNavigationDelegate
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!)
@@ -21,7 +21,7 @@ protocol TBWebViewNavigationDelegate {
     func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)
 }
 
-protocol TBWebViewDelegate {
+public protocol TBWebViewDelegate {
     func webViewUrlDefault() -> String
     func fetchDecidePolicyPrefixs() -> [(String, Bool)]
     func decidePolicyCallBack(url: String, prefix: String)
@@ -50,12 +50,12 @@ public class TBWebViewManager: NSObject {
         super.init()
     }
     
-    func loadView(frame: CGRect) {
+    public func loadWebView(frame: CGRect) {
         self.webView = WKWebView(frame: frame, configuration: TBWebViewConfigurationManager().configuration())
         setWebViewAttribute()
     }
     
-    func load(_ url: String?) -> WKNavigation? {
+    public func load(_ url: String?) -> WKNavigation? {
         if self.webView == nil {
             print("请先加载WebView")
             return nil
@@ -69,7 +69,7 @@ public class TBWebViewManager: NSObject {
     }
     
     //执行JS
-    func evaluateJavaScripts(datas: [TBEvaluateJSHandler]) {
+    public func evaluateJavaScripts(datas: [TBEvaluateJSHandler]) {
         if datas.count == 0 {
             return
         }
@@ -79,7 +79,7 @@ public class TBWebViewManager: NSObject {
     }
     
     //执行单个JS
-    func evaluateJavaScript(handler: TBEvaluateJSHandler) {
+    public func evaluateJavaScript(handler: TBEvaluateJSHandler) {
         var isExecute = false
         if let url = self.webView.url?.absoluteString {
             if let prefixKey = handler.prefixKey, url.hasPrefix(prefixKey) {

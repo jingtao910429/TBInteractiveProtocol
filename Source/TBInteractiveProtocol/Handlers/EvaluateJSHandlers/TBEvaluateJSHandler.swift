@@ -8,15 +8,15 @@
 
 import UIKit
 
-typealias EvaluateJSCompletionHandler = ((Any?, Error?) -> Swift.Void)?
+public typealias EvaluateJSCompletionHandler = ((Any?, Error?) -> Swift.Void)?
 
-class TBEvaluateJSHandler: NSObject {
-    var prefixKey: String?
-    var containsKey: String?
-    var evaluateJavaScriptObjects: [TBEvaluateJSObject] = []
+public class TBEvaluateJSHandler: NSObject {
+    public var prefixKey: String?
+    public var containsKey: String?
+    public var evaluateJavaScriptObjects: [TBEvaluateJSObject] = []
 }
 
-class TBEvaluateJSObject: NSObject {
-    var evaluateJavaScript: String?
-    var evaluateJSCompletionHandler: EvaluateJSCompletionHandler?
+public class TBEvaluateJSObject: NSObject {
+    public var evaluateJavaScript: String?
+    public var evaluateJSCompletionHandler: EvaluateJSCompletionHandler?
 }
