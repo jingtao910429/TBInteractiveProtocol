@@ -7,259 +7,141 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0245660B44C2FD32378ED4A347CFFFAE /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F682BBE701FDA79446AFA6B7698D24E /* DataTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		02B6AC7C4ABFA4E2AEE0121F0A41CE6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9FDBB979C5256ABFCD6810CA09CB5 /* Foundation.framework */; };
-		0630CB52B4B9864E4E5FBDE34F471C5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0895CD675AB9AB89969D9109C45B145 /* UIKit.framework */; };
-		0A94E99244883942866756A0A592DCEF /* TBTitlePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717C5494EE06F82CDB514F1CEE43309B /* TBTitlePlugin.swift */; };
-		0DCFD83A6149FC0514890A5ED67047B5 /* NJKWebViewProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5A55CA78CE0D9209D24D5A5F984AE39 /* NJKWebViewProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DEC3E5EB58378BC1902649CF376F284 /* TBWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9E9E0AF0C5CF28D2E1E0A74AF8903A /* TBWebViewController.swift */; };
-		1329947BB72A9D9CA18F1C44AFBFD7F2 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFB41FB5E3F326AE6B32B0D92F04BC3 /* ISO8601DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		1457023A8917C66AEAE2EAF3802026D7 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582ACB94AE76572A4AF05DBC28D711B1 /* CustomDateFormatTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		1563D7F05577852DD479C1BA3CFC24CC /* NJKWebViewProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79811341478D453BEADBC058F03FA58B /* NJKWebViewProgress-dummy.m */; };
-		189CDFA81E405AB6498A5D9032146C9A /* TBOpenMapPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9630824E13C0512D2D6D3A8C0E9CE65A /* TBOpenMapPlugin.swift */; };
-		1C4466B63730397EAEFAAB5D4DC81411 /* Pods-TBInteractiveProtocol-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0272BAA438F893CE610BE74CFAB451 /* Pods-TBInteractiveProtocol-dummy.m */; };
-		23FCD10E8F198AF79649E004AB2C5BDD /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20870AC66BA858ABF94A08054AB460 /* DateFormatterTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		24D6E11699BFAAD67F17EFA5B7DD9E0D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DFAA4466BC6C9DB7462E7A77EBAFFA1 /* CoreLocation.framework */; };
-		25E8218D7A1D56D4D65223CD8FC3CBC6 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108782D9AE10C15C060594AB80F0053A /* EnumTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2B614023108C5650E305F2A44EC75943 /* TBCallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B1E18F62A8C3EDD5CB3CE9274C1093 /* TBCallHandler.swift */; };
-		2FE20550C6788508DCEF33844ED1B9A9 /* TBRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5C6689D456B3026FE4698FB85F3E16 /* TBRegisterHandler.swift */; };
-		30E2EA94FFD92A570B347400530F86F3 /* TBGoBackHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A314D1E5B4373FC5D2C922511449EBAC /* TBGoBackHandler.swift */; };
-		347945A5FC349A6E31AC7E3403E2CDE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9FDBB979C5256ABFCD6810CA09CB5 /* Foundation.framework */; };
-		3674FE2B614463AEDA02962DCD38DB0B /* TBWebViewConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16389DE6FEA88C682C4ADB5AF41BC275 /* TBWebViewConfigurationManager.swift */; };
-		383E6DBA8918A3663922FDDE262BE527 /* TBShareLinkPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F374DB61F8CFEA0CC52E825E35A80C /* TBShareLinkPlugin.swift */; };
-		3DEC3E2CEFC71B9B8FFFB1A65217AC69 /* TBWebViewJavascriptBridge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1438A2EE6152495754E06F36F4B6E910 /* TBWebViewJavascriptBridge-dummy.m */; };
-		3F841D6BD9DC264790920B0EBCF77338 /* WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CC52111576BEFE0D77569AE05FD99C /* WebViewJavascriptBridge_JS.m */; };
-		40E6B7A671DFD76170156328D995546B /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A4663BAB0A76459316C17F5DDE418 /* NJKWebViewProgress.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4B06236EB97AB40B24BEE4483A5CF35B /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B7EA02ED70F878CBCB09C0D6B392C5 /* URLTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		55C546AD2906C44E37FF671C2C428F46 /* TBWebViewJavascriptBridge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF7E33005A6E40763A549F499D3C846 /* TBWebViewJavascriptBridge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55ED7151F7DD61FB2DD927B6C710364A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9FDBB979C5256ABFCD6810CA09CB5 /* Foundation.framework */; };
-		5F3C6CA380EBA99F98A4935C2AF81C14 /* TBUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF7E565A16B060C425E9F8919847E1 /* TBUserInfoModel.swift */; };
-		5F826DA0AF2EEC7B6F3C83472D58F4A9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBDDBE8ED2D705683DE2BC3592D0793 /* WebKit.framework */; };
-		63F38701F2C5646912E5B0D069E55029 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D62F94E844EB0EC31061614868E4E7C /* WebViewJavascriptBridgeBase.m */; };
-		67610502D9611B665DFE7B8575721A57 /* TBInteractiveProtocol-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F862978FC6540F02676A691DBFF074A /* TBInteractiveProtocol-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C540D9D9A25F356C221598572F3F2EF /* ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C14EA3CF886B43EBB697C24AA1CB54 /* ObjectMapper-dummy.m */; };
-		6C80086AE63A36DF019CA1101A6EECE9 /* TBRegisterPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E019C5FB857456499AC90B18538F0827 /* TBRegisterPlugin.swift */; };
-		6E245915CCAB0997627A5927B9B49C04 /* TBWebViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCC8F1E731110000CE66701C3CB0009 /* TBWebViewHelper.swift */; };
-		71CE430606A3758204EA8D01D9B6EE45 /* Pods-TBInteractiveProtocol-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB485A8FD2C29080342B5A4D7540E68B /* Pods-TBInteractiveProtocol-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		727886CDE0C72BF8837F5B31FF7B85B4 /* TBUserInfoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488EBB26131448F27C9B66B8359E97D6 /* TBUserInfoPlugin.swift */; };
-		735A38022491359845D0D6D6FAC61752 /* NJKWebViewProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E9E14E096521CC22B70560E435EAC7 /* NJKWebViewProgress.framework */; };
-		7482D61415D23425FDDC0D9077987D1F /* TBCityInfoRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198A2D3F2954CFBCACDA1685E0DC9720 /* TBCityInfoRegisterHandler.swift */; };
-		75D36472FF3A7668A945E6C7286CA4D0 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7735BA8E8E80B94D4B0DBBE8B180681 /* ObjectMapper.framework */; };
-		7A802273DB3B8921570CC5E072E41B04 /* WebViewJavascriptBridge_JS.h in Headers */ = {isa = PBXBuildFile; fileRef = 005A09F00E138CBE62E5CDDF02103B7F /* WebViewJavascriptBridge_JS.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		7AE9484F09D29428653109D73D4FC488 /* NJKWebViewProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B1707197693ADD92FAE12846202CD25 /* NJKWebViewProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E7EE8D5A6CDC6EFAC20A6382BCDE8B7 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A80C416D74E07F43B0C2E5EFDDCA1E /* ToJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		86D3021C3B6F4A9FC445B7CA3510EDB1 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD95DF60238EBABAEE4751AEB3EC2FA /* Map.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		89A04B513BDDAD3529E2DFD4E7CD8404 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF25583220A7A0D4BD0A45592828ADA /* TransformType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8C9165B82240F78C43F7E7ACFD17612B /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E60927002A0C4041B43924F1F3849242 /* NJKWebViewProgressView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8CEC50F33A7D4F7EAD1DF46AAF71A68D /* TBSharePicPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4124D5FD718CA6712D6101AD2E2C8 /* TBSharePicPlugin.swift */; };
-		8D96D03E211E267C29E017A0FE31842B /* TBCallPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106A85B0DDBD98DD30E2A90492687F5 /* TBCallPlugin.swift */; };
-		91E48481BE99249FCEF1D0ED2422F799 /* TBCityInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAEED7363B2320652EBCC222D71F94F /* TBCityInfoModel.swift */; };
-		91F0DDA31FB30DA9561299AFB40013EB /* TBRegisterCommond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEE549CD19855F8852A728FEADF610C /* TBRegisterCommond.swift */; };
-		9238C0D16353069CF7250A004DC39F3E /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 7041D4409E4775079159D9AFA540B8DF /* WKWebViewJavascriptBridge.m */; };
-		94A49147788A01925EE6E748C169D955 /* JSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A824AE82855C88F9990272189DD75 /* JSHandler.swift */; };
-		94CEF26D532BE9C8E2EAA68D5707F012 /* TBInteractiveProtocol-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E04A32A60554C0A7BAC63F4670C7A2 /* TBInteractiveProtocol-dummy.m */; };
-		958FA78B2D85662193B9DB75491DD7C6 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722ECA5B218E538AFA30AF8AF8C07BAD /* NSDecimalNumberTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		95C1C28FAA7AC0519E28EFA39A726942 /* TBShareDataPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43831A225CF031A76F677A1CC4234E70 /* TBShareDataPlugin.swift */; };
-		95E9FB277407228BB774E96E509E0F83 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDE7460C17A5158C3486F6BBCBD2357 /* TransformOf.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9704864239071EB67A0A71145A9897CF /* TBGoBackPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E668ABD86513047245ED7A78F54278AD /* TBGoBackPlugin.swift */; };
-		A06E98F5B2C7CDF10F448870C0B56E52 /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD469ABC65FB619CB0FFFE782E452DAA /* DictionaryTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A0B9324FA8620E06C587E411D167810A /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DF5B32623FF13ECBE3F719668F9FF2 /* Operators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A916631055368A2C9163FB4EBCC35B86 /* WebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DBBE971BB322DC57F8939526805A5A1 /* WebViewJavascriptBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B136AEDB60DD31A44E7A4F30591F8EC7 /* TBOpenMapRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E1BE5C972A927E4F6DB0C9DA52C16 /* TBOpenMapRegisterHandler.swift */; };
-		B4009EC480B4C2F36219421B867F822F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0895CD675AB9AB89969D9109C45B145 /* UIKit.framework */; };
-		B48DA003C6C8F0D24C992D9C665BD816 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD73F6B1619184784DA9356D05EF824 /* FromJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B51A0FDE1631B6110B4848B455AE70C9 /* TBWebProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1A27EE9BCDDE7FA951DFCA9893B7DD /* TBWebProgressView.swift */; };
-		BF4C383BB5448C391BA4CF33A41202C4 /* WebViewJavascriptBridgeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 34FC5B7E95A3617576B75F4F097CD186 /* WebViewJavascriptBridgeBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1828AB53EC546EFE9752FB6B5167A92 /* TBUserInfoRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6C8ACFB5E0FC2D279844E01199BDCA /* TBUserInfoRegisterHandler.swift */; };
-		C1BEAA2832D97B07F1B3D66CA0FC9508 /* TBShareDataCallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63437E9D404F107AEA03B3250081AB0A /* TBShareDataCallHandler.swift */; };
-		C564A9B8F212922D3672E14557746B08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9FDBB979C5256ABFCD6810CA09CB5 /* Foundation.framework */; };
-		C73641D9B812626A318261FF1434B689 /* TBEvaluateJSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151559DB68F787007AB504DA17CCC55A /* TBEvaluateJSHandler.swift */; };
-		C897DF465CE00979527E155E65177DDE /* TBCallBackPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D5D25DF9F3D0198A60FF702C0DA659 /* TBCallBackPlugin.swift */; };
-		C938BEA8300BD1E5382A604639EA7EDF /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 79937FC823BD90781D9779AC3342EC29 /* WebViewJavascriptBridge.m */; };
-		C952DAE55A59BC13FCB9B43D79702118 /* TBCallCommond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE485F6F205A662E4DECDE75F3158E /* TBCallCommond.swift */; };
-		CEA96EDE2329C58C7FA61BC6E4DFF09D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBDDBE8ED2D705683DE2BC3592D0793 /* WebKit.framework */; };
-		CF4984C319D53D14AE993E8A944307F6 /* TBWebViewJavascriptBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657BB9B7D7F2A0F704F6C324E5DB3CD9 /* TBWebViewJavascriptBridge.framework */; };
-		D040BF4D3C93E112007043A2DC2F6DFB /* TBSharePicRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C15853DD9EAED3C13A909961E9E71F1 /* TBSharePicRegisterHandler.swift */; };
-		D17A76477E3FDFE3016E8979A2993B7C /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477DC33C468CB7B5A61997AB41818428 /* Mapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D2AB0326857A96B3A9FFCB75F0EE19AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9FDBB979C5256ABFCD6810CA09CB5 /* Foundation.framework */; };
-		DE4F4792C1421836670D303D82150F5C /* TBTitleRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E76209EB595A9A5624204503B12E1 /* TBTitleRegisterHandler.swift */; };
-		E084551B963F85CDD15EA34E2B9B7431 /* TBCallBackRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CB61088DBE445767012221263DF9A0 /* TBCallBackRegisterHandler.swift */; };
-		E39D141940B311900301534BE4A892B1 /* TBCityInfoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC63A98D1018E1C44B8A5FDB343E9F2D /* TBCityInfoPlugin.swift */; };
-		E55375B167BAE7DCCE7F917D8CA9EAD2 /* ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA692252849767E77BE51AD2F38E3D75 /* ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA30E95CBF6CC9F3D2435C303B637F94 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C06BAE923770C962D0E96371C0C4A0 /* DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		EE7B10FD039B4CE70B586584C9497CED /* WKWebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A32D07E181C82FEAA39ACC8949F83F /* WKWebViewJavascriptBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2EFDC17C03449A9A15E26464453103F /* NJKWebViewProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B91D71B09626CF52E9C2E0FD1675860 /* NJKWebViewProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F44C407B909BC7EE9B61CCE3E0FF3407 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617B17BFAA493133A96DB8C8F893BB08 /* Mappable.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F45AD0030121B2BD275A9B70C0AB7C98 /* TBShareLinkRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAD10A2C2183B8455988572230A668B /* TBShareLinkRegisterHandler.swift */; };
-		F920A83A17F03DA6117223CB88A99314 /* TBUploadEventRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1DE3A1B6F2215414B6699554705FE3 /* TBUploadEventRegisterHandler.swift */; };
-		FB6B0904DE2AA063E45D154EA111B86B /* TBUploadEventPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15314CB75C216D6BB802597E156447C4 /* TBUploadEventPlugin.swift */; };
-		FF48D6811701617EE2434FC61B7187C5 /* TBWebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F148609CC0050662B5804C840C034 /* TBWebViewManager.swift */; };
+		0245660B44C2FD32378ED4A347CFFFAE /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C829A5CE1338E6A1E313FF0CA0B45C /* DataTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		02B6AC7C4ABFA4E2AEE0121F0A41CE6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78303A97700CA406D0BCB9A42F086717 /* Foundation.framework */; };
+		0DCFD83A6149FC0514890A5ED67047B5 /* NJKWebViewProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D5D19528ACCE6D6B0B580CCB14B6AAA /* NJKWebViewProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EAEAF94D519F8F49523B014E8386E52 /* WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7987302FF7E24CA978DEA0BCBA1831 /* WebViewJavascriptBridge_JS.m */; };
+		1329947BB72A9D9CA18F1C44AFBFD7F2 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D1CED910E6C7CAB0D89EDA90FDD80 /* ISO8601DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1457023A8917C66AEAE2EAF3802026D7 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480E40BD0C706D9A7134A4A1FD5D793 /* CustomDateFormatTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1563D7F05577852DD479C1BA3CFC24CC /* NJKWebViewProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 312ACA42D7A8B95D4F635E9984784E50 /* NJKWebViewProgress-dummy.m */; };
+		1B7711EF94E25FBB5401A677FFD530B7 /* WKWebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = E4E66C8E2C68DECA7CD1C4E199CAD0DC /* WKWebViewJavascriptBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23FCD10E8F198AF79649E004AB2C5BDD /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13313F8D6EC9C86E16564EAF698E9F7 /* DateFormatterTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		25E8218D7A1D56D4D65223CD8FC3CBC6 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5968228B442CC17A426C7111E872A38 /* EnumTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		28D3A5AEA18F7DB3B58CCBB66AF98D0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78303A97700CA406D0BCB9A42F086717 /* Foundation.framework */; };
+		2F964C1D8692A6CE03F90D45E02F2617 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCF78C37CDFCFDEB7867B41FA44FA26 /* UIKit.framework */; };
+		347945A5FC349A6E31AC7E3403E2CDE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78303A97700CA406D0BCB9A42F086717 /* Foundation.framework */; };
+		40E6B7A671DFD76170156328D995546B /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 839677BD0A7110456D0A0BDE406A9D8D /* NJKWebViewProgress.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4B06236EB97AB40B24BEE4483A5CF35B /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935CDAB4FBD88ADA0F01CDFD774BA770 /* URLTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4F9C86FF2B45002DCD738F12C6E7575B /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 253BCA029FA35C1FB1EFF09239505E93 /* WebViewJavascriptBridge.m */; };
+		5D4880320B3391E9C9ECD751E49426DC /* WebViewJavascriptBridge_JS.h in Headers */ = {isa = PBXBuildFile; fileRef = F96AB9834D89DF6C56C36CB1245EAF8B /* WebViewJavascriptBridge_JS.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		64D4B20F1BF5D6D957193A8DFA177AFA /* Pods-TBInteractiveProtocol-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0272BAA438F893CE610BE74CFAB451 /* Pods-TBInteractiveProtocol-dummy.m */; };
+		6C540D9D9A25F356C221598572F3F2EF /* ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B32FB13E9D89CA5E12C5B1F11C85686 /* ObjectMapper-dummy.m */; };
+		734FC7B04F0217855CDB0482A259AFDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78303A97700CA406D0BCB9A42F086717 /* Foundation.framework */; };
+		7AE9484F09D29428653109D73D4FC488 /* NJKWebViewProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 36373D2B45BE4340E5342826E70802DB /* NJKWebViewProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E07194201488621B0FEF6A490BFFDC3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB14A55D4DB30C8D98DB7528D9807F4 /* WebKit.framework */; };
+		7E7EE8D5A6CDC6EFAC20A6382BCDE8B7 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B909CB6CFA92D857576600E25468532A /* ToJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8526D4977759A9F946AEC95E32AC18F8 /* WebViewJavascriptBridgeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 179F363E7EF216360CDAAFB8C9FF53F1 /* WebViewJavascriptBridgeBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86D3021C3B6F4A9FC445B7CA3510EDB1 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF32092B6E94048126F83D9E7AA6511 /* Map.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		89A04B513BDDAD3529E2DFD4E7CD8404 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EC68CCF6BCF72B1BB66E34C7E4F12 /* TransformType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8C9165B82240F78C43F7E7ACFD17612B /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71626D91BF8B3D985F11254B6BAF797C /* NJKWebViewProgressView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		945DFBE8BE27178EA315109BEE06DCBA /* WebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C360DFC63F89BF209A343B49DD06A5 /* WebViewJavascriptBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		958FA78B2D85662193B9DB75491DD7C6 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A99E459B73B9244E94693DD33EEF6C /* NSDecimalNumberTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		95E9FB277407228BB774E96E509E0F83 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0B3998106C60EA8F63CAA5589605D /* TransformOf.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A06E98F5B2C7CDF10F448870C0B56E52 /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41721692D2CA9824BB55146E4E8F5279 /* DictionaryTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A0B9324FA8620E06C587E411D167810A /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC734536FA6B6AD574758BAAD1CA5B0 /* Operators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AB0DCF4D0F64B3B021CBB59F7AEBA253 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE454C9D93C8CBA5E4C07FFA5E4FE36 /* WebViewJavascriptBridgeBase.m */; };
+		B48DA003C6C8F0D24C992D9C665BD816 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD63D747E44986851989DE6B1721510 /* FromJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B92E0397BF6752682062E6B3D107D786 /* TBWebViewJavascriptBridge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47945DE346C9735291FD453356D45FDF /* TBWebViewJavascriptBridge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C246652819F51F19CB092605FCE8BEC1 /* Pods-TBInteractiveProtocol-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB485A8FD2C29080342B5A4D7540E68B /* Pods-TBInteractiveProtocol-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D17A76477E3FDFE3016E8979A2993B7C /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0C4F39E202560D57CDCBA438DC2A95 /* Mapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E1F62EB9771772D3766DD5641D82261F /* TBWebViewJavascriptBridge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC62A490B808CB3D33E7076C1208167 /* TBWebViewJavascriptBridge-dummy.m */; };
+		E4AA96F1986B63B2BEB55484BCB1B4BB /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = C07F72D8CE27FF6B92FF65ECE9930E55 /* WKWebViewJavascriptBridge.m */; };
+		E55375B167BAE7DCCE7F917D8CA9EAD2 /* ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D3D5E859ADC5D945DE1D86071D0344A /* ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA30E95CBF6CC9F3D2435C303B637F94 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53304B113B894A70FFE48992E63BAF22 /* DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F2EFDC17C03449A9A15E26464453103F /* NJKWebViewProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 089D3E97BBB6FB95DCF7C335918D832A /* NJKWebViewProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F44C407B909BC7EE9B61CCE3E0FF3407 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99124FCDA4AF541EB7FCFE39102ADBBC /* Mappable.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		340BF4530397732C2A00B913F122CBBC /* PBXContainerItemProxy */ = {
+		12FB08F72FF9F4DD59098907AC60E2F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 40A16CB0CB5FD49FD533BBC4F0A0C888;
 			remoteInfo = ObjectMapper;
 		};
-		4E34F32A4AFEC5A50B6927CE46B04DD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 40A16CB0CB5FD49FD533BBC4F0A0C888;
-			remoteInfo = ObjectMapper;
-		};
-		6AABA08516CC61EDB66F761DAE350484 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BFE2670DCC1904935C9F0448F21D6728;
-			remoteInfo = TBWebViewJavascriptBridge;
-		};
-		84D0A4BB1F64776D129A1E76B9D681FB /* PBXContainerItemProxy */ = {
+		2C553364B855F2D4B74C9286158C4A58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 826EFF975442065A54A0B2D3103EE6A4;
 			remoteInfo = NJKWebViewProgress;
 		};
-		A5A52370DD1C33C220646AFC6C70CE7D /* PBXContainerItemProxy */ = {
+		9B1C01270B7AE24F7353B555D14C219F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BFE2670DCC1904935C9F0448F21D6728;
+			remoteGlobalIDString = 35A96753A2A3048D570FB2B5F8B945CC;
 			remoteInfo = TBWebViewJavascriptBridge;
-		};
-		C582154BEF6D9ECB3653273438664861 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 826EFF975442065A54A0B2D3103EE6A4;
-			remoteInfo = NJKWebViewProgress;
-		};
-		DD83E3BD3B330033C79465571C8F9408 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BD26C88FF07F05FD873E5C82EEEA7D9;
-			remoteInfo = TBInteractiveProtocol;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		005A09F00E138CBE62E5CDDF02103B7F /* WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridge_JS.h; path = WebViewJavascriptBridge/WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
-		031546E3C0C5153E463E27CD94DE53D7 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F682BBE701FDA79446AFA6B7698D24E /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = ObjectMapper/Transforms/DataTransform.swift; sourceTree = "<group>"; };
-		108782D9AE10C15C060594AB80F0053A /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = ObjectMapper/Transforms/EnumTransform.swift; sourceTree = "<group>"; };
-		1106A85B0DDBD98DD30E2A90492687F5 /* TBCallPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBCallPlugin.swift; path = Source/TBInteractiveProtocol/WeakBusiness/Plugins/CallHandlerPlugins/TBCallPlugin.swift; sourceTree = "<group>"; };
-		1438A2EE6152495754E06F36F4B6E910 /* TBWebViewJavascriptBridge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TBWebViewJavascriptBridge-dummy.m"; sourceTree = "<group>"; };
-		151559DB68F787007AB504DA17CCC55A /* TBEvaluateJSHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBEvaluateJSHandler.swift; path = Source/TBInteractiveProtocol/Handlers/EvaluateJSHandlers/TBEvaluateJSHandler.swift; sourceTree = "<group>"; };
-		15314CB75C216D6BB802597E156447C4 /* TBUploadEventPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBUploadEventPlugin.swift; path = Source/TBInteractiveProtocol/WeakBusiness/Plugins/RegisterHandlerPlugins/TBUploadEventPlugin.swift; sourceTree = "<group>"; };
-		16389DE6FEA88C682C4ADB5AF41BC275 /* TBWebViewConfigurationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBWebViewConfigurationManager.swift; path = Source/TBInteractiveProtocol/TBWebViewConfigurationManager.swift; sourceTree = "<group>"; };
-		16C14EA3CF886B43EBB697C24AA1CB54 /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
-		198A2D3F2954CFBCACDA1685E0DC9720 /* TBCityInfoRegisterHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBCityInfoRegisterHandler.swift; path = Source/TBInteractiveProtocol/Handlers/RegisterHandlers/TBCityInfoRegisterHandler.swift; sourceTree = "<group>"; };
-		1B91D71B09626CF52E9C2E0FD1675860 /* NJKWebViewProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NJKWebViewProgress.h; path = NJKWebViewProgress/NJKWebViewProgress.h; sourceTree = "<group>"; };
-		1DF7E33005A6E40763A549F499D3C846 /* TBWebViewJavascriptBridge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TBWebViewJavascriptBridge-umbrella.h"; sourceTree = "<group>"; };
-		264452114CE1BD1D8396C94C15092853 /* TBInteractiveProtocol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TBInteractiveProtocol.framework; path = TBInteractiveProtocol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0480E40BD0C706D9A7134A4A1FD5D793 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = ObjectMapper/Transforms/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		089D3E97BBB6FB95DCF7C335918D832A /* NJKWebViewProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NJKWebViewProgress.h; path = NJKWebViewProgress/NJKWebViewProgress.h; sourceTree = "<group>"; };
+		0CF32092B6E94048126F83D9E7AA6511 /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = ObjectMapper/Core/Map.swift; sourceTree = "<group>"; };
+		0D5D19528ACCE6D6B0B580CCB14B6AAA /* NJKWebViewProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NJKWebViewProgress-umbrella.h"; sourceTree = "<group>"; };
+		145FDAF1FF4C0B0C79BE83C65BB4D33E /* NJKWebViewProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NJKWebViewProgress.modulemap; sourceTree = "<group>"; };
+		179F363E7EF216360CDAAFB8C9FF53F1 /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridgeBase.h; path = WebViewJavascriptBridge/WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
+		1A2993922F6DD192B252C1426ECA8572 /* TBWebViewJavascriptBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TBWebViewJavascriptBridge.framework; path = TBWebViewJavascriptBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BE454C9D93C8CBA5E4C07FFA5E4FE36 /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridgeBase.m; path = WebViewJavascriptBridge/WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
+		1D3D5E859ADC5D945DE1D86071D0344A /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		2244EBFB46E859D0175C51102C6E1B4C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		253BCA029FA35C1FB1EFF09239505E93 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridge.m; path = WebViewJavascriptBridge/WebViewJavascriptBridge.m; sourceTree = "<group>"; };
 		27E50B60AE9BADBF0DB29F15446CF399 /* Pods-TBInteractiveProtocol-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TBInteractiveProtocol-resources.sh"; sourceTree = "<group>"; };
-		2AAD10A2C2183B8455988572230A668B /* TBShareLinkRegisterHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBShareLinkRegisterHandler.swift; path = Source/TBInteractiveProtocol/Handlers/RegisterHandlers/TBShareLinkRegisterHandler.swift; sourceTree = "<group>"; };
-		2DF25583220A7A0D4BD0A45592828ADA /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = ObjectMapper/Transforms/TransformType.swift; sourceTree = "<group>"; };
-		34FC5B7E95A3617576B75F4F097CD186 /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridgeBase.h; path = WebViewJavascriptBridge/WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
-		37EE485F6F205A662E4DECDE75F3158E /* TBCallCommond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBCallCommond.swift; path = Source/TBInteractiveProtocol/Handlers/CallHandlers/TBCallCommond.swift; sourceTree = "<group>"; };
-		3BE875EF2A304E1352528DD80F1E2D75 /* TBWebViewJavascriptBridge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TBWebViewJavascriptBridge.modulemap; sourceTree = "<group>"; };
-		3F0D427908F2736843543B5EBE1A24C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FEE549CD19855F8852A728FEADF610C /* TBRegisterCommond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBRegisterCommond.swift; path = Source/TBInteractiveProtocol/Handlers/RegisterHandlers/TBRegisterCommond.swift; sourceTree = "<group>"; };
-		4295CFDFC8E932CBE0D70C24A8690110 /* TBInteractiveProtocol-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TBInteractiveProtocol-prefix.pch"; sourceTree = "<group>"; };
-		43831A225CF031A76F677A1CC4234E70 /* TBShareDataPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBShareDataPlugin.swift; path = Source/TBInteractiveProtocol/WeakBusiness/Plugins/CallHandlerPlugins/TBShareDataPlugin.swift; sourceTree = "<group>"; };
-		43BACF1BFC9B76F0EBFE0DB187775A65 /* TBWebViewJavascriptBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TBWebViewJavascriptBridge.framework; path = TBWebViewJavascriptBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		477DC33C468CB7B5A61997AB41818428 /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = ObjectMapper/Core/Mapper.swift; sourceTree = "<group>"; };
-		488EBB26131448F27C9B66B8359E97D6 /* TBUserInfoPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBUserInfoPlugin.swift; path = Source/TBInteractiveProtocol/WeakBusiness/Plugins/RegisterHandlerPlugins/TBUserInfoPlugin.swift; sourceTree = "<group>"; };
-		4A2DD72439B78A1404CB07B57670E56A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BCC8F1E731110000CE66701C3CB0009 /* TBWebViewHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBWebViewHelper.swift; path = Source/TBInteractiveProtocol/Helper/TBWebViewHelper.swift; sourceTree = "<group>"; };
-		4E8A4663BAB0A76459316C17F5DDE418 /* NJKWebViewProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NJKWebViewProgress.m; path = NJKWebViewProgress/NJKWebViewProgress.m; sourceTree = "<group>"; };
-		4FF8C3BF194A84B513F96B158C7C71EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28FC22F411C68E19826A3033591E58EE /* Pods_TBInteractiveProtocol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TBInteractiveProtocol.framework; path = "Pods-TBInteractiveProtocol.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A36E5F1E6CA00C80B156AFAA1A7F201 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		312ACA42D7A8B95D4F635E9984784E50 /* NJKWebViewProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NJKWebViewProgress-dummy.m"; sourceTree = "<group>"; };
+		34E18342B5DAF57918D4D866B0EFB4E5 /* TBWebViewJavascriptBridge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TBWebViewJavascriptBridge-prefix.pch"; sourceTree = "<group>"; };
+		351E3227807356BFC8689B6D72BA6706 /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
+		36373D2B45BE4340E5342826E70802DB /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NJKWebViewProgressView.h; path = NJKWebViewProgress/NJKWebViewProgressView.h; sourceTree = "<group>"; };
+		37C829A5CE1338E6A1E313FF0CA0B45C /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = ObjectMapper/Transforms/DataTransform.swift; sourceTree = "<group>"; };
+		41721692D2CA9824BB55146E4E8F5279 /* DictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryTransform.swift; path = ObjectMapper/Transforms/DictionaryTransform.swift; sourceTree = "<group>"; };
+		47945DE346C9735291FD453356D45FDF /* TBWebViewJavascriptBridge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TBWebViewJavascriptBridge-umbrella.h"; sourceTree = "<group>"; };
+		51ECB7115BB8E76481CCA6F80869AFD7 /* NJKWebViewProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NJKWebViewProgress-prefix.pch"; sourceTree = "<group>"; };
+		53304B113B894A70FFE48992E63BAF22 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = ObjectMapper/Transforms/DateTransform.swift; sourceTree = "<group>"; };
 		580D5E0CDB5DE03B8443BB7559B93FA9 /* Pods-TBInteractiveProtocol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TBInteractiveProtocol.release.xcconfig"; sourceTree = "<group>"; };
-		582ACB94AE76572A4AF05DBC28D711B1 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = ObjectMapper/Transforms/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
 		58DC17F0F1937F0B82F9D9D13CCEFA55 /* Pods-TBInteractiveProtocol-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TBInteractiveProtocol-acknowledgements.plist"; sourceTree = "<group>"; };
-		5A1DE3A1B6F2215414B6699554705FE3 /* TBUploadEventRegisterHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBUploadEventRegisterHandler.swift; path = Source/TBInteractiveProtocol/Handlers/RegisterHandlers/TBUploadEventRegisterHandler.swift; sourceTree = "<group>"; };
-		5B09101CE954F29F93E421C873D38E25 /* NJKWebViewProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NJKWebViewProgress-prefix.pch"; sourceTree = "<group>"; };
-		5C1A27EE9BCDDE7FA951DFCA9893B7DD /* TBWebProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBWebProgressView.swift; path = Source/TBInteractiveProtocol/ProgressView/TBWebProgressView.swift; sourceTree = "<group>"; };
-		617B17BFAA493133A96DB8C8F893BB08 /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = ObjectMapper/Core/Mappable.swift; sourceTree = "<group>"; };
-		61B7EA02ED70F878CBCB09C0D6B392C5 /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = ObjectMapper/Transforms/URLTransform.swift; sourceTree = "<group>"; };
-		61D5D25DF9F3D0198A60FF702C0DA659 /* TBCallBackPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBCallBackPlugin.swift; path = Source/TBInteractiveProtocol/WeakBusiness/Plugins/RegisterHandlerPlugins/TBCallBackPlugin.swift; sourceTree = "<group>"; };
-		624AC9CD2A03B58E1197C013C73B435B /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
-		63437E9D404F107AEA03B3250081AB0A /* TBShareDataCallHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBShareDataCallHandler.swift; path = Source/TBInteractiveProtocol/Handlers/CallHandlers/TBShareDataCallHandler.swift; sourceTree = "<group>"; };
-		657BB9B7D7F2A0F704F6C324E5DB3CD9 /* TBWebViewJavascriptBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TBWebViewJavascriptBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EBDDBE8ED2D705683DE2BC3592D0793 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
-		7041D4409E4775079159D9AFA540B8DF /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WKWebViewJavascriptBridge.m; path = WebViewJavascriptBridge/WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
-		717C5494EE06F82CDB514F1CEE43309B /* TBTitlePlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBTitlePlugin.swift; path = Source/TBInteractiveProtocol/WeakBusiness/Plugins/RegisterHandlerPlugins/TBTitlePlugin.swift; sourceTree = "<group>"; };
-		722ECA5B218E538AFA30AF8AF8C07BAD /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = ObjectMapper/Transforms/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
-		76E04A32A60554C0A7BAC63F4670C7A2 /* TBInteractiveProtocol-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TBInteractiveProtocol-dummy.m"; sourceTree = "<group>"; };
-		79811341478D453BEADBC058F03FA58B /* NJKWebViewProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NJKWebViewProgress-dummy.m"; sourceTree = "<group>"; };
-		79937FC823BD90781D9779AC3342EC29 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridge.m; path = WebViewJavascriptBridge/WebViewJavascriptBridge.m; sourceTree = "<group>"; };
-		7B704E20ABDCA8612713F87AACBDD653 /* Pods_TBInteractiveProtocol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TBInteractiveProtocol.framework; path = "Pods-TBInteractiveProtocol.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C1E1BE5C972A927E4F6DB0C9DA52C16 /* TBOpenMapRegisterHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBOpenMapRegisterHandler.swift; path = Source/TBInteractiveProtocol/Handlers/RegisterHandlers/TBOpenMapRegisterHandler.swift; sourceTree = "<group>"; };
+		5A71EF834CF5BF9F998E3F6BA1953E0B /* TBWebViewJavascriptBridge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TBWebViewJavascriptBridge.modulemap; sourceTree = "<group>"; };
+		5AD63D747E44986851989DE6B1721510 /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = ObjectMapper/Core/FromJSON.swift; sourceTree = "<group>"; };
+		66C360DFC63F89BF209A343B49DD06A5 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridge.h; path = WebViewJavascriptBridge/WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		71626D91BF8B3D985F11254B6BAF797C /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NJKWebViewProgressView.m; path = NJKWebViewProgress/NJKWebViewProgressView.m; sourceTree = "<group>"; };
+		78303A97700CA406D0BCB9A42F086717 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7CEB6784E17A75A4F378B93D5C7DAAA3 /* Pods-TBInteractiveProtocol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TBInteractiveProtocol.debug.xcconfig"; sourceTree = "<group>"; };
-		7DFAA4466BC6C9DB7462E7A77EBAFFA1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
-		7E456F05C2539ADD5D5998D759C591AD /* TBInteractiveProtocol.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TBInteractiveProtocol.xcconfig; sourceTree = "<group>"; };
-		7F20870AC66BA858ABF94A08054AB460 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = ObjectMapper/Transforms/DateFormatterTransform.swift; sourceTree = "<group>"; };
-		80CC52111576BEFE0D77569AE05FD99C /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridge_JS.m; path = WebViewJavascriptBridge/WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		839677BD0A7110456D0A0BDE406A9D8D /* NJKWebViewProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NJKWebViewProgress.m; path = NJKWebViewProgress/NJKWebViewProgress.m; sourceTree = "<group>"; };
 		840923BFB89EE68FDDA1FFC87BAB0350 /* Pods-TBInteractiveProtocol.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TBInteractiveProtocol.modulemap"; sourceTree = "<group>"; };
-		8417AAD5BB399CA9374D09BBB9ADD080 /* TBInteractiveProtocol.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TBInteractiveProtocol.modulemap; sourceTree = "<group>"; };
-		84A80C416D74E07F43B0C2E5EFDDCA1E /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = ObjectMapper/Core/ToJSON.swift; sourceTree = "<group>"; };
-		84A8F4CC3BC834A5959C4ED663DBDC26 /* TBWebViewJavascriptBridge.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TBWebViewJavascriptBridge.xcconfig; sourceTree = "<group>"; };
-		8C15853DD9EAED3C13A909961E9E71F1 /* TBSharePicRegisterHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBSharePicRegisterHandler.swift; path = Source/TBInteractiveProtocol/Handlers/RegisterHandlers/TBSharePicRegisterHandler.swift; sourceTree = "<group>"; };
-		8CDE7460C17A5158C3486F6BBCBD2357 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = ObjectMapper/Transforms/TransformOf.swift; sourceTree = "<group>"; };
-		8D62F94E844EB0EC31061614868E4E7C /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridgeBase.m; path = WebViewJavascriptBridge/WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
-		8DB8AB0A8951A3E2EAABC11F8C45EA23 /* ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.xcconfig; sourceTree = "<group>"; };
-		8DBBE971BB322DC57F8939526805A5A1 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridge.h; path = WebViewJavascriptBridge/WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		935CDAB4FBD88ADA0F01CDFD774BA770 /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = ObjectMapper/Transforms/URLTransform.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9630824E13C0512D2D6D3A8C0E9CE65A /* TBOpenMapPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBOpenMapPlugin.swift; path = Source/TBInteractiveProtocol/WeakBusiness/Plugins/RegisterHandlerPlugins/TBOpenMapPlugin.swift; sourceTree = "<group>"; };
-		96A4124D5FD718CA6712D6101AD2E2C8 /* TBSharePicPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBSharePicPlugin.swift; path = Source/TBInteractiveProtocol/WeakBusiness/Plugins/RegisterHandlerPlugins/TBSharePicPlugin.swift; sourceTree = "<group>"; };
-		9721E931127DE0C52AE3FA347AF2CD87 /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
-		97DF5B32623FF13ECBE3F719668F9FF2 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = ObjectMapper/Core/Operators.swift; sourceTree = "<group>"; };
 		982D4C10040E32C637AA1FF7587D2153 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99B1E18F62A8C3EDD5CB3CE9274C1093 /* TBCallHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBCallHandler.swift; path = Source/TBInteractiveProtocol/Handlers/CallHandlers/TBCallHandler.swift; sourceTree = "<group>"; };
-		9A5C6689D456B3026FE4698FB85F3E16 /* TBRegisterHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBRegisterHandler.swift; path = Source/TBInteractiveProtocol/Handlers/RegisterHandlers/TBRegisterHandler.swift; sourceTree = "<group>"; };
-		9B1707197693ADD92FAE12846202CD25 /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NJKWebViewProgressView.h; path = NJKWebViewProgress/NJKWebViewProgressView.h; sourceTree = "<group>"; };
-		9D6E76209EB595A9A5624204503B12E1 /* TBTitleRegisterHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBTitleRegisterHandler.swift; path = Source/TBInteractiveProtocol/Handlers/RegisterHandlers/TBTitleRegisterHandler.swift; sourceTree = "<group>"; };
-		9F862978FC6540F02676A691DBFF074A /* TBInteractiveProtocol-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TBInteractiveProtocol-umbrella.h"; sourceTree = "<group>"; };
-		9FA13EDEE2CF1D74D2DBEB85DCC33D75 /* NJKWebViewProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NJKWebViewProgress.modulemap; sourceTree = "<group>"; };
-		9FFB41FB5E3F326AE6B32B0D92F04BC3 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = ObjectMapper/Transforms/ISO8601DateTransform.swift; sourceTree = "<group>"; };
-		A2E9E14E096521CC22B70560E435EAC7 /* NJKWebViewProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NJKWebViewProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A314D1E5B4373FC5D2C922511449EBAC /* TBGoBackHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBGoBackHandler.swift; path = Source/TBInteractiveProtocol/Handlers/CallHandlers/TBGoBackHandler.swift; sourceTree = "<group>"; };
-		A31A824AE82855C88F9990272189DD75 /* JSHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSHandler.swift; path = Source/TBInteractiveProtocol/Handlers/JSHandler.swift; sourceTree = "<group>"; };
-		AA475383378B1604037376DD5681B3F4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB9E9E0AF0C5CF28D2E1E0A74AF8903A /* TBWebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBWebViewController.swift; path = Source/TBInteractiveProtocol/TBWebViewController.swift; sourceTree = "<group>"; };
-		B1CB61088DBE445767012221263DF9A0 /* TBCallBackRegisterHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBCallBackRegisterHandler.swift; path = Source/TBInteractiveProtocol/Handlers/RegisterHandlers/TBCallBackRegisterHandler.swift; sourceTree = "<group>"; };
-		BA6C8ACFB5E0FC2D279844E01199BDCA /* TBUserInfoRegisterHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBUserInfoRegisterHandler.swift; path = Source/TBInteractiveProtocol/Handlers/RegisterHandlers/TBUserInfoRegisterHandler.swift; sourceTree = "<group>"; };
-		BC63A98D1018E1C44B8A5FDB343E9F2D /* TBCityInfoPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBCityInfoPlugin.swift; path = Source/TBInteractiveProtocol/WeakBusiness/Plugins/RegisterHandlerPlugins/TBCityInfoPlugin.swift; sourceTree = "<group>"; };
-		BE9E5886A06C9567D12588E060D66D5C /* NJKWebViewProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NJKWebViewProgress.xcconfig; sourceTree = "<group>"; };
-		C5A55CA78CE0D9209D24D5A5F984AE39 /* NJKWebViewProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NJKWebViewProgress-umbrella.h"; sourceTree = "<group>"; };
-		CBFDFCE3E735100E2D1A54378FBF741E /* NJKWebViewProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NJKWebViewProgress.framework; path = NJKWebViewProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEAEED7363B2320652EBCC222D71F94F /* TBCityInfoModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBCityInfoModel.swift; path = Source/TBInteractiveProtocol/WeakBusiness/Models/TBCityInfoModel.swift; sourceTree = "<group>"; };
-		D0895CD675AB9AB89969D9109C45B145 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		DCE9FDBB979C5256ABFCD6810CA09CB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E019C5FB857456499AC90B18538F0827 /* TBRegisterPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBRegisterPlugin.swift; path = Source/TBInteractiveProtocol/WeakBusiness/Plugins/RegisterHandlerPlugins/TBRegisterPlugin.swift; sourceTree = "<group>"; };
-		E60927002A0C4041B43924F1F3849242 /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NJKWebViewProgressView.m; path = NJKWebViewProgress/NJKWebViewProgressView.m; sourceTree = "<group>"; };
-		E668ABD86513047245ED7A78F54278AD /* TBGoBackPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBGoBackPlugin.swift; path = Source/TBInteractiveProtocol/WeakBusiness/Plugins/CallHandlerPlugins/TBGoBackPlugin.swift; sourceTree = "<group>"; };
+		99124FCDA4AF541EB7FCFE39102ADBBC /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = ObjectMapper/Core/Mappable.swift; sourceTree = "<group>"; };
+		9B32FB13E9D89CA5E12C5B1F11C85686 /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		9D0C4F39E202560D57CDCBA438DC2A95 /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = ObjectMapper/Core/Mapper.swift; sourceTree = "<group>"; };
+		A6D499F7FA3B9E787E98E0685E583361 /* NJKWebViewProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NJKWebViewProgress.framework; path = NJKWebViewProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC734536FA6B6AD574758BAAD1CA5B0 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = ObjectMapper/Core/Operators.swift; sourceTree = "<group>"; };
+		ACCF78C37CDFCFDEB7867B41FA44FA26 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B909CB6CFA92D857576600E25468532A /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = ObjectMapper/Core/ToJSON.swift; sourceTree = "<group>"; };
+		BAB14A55D4DB30C8D98DB7528D9807F4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		BD451CABE80FEF6373C5F79F3F7A2E0D /* TBWebViewJavascriptBridge.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TBWebViewJavascriptBridge.xcconfig; sourceTree = "<group>"; };
+		C07F72D8CE27FF6B92FF65ECE9930E55 /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WKWebViewJavascriptBridge.m; path = WebViewJavascriptBridge/WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		C13313F8D6EC9C86E16564EAF698E9F7 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = ObjectMapper/Transforms/DateFormatterTransform.swift; sourceTree = "<group>"; };
+		C694476CFA09A9D6DE15B9EC1EF243AC /* NJKWebViewProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NJKWebViewProgress.xcconfig; sourceTree = "<group>"; };
+		C8C6B8A41A6AF6B216B3E07742737BA6 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE43A62F422CBDFF5045F8A147ABBD8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC8D1CED910E6C7CAB0D89EDA90FDD80 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = ObjectMapper/Transforms/ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		DD7987302FF7E24CA978DEA0BCBA1831 /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridge_JS.m; path = WebViewJavascriptBridge/WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		E4E66C8E2C68DECA7CD1C4E199CAD0DC /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WKWebViewJavascriptBridge.h; path = WebViewJavascriptBridge/WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		E6508825EE0330C2D77867BD175EAE2E /* ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.xcconfig; sourceTree = "<group>"; };
+		E706CBC17584F03A3A1CC747AD38C377 /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
 		E7539F0735FC749ED663FDDAE6063E75 /* Pods-TBInteractiveProtocol-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TBInteractiveProtocol-frameworks.sh"; sourceTree = "<group>"; };
-		E7735BA8E8E80B94D4B0DBBE8B180681 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7C06BAE923770C962D0E96371C0C4A0 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = ObjectMapper/Transforms/DateTransform.swift; sourceTree = "<group>"; };
-		EA51AE57C68DD29206A018807F0B9F3B /* TBWebViewJavascriptBridge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TBWebViewJavascriptBridge-prefix.pch"; sourceTree = "<group>"; };
+		E87EC68CCF6BCF72B1BB66E34C7E4F12 /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = ObjectMapper/Transforms/TransformType.swift; sourceTree = "<group>"; };
 		EB0272BAA438F893CE610BE74CFAB451 /* Pods-TBInteractiveProtocol-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TBInteractiveProtocol-dummy.m"; sourceTree = "<group>"; };
 		EB58F40B0194A05179C4247DD9A4C6C4 /* Pods-TBInteractiveProtocol-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TBInteractiveProtocol-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EBD95DF60238EBABAEE4751AEB3EC2FA /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = ObjectMapper/Core/Map.swift; sourceTree = "<group>"; };
-		F2F374DB61F8CFEA0CC52E825E35A80C /* TBShareLinkPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBShareLinkPlugin.swift; path = Source/TBInteractiveProtocol/WeakBusiness/Plugins/RegisterHandlerPlugins/TBShareLinkPlugin.swift; sourceTree = "<group>"; };
-		F3DF7E565A16B060C425E9F8919847E1 /* TBUserInfoModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBUserInfoModel.swift; path = Source/TBInteractiveProtocol/WeakBusiness/Models/TBUserInfoModel.swift; sourceTree = "<group>"; };
-		F9A32D07E181C82FEAA39ACC8949F83F /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WKWebViewJavascriptBridge.h; path = WebViewJavascriptBridge/WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
-		FA692252849767E77BE51AD2F38E3D75 /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
-		FAD73F6B1619184784DA9356D05EF824 /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = ObjectMapper/Core/FromJSON.swift; sourceTree = "<group>"; };
+		EBE0B3998106C60EA8F63CAA5589605D /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = ObjectMapper/Transforms/TransformOf.swift; sourceTree = "<group>"; };
+		F0A99E459B73B9244E94693DD33EEF6C /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = ObjectMapper/Transforms/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		F5968228B442CC17A426C7111E872A38 /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = ObjectMapper/Transforms/EnumTransform.swift; sourceTree = "<group>"; };
+		F96AB9834D89DF6C56C36CB1245EAF8B /* WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridge_JS.h; path = WebViewJavascriptBridge/WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
 		FB485A8FD2C29080342B5A4D7540E68B /* Pods-TBInteractiveProtocol-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TBInteractiveProtocol-umbrella.h"; sourceTree = "<group>"; };
-		FD469ABC65FB619CB0FFFE782E452DAA /* DictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryTransform.swift; path = ObjectMapper/Transforms/DictionaryTransform.swift; sourceTree = "<group>"; };
-		FF2F148609CC0050662B5804C840C034 /* TBWebViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TBWebViewManager.swift; path = Source/TBInteractiveProtocol/TBWebViewManager.swift; sourceTree = "<group>"; };
+		FFC62A490B808CB3D33E7076C1208167 /* TBWebViewJavascriptBridge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TBWebViewJavascriptBridge-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,21 +153,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1DF8FC3855D078DED1D8DA1611420A7D /* Frameworks */ = {
+		3969BCD417B3428FC5A2D3E54BE30FBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2AB0326857A96B3A9FFCB75F0EE19AA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1EE61EAF9FAC242595D56B472C57E28A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				55ED7151F7DD61FB2DD927B6C710364A /* Foundation.framework in Frameworks */,
-				0630CB52B4B9864E4E5FBDE34F471C5F /* UIKit.framework in Frameworks */,
-				5F826DA0AF2EEC7B6F3C83472D58F4A9 /* WebKit.framework in Frameworks */,
+				734FC7B04F0217855CDB0482A259AFDD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,66 +169,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D6182D203E8A947E63AA40D2C6F1395 /* Frameworks */ = {
+		A668EA7FF70DCFC353C5CA0188737285 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24D6E11699BFAAD67F17EFA5B7DD9E0D /* CoreLocation.framework in Frameworks */,
-				C564A9B8F212922D3672E14557746B08 /* Foundation.framework in Frameworks */,
-				735A38022491359845D0D6D6FAC61752 /* NJKWebViewProgress.framework in Frameworks */,
-				75D36472FF3A7668A945E6C7286CA4D0 /* ObjectMapper.framework in Frameworks */,
-				CF4984C319D53D14AE993E8A944307F6 /* TBWebViewJavascriptBridge.framework in Frameworks */,
-				B4009EC480B4C2F36219421B867F822F /* UIKit.framework in Frameworks */,
-				CEA96EDE2329C58C7FA61BC6E4DFF09D /* WebKit.framework in Frameworks */,
+				28D3A5AEA18F7DB3B58CCBB66AF98D0B /* Foundation.framework in Frameworks */,
+				2F964C1D8692A6CE03F90D45E02F2617 /* UIKit.framework in Frameworks */,
+				7E07194201488621B0FEF6A490BFFDC3 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00D85C3B04480B0B9626E6ECEA3F0B7B /* Models */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEAEED7363B2320652EBCC222D71F94F /* TBCityInfoModel.swift */,
-				F3DF7E565A16B060C425E9F8919847E1 /* TBUserInfoModel.swift */,
+				3D21A80A7717CA9FF6F518C4E1DFB9D0 /* iOS */,
 			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		1CE323702E4EDAC3B4687C4F7E314532 /* Plugins */ = {
-			isa = PBXGroup;
-			children = (
-				61D5D25DF9F3D0198A60FF702C0DA659 /* TBCallBackPlugin.swift */,
-				1106A85B0DDBD98DD30E2A90492687F5 /* TBCallPlugin.swift */,
-				BC63A98D1018E1C44B8A5FDB343E9F2D /* TBCityInfoPlugin.swift */,
-				E668ABD86513047245ED7A78F54278AD /* TBGoBackPlugin.swift */,
-				9630824E13C0512D2D6D3A8C0E9CE65A /* TBOpenMapPlugin.swift */,
-				E019C5FB857456499AC90B18538F0827 /* TBRegisterPlugin.swift */,
-				43831A225CF031A76F677A1CC4234E70 /* TBShareDataPlugin.swift */,
-				F2F374DB61F8CFEA0CC52E825E35A80C /* TBShareLinkPlugin.swift */,
-				96A4124D5FD718CA6712D6101AD2E2C8 /* TBSharePicPlugin.swift */,
-				717C5494EE06F82CDB514F1CEE43309B /* TBTitlePlugin.swift */,
-				15314CB75C216D6BB802597E156447C4 /* TBUploadEventPlugin.swift */,
-				488EBB26131448F27C9B66B8359E97D6 /* TBUserInfoPlugin.swift */,
-			);
-			name = Plugins;
-			sourceTree = "<group>";
-		};
-		1FD588DA3D0B5F5777183E202FDA9B8F /* TBWebViewJavascriptBridge */ = {
-			isa = PBXGroup;
-			children = (
-				8DBBE971BB322DC57F8939526805A5A1 /* WebViewJavascriptBridge.h */,
-				79937FC823BD90781D9779AC3342EC29 /* WebViewJavascriptBridge.m */,
-				005A09F00E138CBE62E5CDDF02103B7F /* WebViewJavascriptBridge_JS.h */,
-				80CC52111576BEFE0D77569AE05FD99C /* WebViewJavascriptBridge_JS.m */,
-				34FC5B7E95A3617576B75F4F097CD186 /* WebViewJavascriptBridgeBase.h */,
-				8D62F94E844EB0EC31061614868E4E7C /* WebViewJavascriptBridgeBase.m */,
-				F9A32D07E181C82FEAA39ACC8949F83F /* WKWebViewJavascriptBridge.h */,
-				7041D4409E4775079159D9AFA540B8DF /* WKWebViewJavascriptBridge.m */,
-				28D91257B69809A8EA5EE24FA98A41CF /* Support Files */,
-			);
-			name = TBWebViewJavascriptBridge;
-			path = TBWebViewJavascriptBridge;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		23F6BA59757E8C6FD33345475F2B3DC2 /* Targets Support Files */ = {
@@ -367,157 +198,86 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		28D91257B69809A8EA5EE24FA98A41CF /* Support Files */ = {
+		3D21A80A7717CA9FF6F518C4E1DFB9D0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				AA475383378B1604037376DD5681B3F4 /* Info.plist */,
-				3BE875EF2A304E1352528DD80F1E2D75 /* TBWebViewJavascriptBridge.modulemap */,
-				84A8F4CC3BC834A5959C4ED663DBDC26 /* TBWebViewJavascriptBridge.xcconfig */,
-				1438A2EE6152495754E06F36F4B6E910 /* TBWebViewJavascriptBridge-dummy.m */,
-				EA51AE57C68DD29206A018807F0B9F3B /* TBWebViewJavascriptBridge-prefix.pch */,
-				1DF7E33005A6E40763A549F499D3C846 /* TBWebViewJavascriptBridge-umbrella.h */,
+				78303A97700CA406D0BCB9A42F086717 /* Foundation.framework */,
+				ACCF78C37CDFCFDEB7867B41FA44FA26 /* UIKit.framework */,
+				BAB14A55D4DB30C8D98DB7528D9807F4 /* WebKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4B03182CA5EE1718334E1DF313541240 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8C8C34984D180FACD66CB2FAFE802F9 /* NJKWebViewProgress */,
+				B8641538906319025E7DD7EB70010666 /* ObjectMapper */,
+				880F398E3F230D9A056426D0EBF70DDF /* TBWebViewJavascriptBridge */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5D828FED4DE006BA5B904A8B5BA5BC83 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A36E5F1E6CA00C80B156AFAA1A7F201 /* Info.plist */,
+				5A71EF834CF5BF9F998E3F6BA1953E0B /* TBWebViewJavascriptBridge.modulemap */,
+				BD451CABE80FEF6373C5F79F3F7A2E0D /* TBWebViewJavascriptBridge.xcconfig */,
+				FFC62A490B808CB3D33E7076C1208167 /* TBWebViewJavascriptBridge-dummy.m */,
+				34E18342B5DAF57918D4D866B0EFB4E5 /* TBWebViewJavascriptBridge-prefix.pch */,
+				47945DE346C9735291FD453356D45FDF /* TBWebViewJavascriptBridge-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TBWebViewJavascriptBridge";
 			sourceTree = "<group>";
 		};
-		2B2DC400EDC5182B46A736FCF3346595 /* Core */ = {
+		61AC56A47CD0161C182D6586F5017F4D /* ProgressView */ = {
 			isa = PBXGroup;
 			children = (
-				1B91D71B09626CF52E9C2E0FD1675860 /* NJKWebViewProgress.h */,
-				4E8A4663BAB0A76459316C17F5DDE418 /* NJKWebViewProgress.m */,
+				36373D2B45BE4340E5342826E70802DB /* NJKWebViewProgressView.h */,
+				71626D91BF8B3D985F11254B6BAF797C /* NJKWebViewProgressView.m */,
 			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		41B04A2333083705F3501A4F5A63FC57 /* TBInteractiveProtocol */ = {
-			isa = PBXGroup;
-			children = (
-				EE55C6669B1DD75147ED276386EE3298 /* Core */,
-				5962048520E1F6579C6ACAA3E6415283 /* Handlers */,
-				78F0EE7960DD2FE7463D18D3167EB299 /* Support Files */,
-				505915643F6CDF73AB23E6D88D221C18 /* WeakBusiness */,
-			);
-			name = TBInteractiveProtocol;
-			path = TBInteractiveProtocol;
-			sourceTree = "<group>";
-		};
-		505915643F6CDF73AB23E6D88D221C18 /* WeakBusiness */ = {
-			isa = PBXGroup;
-			children = (
-				00D85C3B04480B0B9626E6ECEA3F0B7B /* Models */,
-				1CE323702E4EDAC3B4687C4F7E314532 /* Plugins */,
-			);
-			name = WeakBusiness;
-			sourceTree = "<group>";
-		};
-		54D73CA3F78C0F87EB58703FE14115E3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				85D97875355AC356547E303F1BD99EA1 /* NJKWebViewProgress */,
-				B503333DD35EC0F6D7C62BB6F7222BBC /* ObjectMapper */,
-				41B04A2333083705F3501A4F5A63FC57 /* TBInteractiveProtocol */,
-				1FD588DA3D0B5F5777183E202FDA9B8F /* TBWebViewJavascriptBridge */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		594C7B2DE471370D479669871893196D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3F0D427908F2736843543B5EBE1A24C7 /* Info.plist */,
-				9FA13EDEE2CF1D74D2DBEB85DCC33D75 /* NJKWebViewProgress.modulemap */,
-				BE9E5886A06C9567D12588E060D66D5C /* NJKWebViewProgress.xcconfig */,
-				79811341478D453BEADBC058F03FA58B /* NJKWebViewProgress-dummy.m */,
-				5B09101CE954F29F93E421C873D38E25 /* NJKWebViewProgress-prefix.pch */,
-				C5A55CA78CE0D9209D24D5A5F984AE39 /* NJKWebViewProgress-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/NJKWebViewProgress";
-			sourceTree = "<group>";
-		};
-		5962048520E1F6579C6ACAA3E6415283 /* Handlers */ = {
-			isa = PBXGroup;
-			children = (
-				A31A824AE82855C88F9990272189DD75 /* JSHandler.swift */,
-				B1CB61088DBE445767012221263DF9A0 /* TBCallBackRegisterHandler.swift */,
-				37EE485F6F205A662E4DECDE75F3158E /* TBCallCommond.swift */,
-				99B1E18F62A8C3EDD5CB3CE9274C1093 /* TBCallHandler.swift */,
-				198A2D3F2954CFBCACDA1685E0DC9720 /* TBCityInfoRegisterHandler.swift */,
-				151559DB68F787007AB504DA17CCC55A /* TBEvaluateJSHandler.swift */,
-				A314D1E5B4373FC5D2C922511449EBAC /* TBGoBackHandler.swift */,
-				7C1E1BE5C972A927E4F6DB0C9DA52C16 /* TBOpenMapRegisterHandler.swift */,
-				3FEE549CD19855F8852A728FEADF610C /* TBRegisterCommond.swift */,
-				9A5C6689D456B3026FE4698FB85F3E16 /* TBRegisterHandler.swift */,
-				63437E9D404F107AEA03B3250081AB0A /* TBShareDataCallHandler.swift */,
-				2AAD10A2C2183B8455988572230A668B /* TBShareLinkRegisterHandler.swift */,
-				8C15853DD9EAED3C13A909961E9E71F1 /* TBSharePicRegisterHandler.swift */,
-				9D6E76209EB595A9A5624204503B12E1 /* TBTitleRegisterHandler.swift */,
-				5A1DE3A1B6F2215414B6699554705FE3 /* TBUploadEventRegisterHandler.swift */,
-				BA6C8ACFB5E0FC2D279844E01199BDCA /* TBUserInfoRegisterHandler.swift */,
-			);
-			name = Handlers;
-			sourceTree = "<group>";
-		};
-		642233810294835FD696E927934D449B /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				7DFAA4466BC6C9DB7462E7A77EBAFFA1 /* CoreLocation.framework */,
-				DCE9FDBB979C5256ABFCD6810CA09CB5 /* Foundation.framework */,
-				D0895CD675AB9AB89969D9109C45B145 /* UIKit.framework */,
-				6EBDDBE8ED2D705683DE2BC3592D0793 /* WebKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		78F0EE7960DD2FE7463D18D3167EB299 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4A2DD72439B78A1404CB07B57670E56A /* Info.plist */,
-				8417AAD5BB399CA9374D09BBB9ADD080 /* TBInteractiveProtocol.modulemap */,
-				7E456F05C2539ADD5D5998D759C591AD /* TBInteractiveProtocol.xcconfig */,
-				76E04A32A60554C0A7BAC63F4670C7A2 /* TBInteractiveProtocol-dummy.m */,
-				4295CFDFC8E932CBE0D70C24A8690110 /* TBInteractiveProtocol-prefix.pch */,
-				9F862978FC6540F02676A691DBFF074A /* TBInteractiveProtocol-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TBInteractiveProtocol";
+			name = ProgressView;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				D706B0B54C2BFEFA051C7D05772FE5B2 /* Frameworks */,
-				54D73CA3F78C0F87EB58703FE14115E3 /* Pods */,
-				E9170912D90CEC4F2B5C0BAA9F7C09F0 /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				4B03182CA5EE1718334E1DF313541240 /* Pods */,
+				8A19B7709A3593195318A904BDF09CDB /* Products */,
 				23F6BA59757E8C6FD33345475F2B3DC2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		84391FBCC21408C9E27333D5805786BA /* Support Files */ = {
+		880F398E3F230D9A056426D0EBF70DDF /* TBWebViewJavascriptBridge */ = {
 			isa = PBXGroup;
 			children = (
-				4FF8C3BF194A84B513F96B158C7C71EE /* Info.plist */,
-				9721E931127DE0C52AE3FA347AF2CD87 /* ObjectMapper.modulemap */,
-				8DB8AB0A8951A3E2EAABC11F8C45EA23 /* ObjectMapper.xcconfig */,
-				16C14EA3CF886B43EBB697C24AA1CB54 /* ObjectMapper-dummy.m */,
-				624AC9CD2A03B58E1197C013C73B435B /* ObjectMapper-prefix.pch */,
-				FA692252849767E77BE51AD2F38E3D75 /* ObjectMapper-umbrella.h */,
+				66C360DFC63F89BF209A343B49DD06A5 /* WebViewJavascriptBridge.h */,
+				253BCA029FA35C1FB1EFF09239505E93 /* WebViewJavascriptBridge.m */,
+				F96AB9834D89DF6C56C36CB1245EAF8B /* WebViewJavascriptBridge_JS.h */,
+				DD7987302FF7E24CA978DEA0BCBA1831 /* WebViewJavascriptBridge_JS.m */,
+				179F363E7EF216360CDAAFB8C9FF53F1 /* WebViewJavascriptBridgeBase.h */,
+				1BE454C9D93C8CBA5E4C07FFA5E4FE36 /* WebViewJavascriptBridgeBase.m */,
+				E4E66C8E2C68DECA7CD1C4E199CAD0DC /* WKWebViewJavascriptBridge.h */,
+				C07F72D8CE27FF6B92FF65ECE9930E55 /* WKWebViewJavascriptBridge.m */,
+				5D828FED4DE006BA5B904A8B5BA5BC83 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ObjectMapper";
+			name = TBWebViewJavascriptBridge;
+			path = TBWebViewJavascriptBridge;
 			sourceTree = "<group>";
 		};
-		85D97875355AC356547E303F1BD99EA1 /* NJKWebViewProgress */ = {
+		8A19B7709A3593195318A904BDF09CDB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B2DC400EDC5182B46A736FCF3346595 /* Core */,
-				F3EC5EC664EF8B909CD714F7C3B64621 /* ProgressView */,
-				594C7B2DE471370D479669871893196D /* Support Files */,
+				A6D499F7FA3B9E787E98E0685E583361 /* NJKWebViewProgress.framework */,
+				C8C6B8A41A6AF6B216B3E07742737BA6 /* ObjectMapper.framework */,
+				28FC22F411C68E19826A3033591E58EE /* Pods_TBInteractiveProtocol.framework */,
+				1A2993922F6DD192B252C1426ECA8572 /* TBWebViewJavascriptBridge.framework */,
 			);
-			name = NJKWebViewProgress;
-			path = NJKWebViewProgress;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		A549112A2F45AD1181FECC483CF1E0D1 /* Pods-TBInteractiveProtocol */ = {
@@ -538,87 +298,83 @@
 			path = "Target Support Files/Pods-TBInteractiveProtocol";
 			sourceTree = "<group>";
 		};
-		B503333DD35EC0F6D7C62BB6F7222BBC /* ObjectMapper */ = {
+		A8F26FD10991A4A3297CF6522FF93607 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				582ACB94AE76572A4AF05DBC28D711B1 /* CustomDateFormatTransform.swift */,
-				0F682BBE701FDA79446AFA6B7698D24E /* DataTransform.swift */,
-				7F20870AC66BA858ABF94A08054AB460 /* DateFormatterTransform.swift */,
-				E7C06BAE923770C962D0E96371C0C4A0 /* DateTransform.swift */,
-				FD469ABC65FB619CB0FFFE782E452DAA /* DictionaryTransform.swift */,
-				108782D9AE10C15C060594AB80F0053A /* EnumTransform.swift */,
-				FAD73F6B1619184784DA9356D05EF824 /* FromJSON.swift */,
-				9FFB41FB5E3F326AE6B32B0D92F04BC3 /* ISO8601DateTransform.swift */,
-				EBD95DF60238EBABAEE4751AEB3EC2FA /* Map.swift */,
-				617B17BFAA493133A96DB8C8F893BB08 /* Mappable.swift */,
-				477DC33C468CB7B5A61997AB41818428 /* Mapper.swift */,
-				722ECA5B218E538AFA30AF8AF8C07BAD /* NSDecimalNumberTransform.swift */,
-				97DF5B32623FF13ECBE3F719668F9FF2 /* Operators.swift */,
-				84A80C416D74E07F43B0C2E5EFDDCA1E /* ToJSON.swift */,
-				8CDE7460C17A5158C3486F6BBCBD2357 /* TransformOf.swift */,
-				2DF25583220A7A0D4BD0A45592828ADA /* TransformType.swift */,
-				61B7EA02ED70F878CBCB09C0D6B392C5 /* URLTransform.swift */,
-				84391FBCC21408C9E27333D5805786BA /* Support Files */,
+				2244EBFB46E859D0175C51102C6E1B4C /* Info.plist */,
+				145FDAF1FF4C0B0C79BE83C65BB4D33E /* NJKWebViewProgress.modulemap */,
+				C694476CFA09A9D6DE15B9EC1EF243AC /* NJKWebViewProgress.xcconfig */,
+				312ACA42D7A8B95D4F635E9984784E50 /* NJKWebViewProgress-dummy.m */,
+				51ECB7115BB8E76481CCA6F80869AFD7 /* NJKWebViewProgress-prefix.pch */,
+				0D5D19528ACCE6D6B0B580CCB14B6AAA /* NJKWebViewProgress-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NJKWebViewProgress";
+			sourceTree = "<group>";
+		};
+		AB6460CAC9BB245939B33B2AFADDCF98 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				089D3E97BBB6FB95DCF7C335918D832A /* NJKWebViewProgress.h */,
+				839677BD0A7110456D0A0BDE406A9D8D /* NJKWebViewProgress.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		B33362FE22C29DB5F12E4F485595080F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE43A62F422CBDFF5045F8A147ABBD8C /* Info.plist */,
+				351E3227807356BFC8689B6D72BA6706 /* ObjectMapper.modulemap */,
+				E6508825EE0330C2D77867BD175EAE2E /* ObjectMapper.xcconfig */,
+				9B32FB13E9D89CA5E12C5B1F11C85686 /* ObjectMapper-dummy.m */,
+				E706CBC17584F03A3A1CC747AD38C377 /* ObjectMapper-prefix.pch */,
+				1D3D5E859ADC5D945DE1D86071D0344A /* ObjectMapper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ObjectMapper";
+			sourceTree = "<group>";
+		};
+		B8641538906319025E7DD7EB70010666 /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				0480E40BD0C706D9A7134A4A1FD5D793 /* CustomDateFormatTransform.swift */,
+				37C829A5CE1338E6A1E313FF0CA0B45C /* DataTransform.swift */,
+				C13313F8D6EC9C86E16564EAF698E9F7 /* DateFormatterTransform.swift */,
+				53304B113B894A70FFE48992E63BAF22 /* DateTransform.swift */,
+				41721692D2CA9824BB55146E4E8F5279 /* DictionaryTransform.swift */,
+				F5968228B442CC17A426C7111E872A38 /* EnumTransform.swift */,
+				5AD63D747E44986851989DE6B1721510 /* FromJSON.swift */,
+				DC8D1CED910E6C7CAB0D89EDA90FDD80 /* ISO8601DateTransform.swift */,
+				0CF32092B6E94048126F83D9E7AA6511 /* Map.swift */,
+				99124FCDA4AF541EB7FCFE39102ADBBC /* Mappable.swift */,
+				9D0C4F39E202560D57CDCBA438DC2A95 /* Mapper.swift */,
+				F0A99E459B73B9244E94693DD33EEF6C /* NSDecimalNumberTransform.swift */,
+				ACC734536FA6B6AD574758BAAD1CA5B0 /* Operators.swift */,
+				B909CB6CFA92D857576600E25468532A /* ToJSON.swift */,
+				EBE0B3998106C60EA8F63CAA5589605D /* TransformOf.swift */,
+				E87EC68CCF6BCF72B1BB66E34C7E4F12 /* TransformType.swift */,
+				935CDAB4FBD88ADA0F01CDFD774BA770 /* URLTransform.swift */,
+				B33362FE22C29DB5F12E4F485595080F /* Support Files */,
 			);
 			name = ObjectMapper;
 			path = ObjectMapper;
 			sourceTree = "<group>";
 		};
-		D706B0B54C2BFEFA051C7D05772FE5B2 /* Frameworks */ = {
+		B8C8C34984D180FACD66CB2FAFE802F9 /* NJKWebViewProgress */ = {
 			isa = PBXGroup;
 			children = (
-				A2E9E14E096521CC22B70560E435EAC7 /* NJKWebViewProgress.framework */,
-				E7735BA8E8E80B94D4B0DBBE8B180681 /* ObjectMapper.framework */,
-				657BB9B7D7F2A0F704F6C324E5DB3CD9 /* TBWebViewJavascriptBridge.framework */,
-				642233810294835FD696E927934D449B /* iOS */,
+				AB6460CAC9BB245939B33B2AFADDCF98 /* Core */,
+				61AC56A47CD0161C182D6586F5017F4D /* ProgressView */,
+				A8F26FD10991A4A3297CF6522FF93607 /* Support Files */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E9170912D90CEC4F2B5C0BAA9F7C09F0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CBFDFCE3E735100E2D1A54378FBF741E /* NJKWebViewProgress.framework */,
-				031546E3C0C5153E463E27CD94DE53D7 /* ObjectMapper.framework */,
-				7B704E20ABDCA8612713F87AACBDD653 /* Pods_TBInteractiveProtocol.framework */,
-				264452114CE1BD1D8396C94C15092853 /* TBInteractiveProtocol.framework */,
-				43BACF1BFC9B76F0EBFE0DB187775A65 /* TBWebViewJavascriptBridge.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EE55C6669B1DD75147ED276386EE3298 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				5C1A27EE9BCDDE7FA951DFCA9893B7DD /* TBWebProgressView.swift */,
-				16389DE6FEA88C682C4ADB5AF41BC275 /* TBWebViewConfigurationManager.swift */,
-				AB9E9E0AF0C5CF28D2E1E0A74AF8903A /* TBWebViewController.swift */,
-				4BCC8F1E731110000CE66701C3CB0009 /* TBWebViewHelper.swift */,
-				FF2F148609CC0050662B5804C840C034 /* TBWebViewManager.swift */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		F3EC5EC664EF8B909CD714F7C3B64621 /* ProgressView */ = {
-			isa = PBXGroup;
-			children = (
-				9B1707197693ADD92FAE12846202CD25 /* NJKWebViewProgressView.h */,
-				E60927002A0C4041B43924F1F3849242 /* NJKWebViewProgressView.m */,
-			);
-			name = ProgressView;
+			name = NJKWebViewProgress;
+			path = NJKWebViewProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		208C480DA5C21BB837E238F436039EC4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				67610502D9611B665DFE7B8575721A57 /* TBInteractiveProtocol-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		56C9DF92D2FE54E4C09A9D6837FEEB09 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -627,23 +383,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77721FC5F0CAF673214D66D0C9CF148A /* Headers */ = {
+		6D5225469B874B509ACF0C54EFBC64C9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55C546AD2906C44E37FF671C2C428F46 /* TBWebViewJavascriptBridge-umbrella.h in Headers */,
-				A916631055368A2C9163FB4EBCC35B86 /* WebViewJavascriptBridge.h in Headers */,
-				7A802273DB3B8921570CC5E072E41B04 /* WebViewJavascriptBridge_JS.h in Headers */,
-				BF4C383BB5448C391BA4CF33A41202C4 /* WebViewJavascriptBridgeBase.h in Headers */,
-				EE7B10FD039B4CE70B586584C9497CED /* WKWebViewJavascriptBridge.h in Headers */,
+				C246652819F51F19CB092605FCE8BEC1 /* Pods-TBInteractiveProtocol-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A7B9CB056B0E03D403E09AAFE3D8994 /* Headers */ = {
+		B2D206136BC7DE9524E3D769FAB0A610 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71CE430606A3758204EA8D01D9B6EE45 /* Pods-TBInteractiveProtocol-umbrella.h in Headers */,
+				B92E0397BF6752682062E6B3D107D786 /* TBWebViewJavascriptBridge-umbrella.h in Headers */,
+				945DFBE8BE27178EA315109BEE06DCBA /* WebViewJavascriptBridge.h in Headers */,
+				5D4880320B3391E9C9ECD751E49426DC /* WebViewJavascriptBridge_JS.h in Headers */,
+				8526D4977759A9F946AEC95E32AC18F8 /* WebViewJavascriptBridgeBase.h in Headers */,
+				1B7711EF94E25FBB5401A677FFD530B7 /* WKWebViewJavascriptBridge.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +416,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		35A96753A2A3048D570FB2B5F8B945CC /* TBWebViewJavascriptBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C7D515491F33DF60A872F7D0892ACA4 /* Build configuration list for PBXNativeTarget "TBWebViewJavascriptBridge" */;
+			buildPhases = (
+				9C532AA22CFC228E3657D380FF59C6F4 /* Sources */,
+				A668EA7FF70DCFC353C5CA0188737285 /* Frameworks */,
+				B2D206136BC7DE9524E3D769FAB0A610 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBWebViewJavascriptBridge;
+			productName = TBWebViewJavascriptBridge;
+			productReference = 1A2993922F6DD192B252C1426ECA8572 /* TBWebViewJavascriptBridge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		40A16CB0CB5FD49FD533BBC4F0A0C888 /* ObjectMapper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5602ECDE986016DB7B01B78E48B50E9 /* Build configuration list for PBXNativeTarget "ObjectMapper" */;
@@ -674,48 +447,7 @@
 			);
 			name = ObjectMapper;
 			productName = ObjectMapper;
-			productReference = 031546E3C0C5153E463E27CD94DE53D7 /* ObjectMapper.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		46C1E4F09336C8ED7E5ADE7DD921CC5F /* Pods-TBInteractiveProtocol */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 762AC64E4843A7924605698DC54B9B21 /* Build configuration list for PBXNativeTarget "Pods-TBInteractiveProtocol" */;
-			buildPhases = (
-				F3586799E5625FD97D419649F06AB2F0 /* Sources */,
-				1DF8FC3855D078DED1D8DA1611420A7D /* Frameworks */,
-				8A7B9CB056B0E03D403E09AAFE3D8994 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1A203148C92F6E596CA81A221B9B3063 /* PBXTargetDependency */,
-				101AE4610110132F6B44129433E24A0D /* PBXTargetDependency */,
-				E0A7B626E2AE954E5E9E37C44BF41CC0 /* PBXTargetDependency */,
-				B614D8D21A1FEC917A03EEE173C1A537 /* PBXTargetDependency */,
-			);
-			name = "Pods-TBInteractiveProtocol";
-			productName = "Pods-TBInteractiveProtocol";
-			productReference = 7B704E20ABDCA8612713F87AACBDD653 /* Pods_TBInteractiveProtocol.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5BD26C88FF07F05FD873E5C82EEEA7D9 /* TBInteractiveProtocol */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1CD3A8D4F23EBC83C3D5CAE53083C628 /* Build configuration list for PBXNativeTarget "TBInteractiveProtocol" */;
-			buildPhases = (
-				13020B38000C7C6BE35CCFA08BA5719F /* Sources */,
-				9D6182D203E8A947E63AA40D2C6F1395 /* Frameworks */,
-				208C480DA5C21BB837E238F436039EC4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BDFD9184681196CFE1949C37E66BC8B8 /* PBXTargetDependency */,
-				73C717B3B017E76FE3CB48063A10C861 /* PBXTargetDependency */,
-				01111526EE79ADD4425BC782015CC5CA /* PBXTargetDependency */,
-			);
-			name = TBInteractiveProtocol;
-			productName = TBInteractiveProtocol;
-			productReference = 264452114CE1BD1D8396C94C15092853 /* TBInteractiveProtocol.framework */;
+			productReference = C8C6B8A41A6AF6B216B3E07742737BA6 /* ObjectMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		826EFF975442065A54A0B2D3103EE6A4 /* NJKWebViewProgress */ = {
@@ -732,24 +464,27 @@
 			);
 			name = NJKWebViewProgress;
 			productName = NJKWebViewProgress;
-			productReference = CBFDFCE3E735100E2D1A54378FBF741E /* NJKWebViewProgress.framework */;
+			productReference = A6D499F7FA3B9E787E98E0685E583361 /* NJKWebViewProgress.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BFE2670DCC1904935C9F0448F21D6728 /* TBWebViewJavascriptBridge */ = {
+		AC2B7781D4B65E9897F60397BFA55B0E /* Pods-TBInteractiveProtocol */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 250EF6E1FED2809647C89F71FF3D0950 /* Build configuration list for PBXNativeTarget "TBWebViewJavascriptBridge" */;
+			buildConfigurationList = CA8A8C43480C3C47504D21C07F87E976 /* Build configuration list for PBXNativeTarget "Pods-TBInteractiveProtocol" */;
 			buildPhases = (
-				AF63C9B1ADAA1EC96E2C19803A76EF11 /* Sources */,
-				1EE61EAF9FAC242595D56B472C57E28A /* Frameworks */,
-				77721FC5F0CAF673214D66D0C9CF148A /* Headers */,
+				27E9AAA059E74FAF0B179C6A7350CBC2 /* Sources */,
+				3969BCD417B3428FC5A2D3E54BE30FBE /* Frameworks */,
+				6D5225469B874B509ACF0C54EFBC64C9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C985967F58696419C379515F1CC77BED /* PBXTargetDependency */,
+				C9C05F3509C05A94A10BEFD6D8F505E3 /* PBXTargetDependency */,
+				3B484F0AB120F8E3DB89CA5A190128AF /* PBXTargetDependency */,
 			);
-			name = TBWebViewJavascriptBridge;
-			productName = TBWebViewJavascriptBridge;
-			productReference = 43BACF1BFC9B76F0EBFE0DB187775A65 /* TBWebViewJavascriptBridge.framework */;
+			name = "Pods-TBInteractiveProtocol";
+			productName = "Pods-TBInteractiveProtocol";
+			productReference = 28FC22F411C68E19826A3033591E58EE /* Pods_TBInteractiveProtocol.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -769,63 +504,19 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E9170912D90CEC4F2B5C0BAA9F7C09F0 /* Products */;
+			productRefGroup = 8A19B7709A3593195318A904BDF09CDB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				826EFF975442065A54A0B2D3103EE6A4 /* NJKWebViewProgress */,
 				40A16CB0CB5FD49FD533BBC4F0A0C888 /* ObjectMapper */,
-				46C1E4F09336C8ED7E5ADE7DD921CC5F /* Pods-TBInteractiveProtocol */,
-				5BD26C88FF07F05FD873E5C82EEEA7D9 /* TBInteractiveProtocol */,
-				BFE2670DCC1904935C9F0448F21D6728 /* TBWebViewJavascriptBridge */,
+				AC2B7781D4B65E9897F60397BFA55B0E /* Pods-TBInteractiveProtocol */,
+				35A96753A2A3048D570FB2B5F8B945CC /* TBWebViewJavascriptBridge */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		13020B38000C7C6BE35CCFA08BA5719F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				94A49147788A01925EE6E748C169D955 /* JSHandler.swift in Sources */,
-				C897DF465CE00979527E155E65177DDE /* TBCallBackPlugin.swift in Sources */,
-				E084551B963F85CDD15EA34E2B9B7431 /* TBCallBackRegisterHandler.swift in Sources */,
-				C952DAE55A59BC13FCB9B43D79702118 /* TBCallCommond.swift in Sources */,
-				2B614023108C5650E305F2A44EC75943 /* TBCallHandler.swift in Sources */,
-				8D96D03E211E267C29E017A0FE31842B /* TBCallPlugin.swift in Sources */,
-				91E48481BE99249FCEF1D0ED2422F799 /* TBCityInfoModel.swift in Sources */,
-				E39D141940B311900301534BE4A892B1 /* TBCityInfoPlugin.swift in Sources */,
-				7482D61415D23425FDDC0D9077987D1F /* TBCityInfoRegisterHandler.swift in Sources */,
-				C73641D9B812626A318261FF1434B689 /* TBEvaluateJSHandler.swift in Sources */,
-				30E2EA94FFD92A570B347400530F86F3 /* TBGoBackHandler.swift in Sources */,
-				9704864239071EB67A0A71145A9897CF /* TBGoBackPlugin.swift in Sources */,
-				94CEF26D532BE9C8E2EAA68D5707F012 /* TBInteractiveProtocol-dummy.m in Sources */,
-				189CDFA81E405AB6498A5D9032146C9A /* TBOpenMapPlugin.swift in Sources */,
-				B136AEDB60DD31A44E7A4F30591F8EC7 /* TBOpenMapRegisterHandler.swift in Sources */,
-				91F0DDA31FB30DA9561299AFB40013EB /* TBRegisterCommond.swift in Sources */,
-				2FE20550C6788508DCEF33844ED1B9A9 /* TBRegisterHandler.swift in Sources */,
-				6C80086AE63A36DF019CA1101A6EECE9 /* TBRegisterPlugin.swift in Sources */,
-				C1BEAA2832D97B07F1B3D66CA0FC9508 /* TBShareDataCallHandler.swift in Sources */,
-				95C1C28FAA7AC0519E28EFA39A726942 /* TBShareDataPlugin.swift in Sources */,
-				383E6DBA8918A3663922FDDE262BE527 /* TBShareLinkPlugin.swift in Sources */,
-				F45AD0030121B2BD275A9B70C0AB7C98 /* TBShareLinkRegisterHandler.swift in Sources */,
-				8CEC50F33A7D4F7EAD1DF46AAF71A68D /* TBSharePicPlugin.swift in Sources */,
-				D040BF4D3C93E112007043A2DC2F6DFB /* TBSharePicRegisterHandler.swift in Sources */,
-				0A94E99244883942866756A0A592DCEF /* TBTitlePlugin.swift in Sources */,
-				DE4F4792C1421836670D303D82150F5C /* TBTitleRegisterHandler.swift in Sources */,
-				FB6B0904DE2AA063E45D154EA111B86B /* TBUploadEventPlugin.swift in Sources */,
-				F920A83A17F03DA6117223CB88A99314 /* TBUploadEventRegisterHandler.swift in Sources */,
-				5F3C6CA380EBA99F98A4935C2AF81C14 /* TBUserInfoModel.swift in Sources */,
-				727886CDE0C72BF8837F5B31FF7B85B4 /* TBUserInfoPlugin.swift in Sources */,
-				C1828AB53EC546EFE9752FB6B5167A92 /* TBUserInfoRegisterHandler.swift in Sources */,
-				B51A0FDE1631B6110B4848B455AE70C9 /* TBWebProgressView.swift in Sources */,
-				3674FE2B614463AEDA02962DCD38DB0B /* TBWebViewConfigurationManager.swift in Sources */,
-				0DEC3E5EB58378BC1902649CF376F284 /* TBWebViewController.swift in Sources */,
-				6E245915CCAB0997627A5927B9B49C04 /* TBWebViewHelper.swift in Sources */,
-				FF48D6811701617EE2434FC61B7187C5 /* TBWebViewManager.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2368172672E1B3A1C2C7643F2F7B3E75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -851,6 +542,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27E9AAA059E74FAF0B179C6A7350CBC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D4B20F1BF5D6D957193A8DFA177AFA /* Pods-TBInteractiveProtocol-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		333271689444C03071D8092853B02EDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -861,77 +560,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF63C9B1ADAA1EC96E2C19803A76EF11 /* Sources */ = {
+		9C532AA22CFC228E3657D380FF59C6F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DEC3E2CEFC71B9B8FFFB1A65217AC69 /* TBWebViewJavascriptBridge-dummy.m in Sources */,
-				C938BEA8300BD1E5382A604639EA7EDF /* WebViewJavascriptBridge.m in Sources */,
-				3F841D6BD9DC264790920B0EBCF77338 /* WebViewJavascriptBridge_JS.m in Sources */,
-				63F38701F2C5646912E5B0D069E55029 /* WebViewJavascriptBridgeBase.m in Sources */,
-				9238C0D16353069CF7250A004DC39F3E /* WKWebViewJavascriptBridge.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3586799E5625FD97D419649F06AB2F0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1C4466B63730397EAEFAAB5D4DC81411 /* Pods-TBInteractiveProtocol-dummy.m in Sources */,
+				E1F62EB9771772D3766DD5641D82261F /* TBWebViewJavascriptBridge-dummy.m in Sources */,
+				4F9C86FF2B45002DCD738F12C6E7575B /* WebViewJavascriptBridge.m in Sources */,
+				0EAEAF94D519F8F49523B014E8386E52 /* WebViewJavascriptBridge_JS.m in Sources */,
+				AB0DCF4D0F64B3B021CBB59F7AEBA253 /* WebViewJavascriptBridgeBase.m in Sources */,
+				E4AA96F1986B63B2BEB55484BCB1B4BB /* WKWebViewJavascriptBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		01111526EE79ADD4425BC782015CC5CA /* PBXTargetDependency */ = {
+		3B484F0AB120F8E3DB89CA5A190128AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TBWebViewJavascriptBridge;
-			target = BFE2670DCC1904935C9F0448F21D6728 /* TBWebViewJavascriptBridge */;
-			targetProxy = A5A52370DD1C33C220646AFC6C70CE7D /* PBXContainerItemProxy */;
+			target = 35A96753A2A3048D570FB2B5F8B945CC /* TBWebViewJavascriptBridge */;
+			targetProxy = 9B1C01270B7AE24F7353B555D14C219F /* PBXContainerItemProxy */;
 		};
-		101AE4610110132F6B44129433E24A0D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ObjectMapper;
-			target = 40A16CB0CB5FD49FD533BBC4F0A0C888 /* ObjectMapper */;
-			targetProxy = 340BF4530397732C2A00B913F122CBBC /* PBXContainerItemProxy */;
-		};
-		1A203148C92F6E596CA81A221B9B3063 /* PBXTargetDependency */ = {
+		C985967F58696419C379515F1CC77BED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NJKWebViewProgress;
 			target = 826EFF975442065A54A0B2D3103EE6A4 /* NJKWebViewProgress */;
-			targetProxy = 84D0A4BB1F64776D129A1E76B9D681FB /* PBXContainerItemProxy */;
+			targetProxy = 2C553364B855F2D4B74C9286158C4A58 /* PBXContainerItemProxy */;
 		};
-		73C717B3B017E76FE3CB48063A10C861 /* PBXTargetDependency */ = {
+		C9C05F3509C05A94A10BEFD6D8F505E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ObjectMapper;
 			target = 40A16CB0CB5FD49FD533BBC4F0A0C888 /* ObjectMapper */;
-			targetProxy = 4E34F32A4AFEC5A50B6927CE46B04DD7 /* PBXContainerItemProxy */;
-		};
-		B614D8D21A1FEC917A03EEE173C1A537 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TBWebViewJavascriptBridge;
-			target = BFE2670DCC1904935C9F0448F21D6728 /* TBWebViewJavascriptBridge */;
-			targetProxy = 6AABA08516CC61EDB66F761DAE350484 /* PBXContainerItemProxy */;
-		};
-		BDFD9184681196CFE1949C37E66BC8B8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NJKWebViewProgress;
-			target = 826EFF975442065A54A0B2D3103EE6A4 /* NJKWebViewProgress */;
-			targetProxy = C582154BEF6D9ECB3653273438664861 /* PBXContainerItemProxy */;
-		};
-		E0A7B626E2AE954E5E9E37C44BF41CC0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TBInteractiveProtocol;
-			target = 5BD26C88FF07F05FD873E5C82EEEA7D9 /* TBInteractiveProtocol */;
-			targetProxy = DD83E3BD3B330033C79465571C8F9408 /* PBXContainerItemProxy */;
+			targetProxy = 12FB08F72FF9F4DD59098907AC60E2F3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		005E7A9EE0D4F0735F5CAE8E502EA665 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DB8AB0A8951A3E2EAABC11F8C45EA23 /* ObjectMapper.xcconfig */;
+			baseConfigurationReference = E6508825EE0330C2D77867BD175EAE2E /* ObjectMapper.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -963,7 +630,7 @@
 		};
 		0D0BAAD3753D7D7AA6E83C33F3A94F3E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE9E5886A06C9567D12588E060D66D5C /* NJKWebViewProgress.xcconfig */;
+			baseConfigurationReference = C694476CFA09A9D6DE15B9EC1EF243AC /* NJKWebViewProgress.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -992,69 +659,7 @@
 			};
 			name = Release;
 		};
-		0D10605370024DC99F96F30F23929D63 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84A8F4CC3BC834A5959C4ED663DBDC26 /* TBWebViewJavascriptBridge.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TBWebViewJavascriptBridge/TBWebViewJavascriptBridge-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TBWebViewJavascriptBridge/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TBWebViewJavascriptBridge/TBWebViewJavascriptBridge.modulemap";
-				PRODUCT_NAME = TBWebViewJavascriptBridge;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		368702A35A0DEF1FEBE139166A9A03A1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E456F05C2539ADD5D5998D759C591AD /* TBInteractiveProtocol.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TBInteractiveProtocol/TBInteractiveProtocol-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TBInteractiveProtocol/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TBInteractiveProtocol/TBInteractiveProtocol.modulemap";
-				PRODUCT_NAME = TBInteractiveProtocol;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3B97329B71B815447248E6D66A85D1F3 /* Debug */ = {
+		1A91B0D789EE3D3669019C8864719C06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7CEB6784E17A75A4F378B93D5C7DAAA3 /* Pods-TBInteractiveProtocol.debug.xcconfig */;
 			buildSettings = {
@@ -1088,43 +693,9 @@
 			};
 			name = Debug;
 		};
-		6C48C3EBC5A4AC6BFE24B43419C76F3E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 580D5E0CDB5DE03B8443BB7559B93FA9 /* Pods-TBInteractiveProtocol.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TBInteractiveProtocol/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TBInteractiveProtocol/Pods-TBInteractiveProtocol.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TBInteractiveProtocol;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		806692DCF51C764A2860515363F9A352 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE9E5886A06C9567D12588E060D66D5C /* NJKWebViewProgress.xcconfig */;
+			baseConfigurationReference = C694476CFA09A9D6DE15B9EC1EF243AC /* NJKWebViewProgress.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1152,40 +723,9 @@
 			};
 			name = Debug;
 		};
-		92F3472DE81B0994700DD6703397B015 /* Debug */ = {
+		9ED17FD2FF4ED6BBC7B5CFB484DDBE48 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E456F05C2539ADD5D5998D759C591AD /* TBInteractiveProtocol.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TBInteractiveProtocol/TBInteractiveProtocol-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TBInteractiveProtocol/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TBInteractiveProtocol/TBInteractiveProtocol.modulemap";
-				PRODUCT_NAME = TBInteractiveProtocol;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A5E175C734D08D88943C477560C57E57 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84A8F4CC3BC834A5959C4ED663DBDC26 /* TBWebViewJavascriptBridge.xcconfig */;
+			baseConfigurationReference = BD451CABE80FEF6373C5F79F3F7A2E0D /* TBWebViewJavascriptBridge.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1269,6 +809,40 @@
 			};
 			name = Release;
 		};
+		C3760E280CF0838DD52820F189E4DB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 580D5E0CDB5DE03B8443BB7559B93FA9 /* Pods-TBInteractiveProtocol.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TBInteractiveProtocol/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TBInteractiveProtocol/Pods-TBInteractiveProtocol.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TBInteractiveProtocol;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1331,7 +905,7 @@
 		};
 		F422A9406E593E557C4B588EBD32A894 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DB8AB0A8951A3E2EAABC11F8C45EA23 /* ObjectMapper.xcconfig */;
+			baseConfigurationReference = E6508825EE0330C2D77867BD175EAE2E /* ObjectMapper.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1360,23 +934,44 @@
 			};
 			name = Debug;
 		};
+		F4533F5BC22D8ED157B054C7EC1EEF7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD451CABE80FEF6373C5F79F3F7A2E0D /* TBWebViewJavascriptBridge.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TBWebViewJavascriptBridge/TBWebViewJavascriptBridge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TBWebViewJavascriptBridge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TBWebViewJavascriptBridge/TBWebViewJavascriptBridge.modulemap";
+				PRODUCT_NAME = TBWebViewJavascriptBridge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1CD3A8D4F23EBC83C3D5CAE53083C628 /* Build configuration list for PBXNativeTarget "TBInteractiveProtocol" */ = {
+		1C7D515491F33DF60A872F7D0892ACA4 /* Build configuration list for PBXNativeTarget "TBWebViewJavascriptBridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92F3472DE81B0994700DD6703397B015 /* Debug */,
-				368702A35A0DEF1FEBE139166A9A03A1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		250EF6E1FED2809647C89F71FF3D0950 /* Build configuration list for PBXNativeTarget "TBWebViewJavascriptBridge" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0D10605370024DC99F96F30F23929D63 /* Debug */,
-				A5E175C734D08D88943C477560C57E57 /* Release */,
+				F4533F5BC22D8ED157B054C7EC1EEF7B /* Debug */,
+				9ED17FD2FF4ED6BBC7B5CFB484DDBE48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1399,11 +994,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		762AC64E4843A7924605698DC54B9B21 /* Build configuration list for PBXNativeTarget "Pods-TBInteractiveProtocol" */ = {
+		CA8A8C43480C3C47504D21C07F87E976 /* Build configuration list for PBXNativeTarget "Pods-TBInteractiveProtocol" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B97329B71B815447248E6D66A85D1F3 /* Debug */,
-				6C48C3EBC5A4AC6BFE24B43419C76F3E /* Release */,
+				1A91B0D789EE3D3669019C8864719C06 /* Debug */,
+				C3760E280CF0838DD52820F189E4DB0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

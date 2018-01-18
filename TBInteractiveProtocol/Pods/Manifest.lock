@@ -5,54 +5,18 @@ PODS:
   - NJKWebViewProgress/Core (0.2.3)
   - NJKWebViewProgress/ProgressView (0.2.3)
   - ObjectMapper (2.0.0)
-  - TBInteractiveProtocol (0.0.1):
-    - NJKWebViewProgress
-    - ObjectMapper (~> 2.0.0)
-    - TBInteractiveProtocol/Core (= 0.0.1)
-    - TBInteractiveProtocol/Handlers (= 0.0.1)
-    - TBInteractiveProtocol/WeakBusiness (= 0.0.1)
-    - TBWebViewJavascriptBridge
-  - TBInteractiveProtocol/Core (0.0.1):
-    - NJKWebViewProgress
-    - ObjectMapper (~> 2.0.0)
-    - TBInteractiveProtocol/Handlers
-    - TBWebViewJavascriptBridge
-  - TBInteractiveProtocol/Handlers (0.0.1):
-    - NJKWebViewProgress
-    - ObjectMapper (~> 2.0.0)
-    - TBWebViewJavascriptBridge
-  - TBInteractiveProtocol/WeakBusiness (0.0.1):
-    - NJKWebViewProgress
-    - ObjectMapper (~> 2.0.0)
-    - TBInteractiveProtocol/Core
-    - TBInteractiveProtocol/Handlers
-    - TBInteractiveProtocol/WeakBusiness/Models (= 0.0.1)
-    - TBInteractiveProtocol/WeakBusiness/Plugins (= 0.0.1)
-    - TBWebViewJavascriptBridge
-  - TBInteractiveProtocol/WeakBusiness/Models (0.0.1):
-    - NJKWebViewProgress
-    - ObjectMapper (~> 2.0.0)
-    - TBInteractiveProtocol/Core
-    - TBInteractiveProtocol/Handlers
-    - TBWebViewJavascriptBridge
-  - TBInteractiveProtocol/WeakBusiness/Plugins (0.0.1):
-    - NJKWebViewProgress
-    - ObjectMapper (~> 2.0.0)
-    - TBInteractiveProtocol/Core
-    - TBInteractiveProtocol/Handlers
-    - TBInteractiveProtocol/WeakBusiness/Models
-    - TBWebViewJavascriptBridge
   - TBWebViewJavascriptBridge (0.0.1)
 
 DEPENDENCIES:
-  - TBInteractiveProtocol (~> 0.0.1)
+  - NJKWebViewProgress
+  - ObjectMapper (~> 2.0.0)
+  - TBWebViewJavascriptBridge
 
 SPEC CHECKSUMS:
   NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
-  TBInteractiveProtocol: 49adff5c7a186b502f072f0e8f7502bb3ed5a68a
   TBWebViewJavascriptBridge: cffee1d354fddc972fbe2d1b69141bc59a0559d5
 
-PODFILE CHECKSUM: 50248a1e7259cd5c33b956e69e520514c0b3b580
+PODFILE CHECKSUM: bb407317166f308a550dec39e01c880ed4577388
 
 COCOAPODS: 1.3.1

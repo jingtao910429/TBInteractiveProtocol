@@ -1,6 +1,0 @@
-framework module TBInteractiveProtocol {
-  umbrella header "TBInteractiveProtocol-umbrella.h"
-
-  export *
-  module * { export * }
-}

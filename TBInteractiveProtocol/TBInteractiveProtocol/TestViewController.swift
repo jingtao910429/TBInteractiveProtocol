@@ -8,13 +8,14 @@
 
 import UIKit
 import TBWebViewJavascriptBridge
+import TBInteractiveProtocol
 
 class TestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        TBWebViewJavascriptBridgeVersionNumber
     }
 
     override func didReceiveMemoryWarning() {

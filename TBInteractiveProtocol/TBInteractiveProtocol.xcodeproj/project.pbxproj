@@ -13,39 +13,39 @@
 		04248DAB200C7B170037C6B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04248DAA200C7B170037C6B3 /* Assets.xcassets */; };
 		04248DAE200C7B170037C6B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04248DAC200C7B170037C6B3 /* LaunchScreen.storyboard */; };
 		04248DB1200C7B170037C6B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04248DB0200C7B170037C6B3 /* main.m */; };
-		046F107320104A090028C1AA /* TBWebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F104720104A090028C1AA /* TBWebViewManager.swift */; };
-		046F107420104A090028C1AA /* TBUserInfoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F104B20104A090028C1AA /* TBUserInfoPlugin.swift */; };
-		046F107520104A090028C1AA /* TBCityInfoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F104C20104A090028C1AA /* TBCityInfoPlugin.swift */; };
-		046F107620104A090028C1AA /* TBShareLinkPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F104D20104A090028C1AA /* TBShareLinkPlugin.swift */; };
-		046F107720104A090028C1AA /* TBSharePicPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F104E20104A090028C1AA /* TBSharePicPlugin.swift */; };
-		046F107820104A090028C1AA /* TBTitlePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F104F20104A090028C1AA /* TBTitlePlugin.swift */; };
-		046F107920104A090028C1AA /* TBOpenMapPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F105020104A090028C1AA /* TBOpenMapPlugin.swift */; };
-		046F107A20104A090028C1AA /* TBCallBackPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F105120104A090028C1AA /* TBCallBackPlugin.swift */; };
-		046F107B20104A090028C1AA /* TBUploadEventPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F105220104A090028C1AA /* TBUploadEventPlugin.swift */; };
-		046F107C20104A090028C1AA /* TBRegisterPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F105320104A090028C1AA /* TBRegisterPlugin.swift */; };
-		046F107D20104A090028C1AA /* TBShareDataPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F105520104A090028C1AA /* TBShareDataPlugin.swift */; };
-		046F107E20104A090028C1AA /* TBCallPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F105620104A090028C1AA /* TBCallPlugin.swift */; };
-		046F107F20104A090028C1AA /* TBGoBackPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F105720104A090028C1AA /* TBGoBackPlugin.swift */; };
-		046F108020104A090028C1AA /* TBCityInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F105920104A090028C1AA /* TBCityInfoModel.swift */; };
-		046F108120104A090028C1AA /* TBUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F105A20104A090028C1AA /* TBUserInfoModel.swift */; };
-		046F108220104A090028C1AA /* TBWebViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F105C20104A090028C1AA /* TBWebViewHelper.swift */; };
-		046F108320104A090028C1AA /* TBWebViewConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F105D20104A090028C1AA /* TBWebViewConfigurationManager.swift */; };
-		046F108420104A090028C1AA /* TBShareLinkRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F106020104A090028C1AA /* TBShareLinkRegisterHandler.swift */; };
-		046F108520104A090028C1AA /* TBCallBackRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F106120104A090028C1AA /* TBCallBackRegisterHandler.swift */; };
-		046F108620104A090028C1AA /* TBOpenMapRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F106220104A090028C1AA /* TBOpenMapRegisterHandler.swift */; };
-		046F108720104A090028C1AA /* TBRegisterCommond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F106320104A090028C1AA /* TBRegisterCommond.swift */; };
-		046F108820104A090028C1AA /* TBRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F106420104A090028C1AA /* TBRegisterHandler.swift */; };
-		046F108920104A090028C1AA /* TBUserInfoRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F106520104A090028C1AA /* TBUserInfoRegisterHandler.swift */; };
-		046F108A20104A090028C1AA /* TBTitleRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F106620104A090028C1AA /* TBTitleRegisterHandler.swift */; };
-		046F108B20104A090028C1AA /* TBCityInfoRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F106720104A090028C1AA /* TBCityInfoRegisterHandler.swift */; };
-		046F108C20104A090028C1AA /* TBUploadEventRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F106820104A090028C1AA /* TBUploadEventRegisterHandler.swift */; };
-		046F108D20104A090028C1AA /* TBSharePicRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F106920104A090028C1AA /* TBSharePicRegisterHandler.swift */; };
-		046F108E20104A090028C1AA /* TBEvaluateJSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F106B20104A090028C1AA /* TBEvaluateJSHandler.swift */; };
-		046F108F20104A090028C1AA /* TBShareDataCallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F106D20104A090028C1AA /* TBShareDataCallHandler.swift */; };
-		046F109020104A090028C1AA /* TBGoBackHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F106E20104A090028C1AA /* TBGoBackHandler.swift */; };
-		046F109120104A090028C1AA /* TBCallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F106F20104A090028C1AA /* TBCallHandler.swift */; };
-		046F109220104A090028C1AA /* TBCallCommond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F107020104A090028C1AA /* TBCallCommond.swift */; };
-		046F109320104A090028C1AA /* TBWebProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F107220104A090028C1AA /* TBWebProgressView.swift */; };
+		046F10C1201065540028C1AA /* TBWebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F1095201065540028C1AA /* TBWebViewManager.swift */; };
+		046F10C2201065540028C1AA /* TBUserInfoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F1099201065540028C1AA /* TBUserInfoPlugin.swift */; };
+		046F10C3201065540028C1AA /* TBCityInfoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F109A201065540028C1AA /* TBCityInfoPlugin.swift */; };
+		046F10C4201065540028C1AA /* TBShareLinkPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F109B201065540028C1AA /* TBShareLinkPlugin.swift */; };
+		046F10C5201065540028C1AA /* TBSharePicPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F109C201065540028C1AA /* TBSharePicPlugin.swift */; };
+		046F10C6201065540028C1AA /* TBTitlePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F109D201065540028C1AA /* TBTitlePlugin.swift */; };
+		046F10C7201065540028C1AA /* TBOpenMapPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F109E201065540028C1AA /* TBOpenMapPlugin.swift */; };
+		046F10C8201065540028C1AA /* TBCallBackPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F109F201065540028C1AA /* TBCallBackPlugin.swift */; };
+		046F10C9201065540028C1AA /* TBUploadEventPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10A0201065540028C1AA /* TBUploadEventPlugin.swift */; };
+		046F10CA201065540028C1AA /* TBRegisterPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10A1201065540028C1AA /* TBRegisterPlugin.swift */; };
+		046F10CB201065540028C1AA /* TBShareDataPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10A3201065540028C1AA /* TBShareDataPlugin.swift */; };
+		046F10CC201065540028C1AA /* TBCallPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10A4201065540028C1AA /* TBCallPlugin.swift */; };
+		046F10CD201065540028C1AA /* TBGoBackPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10A5201065540028C1AA /* TBGoBackPlugin.swift */; };
+		046F10CE201065540028C1AA /* TBCityInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10A7201065540028C1AA /* TBCityInfoModel.swift */; };
+		046F10CF201065540028C1AA /* TBUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10A8201065540028C1AA /* TBUserInfoModel.swift */; };
+		046F10D0201065540028C1AA /* TBWebViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10AA201065540028C1AA /* TBWebViewHelper.swift */; };
+		046F10D1201065540028C1AA /* TBWebViewConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10AB201065540028C1AA /* TBWebViewConfigurationManager.swift */; };
+		046F10D2201065540028C1AA /* TBShareLinkRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10AE201065540028C1AA /* TBShareLinkRegisterHandler.swift */; };
+		046F10D3201065540028C1AA /* TBCallBackRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10AF201065540028C1AA /* TBCallBackRegisterHandler.swift */; };
+		046F10D4201065540028C1AA /* TBOpenMapRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10B0201065540028C1AA /* TBOpenMapRegisterHandler.swift */; };
+		046F10D5201065540028C1AA /* TBRegisterCommond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10B1201065540028C1AA /* TBRegisterCommond.swift */; };
+		046F10D6201065540028C1AA /* TBRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10B2201065540028C1AA /* TBRegisterHandler.swift */; };
+		046F10D7201065540028C1AA /* TBUserInfoRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10B3201065540028C1AA /* TBUserInfoRegisterHandler.swift */; };
+		046F10D8201065540028C1AA /* TBTitleRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10B4201065540028C1AA /* TBTitleRegisterHandler.swift */; };
+		046F10D9201065540028C1AA /* TBCityInfoRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10B5201065540028C1AA /* TBCityInfoRegisterHandler.swift */; };
+		046F10DA201065540028C1AA /* TBUploadEventRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10B6201065540028C1AA /* TBUploadEventRegisterHandler.swift */; };
+		046F10DB201065540028C1AA /* TBSharePicRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10B7201065540028C1AA /* TBSharePicRegisterHandler.swift */; };
+		046F10DC201065540028C1AA /* TBEvaluateJSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10B9201065540028C1AA /* TBEvaluateJSHandler.swift */; };
+		046F10DD201065540028C1AA /* TBShareDataCallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10BB201065540028C1AA /* TBShareDataCallHandler.swift */; };
+		046F10DE201065540028C1AA /* TBGoBackHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10BC201065540028C1AA /* TBGoBackHandler.swift */; };
+		046F10DF201065540028C1AA /* TBCallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10BD201065540028C1AA /* TBCallHandler.swift */; };
+		046F10E0201065540028C1AA /* TBCallCommond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10BE201065540028C1AA /* TBCallCommond.swift */; };
+		046F10E1201065540028C1AA /* TBWebProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10C0201065540028C1AA /* TBWebProgressView.swift */; };
 		04985D02200C844100808D26 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04985D01200C844100808D26 /* TestViewController.swift */; };
 		E08F18BDD96F7BAED7BC9454 /* Pods_TBInteractiveProtocol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF11CB0591DC99EA096299A7 /* Pods_TBInteractiveProtocol.framework */; };
 /* End PBXBuildFile section */
@@ -61,39 +61,39 @@
 		04248DAD200C7B170037C6B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04248DAF200C7B170037C6B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04248DB0200C7B170037C6B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		046F104720104A090028C1AA /* TBWebViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBWebViewManager.swift; sourceTree = "<group>"; };
-		046F104B20104A090028C1AA /* TBUserInfoPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUserInfoPlugin.swift; sourceTree = "<group>"; };
-		046F104C20104A090028C1AA /* TBCityInfoPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCityInfoPlugin.swift; sourceTree = "<group>"; };
-		046F104D20104A090028C1AA /* TBShareLinkPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBShareLinkPlugin.swift; sourceTree = "<group>"; };
-		046F104E20104A090028C1AA /* TBSharePicPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBSharePicPlugin.swift; sourceTree = "<group>"; };
-		046F104F20104A090028C1AA /* TBTitlePlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBTitlePlugin.swift; sourceTree = "<group>"; };
-		046F105020104A090028C1AA /* TBOpenMapPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBOpenMapPlugin.swift; sourceTree = "<group>"; };
-		046F105120104A090028C1AA /* TBCallBackPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallBackPlugin.swift; sourceTree = "<group>"; };
-		046F105220104A090028C1AA /* TBUploadEventPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUploadEventPlugin.swift; sourceTree = "<group>"; };
-		046F105320104A090028C1AA /* TBRegisterPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBRegisterPlugin.swift; sourceTree = "<group>"; };
-		046F105520104A090028C1AA /* TBShareDataPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBShareDataPlugin.swift; sourceTree = "<group>"; };
-		046F105620104A090028C1AA /* TBCallPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallPlugin.swift; sourceTree = "<group>"; };
-		046F105720104A090028C1AA /* TBGoBackPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBGoBackPlugin.swift; sourceTree = "<group>"; };
-		046F105920104A090028C1AA /* TBCityInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCityInfoModel.swift; sourceTree = "<group>"; };
-		046F105A20104A090028C1AA /* TBUserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUserInfoModel.swift; sourceTree = "<group>"; };
-		046F105C20104A090028C1AA /* TBWebViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBWebViewHelper.swift; sourceTree = "<group>"; };
-		046F105D20104A090028C1AA /* TBWebViewConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBWebViewConfigurationManager.swift; sourceTree = "<group>"; };
-		046F106020104A090028C1AA /* TBShareLinkRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBShareLinkRegisterHandler.swift; sourceTree = "<group>"; };
-		046F106120104A090028C1AA /* TBCallBackRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallBackRegisterHandler.swift; sourceTree = "<group>"; };
-		046F106220104A090028C1AA /* TBOpenMapRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBOpenMapRegisterHandler.swift; sourceTree = "<group>"; };
-		046F106320104A090028C1AA /* TBRegisterCommond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBRegisterCommond.swift; sourceTree = "<group>"; };
-		046F106420104A090028C1AA /* TBRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBRegisterHandler.swift; sourceTree = "<group>"; };
-		046F106520104A090028C1AA /* TBUserInfoRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUserInfoRegisterHandler.swift; sourceTree = "<group>"; };
-		046F106620104A090028C1AA /* TBTitleRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBTitleRegisterHandler.swift; sourceTree = "<group>"; };
-		046F106720104A090028C1AA /* TBCityInfoRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCityInfoRegisterHandler.swift; sourceTree = "<group>"; };
-		046F106820104A090028C1AA /* TBUploadEventRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUploadEventRegisterHandler.swift; sourceTree = "<group>"; };
-		046F106920104A090028C1AA /* TBSharePicRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBSharePicRegisterHandler.swift; sourceTree = "<group>"; };
-		046F106B20104A090028C1AA /* TBEvaluateJSHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBEvaluateJSHandler.swift; sourceTree = "<group>"; };
-		046F106D20104A090028C1AA /* TBShareDataCallHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBShareDataCallHandler.swift; sourceTree = "<group>"; };
-		046F106E20104A090028C1AA /* TBGoBackHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBGoBackHandler.swift; sourceTree = "<group>"; };
-		046F106F20104A090028C1AA /* TBCallHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallHandler.swift; sourceTree = "<group>"; };
-		046F107020104A090028C1AA /* TBCallCommond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallCommond.swift; sourceTree = "<group>"; };
-		046F107220104A090028C1AA /* TBWebProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBWebProgressView.swift; sourceTree = "<group>"; };
+		046F1095201065540028C1AA /* TBWebViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBWebViewManager.swift; sourceTree = "<group>"; };
+		046F1099201065540028C1AA /* TBUserInfoPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUserInfoPlugin.swift; sourceTree = "<group>"; };
+		046F109A201065540028C1AA /* TBCityInfoPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCityInfoPlugin.swift; sourceTree = "<group>"; };
+		046F109B201065540028C1AA /* TBShareLinkPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBShareLinkPlugin.swift; sourceTree = "<group>"; };
+		046F109C201065540028C1AA /* TBSharePicPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBSharePicPlugin.swift; sourceTree = "<group>"; };
+		046F109D201065540028C1AA /* TBTitlePlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBTitlePlugin.swift; sourceTree = "<group>"; };
+		046F109E201065540028C1AA /* TBOpenMapPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBOpenMapPlugin.swift; sourceTree = "<group>"; };
+		046F109F201065540028C1AA /* TBCallBackPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallBackPlugin.swift; sourceTree = "<group>"; };
+		046F10A0201065540028C1AA /* TBUploadEventPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUploadEventPlugin.swift; sourceTree = "<group>"; };
+		046F10A1201065540028C1AA /* TBRegisterPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBRegisterPlugin.swift; sourceTree = "<group>"; };
+		046F10A3201065540028C1AA /* TBShareDataPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBShareDataPlugin.swift; sourceTree = "<group>"; };
+		046F10A4201065540028C1AA /* TBCallPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallPlugin.swift; sourceTree = "<group>"; };
+		046F10A5201065540028C1AA /* TBGoBackPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBGoBackPlugin.swift; sourceTree = "<group>"; };
+		046F10A7201065540028C1AA /* TBCityInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCityInfoModel.swift; sourceTree = "<group>"; };
+		046F10A8201065540028C1AA /* TBUserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUserInfoModel.swift; sourceTree = "<group>"; };
+		046F10AA201065540028C1AA /* TBWebViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBWebViewHelper.swift; sourceTree = "<group>"; };
+		046F10AB201065540028C1AA /* TBWebViewConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBWebViewConfigurationManager.swift; sourceTree = "<group>"; };
+		046F10AE201065540028C1AA /* TBShareLinkRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBShareLinkRegisterHandler.swift; sourceTree = "<group>"; };
+		046F10AF201065540028C1AA /* TBCallBackRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallBackRegisterHandler.swift; sourceTree = "<group>"; };
+		046F10B0201065540028C1AA /* TBOpenMapRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBOpenMapRegisterHandler.swift; sourceTree = "<group>"; };
+		046F10B1201065540028C1AA /* TBRegisterCommond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBRegisterCommond.swift; sourceTree = "<group>"; };
+		046F10B2201065540028C1AA /* TBRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBRegisterHandler.swift; sourceTree = "<group>"; };
+		046F10B3201065540028C1AA /* TBUserInfoRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUserInfoRegisterHandler.swift; sourceTree = "<group>"; };
+		046F10B4201065540028C1AA /* TBTitleRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBTitleRegisterHandler.swift; sourceTree = "<group>"; };
+		046F10B5201065540028C1AA /* TBCityInfoRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCityInfoRegisterHandler.swift; sourceTree = "<group>"; };
+		046F10B6201065540028C1AA /* TBUploadEventRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUploadEventRegisterHandler.swift; sourceTree = "<group>"; };
+		046F10B7201065540028C1AA /* TBSharePicRegisterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBSharePicRegisterHandler.swift; sourceTree = "<group>"; };
+		046F10B9201065540028C1AA /* TBEvaluateJSHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBEvaluateJSHandler.swift; sourceTree = "<group>"; };
+		046F10BB201065540028C1AA /* TBShareDataCallHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBShareDataCallHandler.swift; sourceTree = "<group>"; };
+		046F10BC201065540028C1AA /* TBGoBackHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBGoBackHandler.swift; sourceTree = "<group>"; };
+		046F10BD201065540028C1AA /* TBCallHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallHandler.swift; sourceTree = "<group>"; };
+		046F10BE201065540028C1AA /* TBCallCommond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallCommond.swift; sourceTree = "<group>"; };
+		046F10C0201065540028C1AA /* TBWebProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBWebProgressView.swift; sourceTree = "<group>"; };
 		04985D00200C844000808D26 /* TBInteractiveProtocol-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBInteractiveProtocol-Bridging-Header.h"; sourceTree = "<group>"; };
 		04985D01200C844100808D26 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2280A055C4D1827C39A36A2B /* Pods-TBInteractiveProtocol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBInteractiveProtocol.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBInteractiveProtocol/Pods-TBInteractiveProtocol.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,130 +150,130 @@
 			path = TBInteractiveProtocol;
 			sourceTree = "<group>";
 		};
-		046F104620104A090028C1AA /* TBInteractiveProtocol */ = {
+		046F1094201065540028C1AA /* TBInteractiveProtocol */ = {
 			isa = PBXGroup;
 			children = (
-				046F104720104A090028C1AA /* TBWebViewManager.swift */,
-				046F104820104A090028C1AA /* WeakBusiness */,
-				046F105B20104A090028C1AA /* Helper */,
-				046F105E20104A090028C1AA /* Handlers */,
-				046F107120104A090028C1AA /* ProgressView */,
+				046F1095201065540028C1AA /* TBWebViewManager.swift */,
+				046F1096201065540028C1AA /* WeakBusiness */,
+				046F10A9201065540028C1AA /* Helper */,
+				046F10AC201065540028C1AA /* Handlers */,
+				046F10BF201065540028C1AA /* ProgressView */,
 			);
 			path = TBInteractiveProtocol;
 			sourceTree = "<group>";
 		};
-		046F104820104A090028C1AA /* WeakBusiness */ = {
+		046F1096201065540028C1AA /* WeakBusiness */ = {
 			isa = PBXGroup;
 			children = (
-				046F104920104A090028C1AA /* Plugins */,
-				046F105820104A090028C1AA /* Models */,
+				046F1097201065540028C1AA /* Plugins */,
+				046F10A6201065540028C1AA /* Models */,
 			);
 			path = WeakBusiness;
 			sourceTree = "<group>";
 		};
-		046F104920104A090028C1AA /* Plugins */ = {
+		046F1097201065540028C1AA /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				046F104A20104A090028C1AA /* RegisterHandlerPlugins */,
-				046F105420104A090028C1AA /* CallHandlerPlugins */,
+				046F1098201065540028C1AA /* RegisterHandlerPlugins */,
+				046F10A2201065540028C1AA /* CallHandlerPlugins */,
 			);
 			path = Plugins;
 			sourceTree = "<group>";
 		};
-		046F104A20104A090028C1AA /* RegisterHandlerPlugins */ = {
+		046F1098201065540028C1AA /* RegisterHandlerPlugins */ = {
 			isa = PBXGroup;
 			children = (
-				046F104B20104A090028C1AA /* TBUserInfoPlugin.swift */,
-				046F104C20104A090028C1AA /* TBCityInfoPlugin.swift */,
-				046F104D20104A090028C1AA /* TBShareLinkPlugin.swift */,
-				046F104E20104A090028C1AA /* TBSharePicPlugin.swift */,
-				046F104F20104A090028C1AA /* TBTitlePlugin.swift */,
-				046F105020104A090028C1AA /* TBOpenMapPlugin.swift */,
-				046F105120104A090028C1AA /* TBCallBackPlugin.swift */,
-				046F105220104A090028C1AA /* TBUploadEventPlugin.swift */,
-				046F105320104A090028C1AA /* TBRegisterPlugin.swift */,
+				046F1099201065540028C1AA /* TBUserInfoPlugin.swift */,
+				046F109A201065540028C1AA /* TBCityInfoPlugin.swift */,
+				046F109B201065540028C1AA /* TBShareLinkPlugin.swift */,
+				046F109C201065540028C1AA /* TBSharePicPlugin.swift */,
+				046F109D201065540028C1AA /* TBTitlePlugin.swift */,
+				046F109E201065540028C1AA /* TBOpenMapPlugin.swift */,
+				046F109F201065540028C1AA /* TBCallBackPlugin.swift */,
+				046F10A0201065540028C1AA /* TBUploadEventPlugin.swift */,
+				046F10A1201065540028C1AA /* TBRegisterPlugin.swift */,
 			);
 			path = RegisterHandlerPlugins;
 			sourceTree = "<group>";
 		};
-		046F105420104A090028C1AA /* CallHandlerPlugins */ = {
+		046F10A2201065540028C1AA /* CallHandlerPlugins */ = {
 			isa = PBXGroup;
 			children = (
-				046F105520104A090028C1AA /* TBShareDataPlugin.swift */,
-				046F105620104A090028C1AA /* TBCallPlugin.swift */,
-				046F105720104A090028C1AA /* TBGoBackPlugin.swift */,
+				046F10A3201065540028C1AA /* TBShareDataPlugin.swift */,
+				046F10A4201065540028C1AA /* TBCallPlugin.swift */,
+				046F10A5201065540028C1AA /* TBGoBackPlugin.swift */,
 			);
 			path = CallHandlerPlugins;
 			sourceTree = "<group>";
 		};
-		046F105820104A090028C1AA /* Models */ = {
+		046F10A6201065540028C1AA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				046F105920104A090028C1AA /* TBCityInfoModel.swift */,
-				046F105A20104A090028C1AA /* TBUserInfoModel.swift */,
+				046F10A7201065540028C1AA /* TBCityInfoModel.swift */,
+				046F10A8201065540028C1AA /* TBUserInfoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		046F105B20104A090028C1AA /* Helper */ = {
+		046F10A9201065540028C1AA /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				046F105C20104A090028C1AA /* TBWebViewHelper.swift */,
-				046F105D20104A090028C1AA /* TBWebViewConfigurationManager.swift */,
+				046F10AA201065540028C1AA /* TBWebViewHelper.swift */,
+				046F10AB201065540028C1AA /* TBWebViewConfigurationManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		046F105E20104A090028C1AA /* Handlers */ = {
+		046F10AC201065540028C1AA /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
-				046F105F20104A090028C1AA /* RegisterHandlers */,
-				046F106A20104A090028C1AA /* EvaluateJSHandlers */,
-				046F106C20104A090028C1AA /* CallHandlers */,
+				046F10AD201065540028C1AA /* RegisterHandlers */,
+				046F10B8201065540028C1AA /* EvaluateJSHandlers */,
+				046F10BA201065540028C1AA /* CallHandlers */,
 			);
 			path = Handlers;
 			sourceTree = "<group>";
 		};
-		046F105F20104A090028C1AA /* RegisterHandlers */ = {
+		046F10AD201065540028C1AA /* RegisterHandlers */ = {
 			isa = PBXGroup;
 			children = (
-				046F106020104A090028C1AA /* TBShareLinkRegisterHandler.swift */,
-				046F106120104A090028C1AA /* TBCallBackRegisterHandler.swift */,
-				046F106220104A090028C1AA /* TBOpenMapRegisterHandler.swift */,
-				046F106320104A090028C1AA /* TBRegisterCommond.swift */,
-				046F106420104A090028C1AA /* TBRegisterHandler.swift */,
-				046F106520104A090028C1AA /* TBUserInfoRegisterHandler.swift */,
-				046F106620104A090028C1AA /* TBTitleRegisterHandler.swift */,
-				046F106720104A090028C1AA /* TBCityInfoRegisterHandler.swift */,
-				046F106820104A090028C1AA /* TBUploadEventRegisterHandler.swift */,
-				046F106920104A090028C1AA /* TBSharePicRegisterHandler.swift */,
+				046F10AE201065540028C1AA /* TBShareLinkRegisterHandler.swift */,
+				046F10AF201065540028C1AA /* TBCallBackRegisterHandler.swift */,
+				046F10B0201065540028C1AA /* TBOpenMapRegisterHandler.swift */,
+				046F10B1201065540028C1AA /* TBRegisterCommond.swift */,
+				046F10B2201065540028C1AA /* TBRegisterHandler.swift */,
+				046F10B3201065540028C1AA /* TBUserInfoRegisterHandler.swift */,
+				046F10B4201065540028C1AA /* TBTitleRegisterHandler.swift */,
+				046F10B5201065540028C1AA /* TBCityInfoRegisterHandler.swift */,
+				046F10B6201065540028C1AA /* TBUploadEventRegisterHandler.swift */,
+				046F10B7201065540028C1AA /* TBSharePicRegisterHandler.swift */,
 			);
 			path = RegisterHandlers;
 			sourceTree = "<group>";
 		};
-		046F106A20104A090028C1AA /* EvaluateJSHandlers */ = {
+		046F10B8201065540028C1AA /* EvaluateJSHandlers */ = {
 			isa = PBXGroup;
 			children = (
-				046F106B20104A090028C1AA /* TBEvaluateJSHandler.swift */,
+				046F10B9201065540028C1AA /* TBEvaluateJSHandler.swift */,
 			);
 			path = EvaluateJSHandlers;
 			sourceTree = "<group>";
 		};
-		046F106C20104A090028C1AA /* CallHandlers */ = {
+		046F10BA201065540028C1AA /* CallHandlers */ = {
 			isa = PBXGroup;
 			children = (
-				046F106D20104A090028C1AA /* TBShareDataCallHandler.swift */,
-				046F106E20104A090028C1AA /* TBGoBackHandler.swift */,
-				046F106F20104A090028C1AA /* TBCallHandler.swift */,
-				046F107020104A090028C1AA /* TBCallCommond.swift */,
+				046F10BB201065540028C1AA /* TBShareDataCallHandler.swift */,
+				046F10BC201065540028C1AA /* TBGoBackHandler.swift */,
+				046F10BD201065540028C1AA /* TBCallHandler.swift */,
+				046F10BE201065540028C1AA /* TBCallCommond.swift */,
 			);
 			path = CallHandlers;
 			sourceTree = "<group>";
 		};
-		046F107120104A090028C1AA /* ProgressView */ = {
+		046F10BF201065540028C1AA /* ProgressView */ = {
 			isa = PBXGroup;
 			children = (
-				046F107220104A090028C1AA /* TBWebProgressView.swift */,
+				046F10C0201065540028C1AA /* TBWebProgressView.swift */,
 			);
 			path = ProgressView;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 		04850E7A200F2B3E00E1C51D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				046F104620104A090028C1AA /* TBInteractiveProtocol */,
+				046F1094201065540028C1AA /* TBInteractiveProtocol */,
 			);
 			name = Source;
 			path = ../../Source;
@@ -384,14 +384,12 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TBInteractiveProtocol/Pods-TBInteractiveProtocol-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/NJKWebViewProgress/NJKWebViewProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/TBInteractiveProtocol/TBInteractiveProtocol.framework",
 				"${BUILT_PRODUCTS_DIR}/TBWebViewJavascriptBridge/TBWebViewJavascriptBridge.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NJKWebViewProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBInteractiveProtocol.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBWebViewJavascriptBridge.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,43 +437,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046F108920104A090028C1AA /* TBUserInfoRegisterHandler.swift in Sources */,
-				046F108D20104A090028C1AA /* TBSharePicRegisterHandler.swift in Sources */,
-				046F109320104A090028C1AA /* TBWebProgressView.swift in Sources */,
-				046F107620104A090028C1AA /* TBShareLinkPlugin.swift in Sources */,
-				046F109020104A090028C1AA /* TBGoBackHandler.swift in Sources */,
-				046F109120104A090028C1AA /* TBCallHandler.swift in Sources */,
-				046F108A20104A090028C1AA /* TBTitleRegisterHandler.swift in Sources */,
-				046F108520104A090028C1AA /* TBCallBackRegisterHandler.swift in Sources */,
-				046F107820104A090028C1AA /* TBTitlePlugin.swift in Sources */,
-				046F107520104A090028C1AA /* TBCityInfoPlugin.swift in Sources */,
+				046F10D7201065540028C1AA /* TBUserInfoRegisterHandler.swift in Sources */,
+				046F10DB201065540028C1AA /* TBSharePicRegisterHandler.swift in Sources */,
+				046F10E1201065540028C1AA /* TBWebProgressView.swift in Sources */,
+				046F10C4201065540028C1AA /* TBShareLinkPlugin.swift in Sources */,
+				046F10DE201065540028C1AA /* TBGoBackHandler.swift in Sources */,
+				046F10DF201065540028C1AA /* TBCallHandler.swift in Sources */,
+				046F10D8201065540028C1AA /* TBTitleRegisterHandler.swift in Sources */,
+				046F10D3201065540028C1AA /* TBCallBackRegisterHandler.swift in Sources */,
+				046F10C6201065540028C1AA /* TBTitlePlugin.swift in Sources */,
+				046F10C3201065540028C1AA /* TBCityInfoPlugin.swift in Sources */,
 				04985D02200C844100808D26 /* TestViewController.swift in Sources */,
-				046F108120104A090028C1AA /* TBUserInfoModel.swift in Sources */,
-				046F107D20104A090028C1AA /* TBShareDataPlugin.swift in Sources */,
-				046F107B20104A090028C1AA /* TBUploadEventPlugin.swift in Sources */,
-				046F108320104A090028C1AA /* TBWebViewConfigurationManager.swift in Sources */,
-				046F108720104A090028C1AA /* TBRegisterCommond.swift in Sources */,
-				046F107C20104A090028C1AA /* TBRegisterPlugin.swift in Sources */,
-				046F108620104A090028C1AA /* TBOpenMapRegisterHandler.swift in Sources */,
-				046F107420104A090028C1AA /* TBUserInfoPlugin.swift in Sources */,
-				046F107320104A090028C1AA /* TBWebViewManager.swift in Sources */,
-				046F107720104A090028C1AA /* TBSharePicPlugin.swift in Sources */,
-				046F108220104A090028C1AA /* TBWebViewHelper.swift in Sources */,
+				046F10CF201065540028C1AA /* TBUserInfoModel.swift in Sources */,
+				046F10CB201065540028C1AA /* TBShareDataPlugin.swift in Sources */,
+				046F10C9201065540028C1AA /* TBUploadEventPlugin.swift in Sources */,
+				046F10D1201065540028C1AA /* TBWebViewConfigurationManager.swift in Sources */,
+				046F10D5201065540028C1AA /* TBRegisterCommond.swift in Sources */,
+				046F10CA201065540028C1AA /* TBRegisterPlugin.swift in Sources */,
+				046F10D4201065540028C1AA /* TBOpenMapRegisterHandler.swift in Sources */,
+				046F10C2201065540028C1AA /* TBUserInfoPlugin.swift in Sources */,
+				046F10C1201065540028C1AA /* TBWebViewManager.swift in Sources */,
+				046F10C5201065540028C1AA /* TBSharePicPlugin.swift in Sources */,
+				046F10D0201065540028C1AA /* TBWebViewHelper.swift in Sources */,
 				04248DA6200C7B170037C6B3 /* ViewController.m in Sources */,
-				046F108420104A090028C1AA /* TBShareLinkRegisterHandler.swift in Sources */,
+				046F10D2201065540028C1AA /* TBShareLinkRegisterHandler.swift in Sources */,
 				04248DB1200C7B170037C6B3 /* main.m in Sources */,
-				046F108820104A090028C1AA /* TBRegisterHandler.swift in Sources */,
+				046F10D6201065540028C1AA /* TBRegisterHandler.swift in Sources */,
 				04248DA3200C7B170037C6B3 /* AppDelegate.m in Sources */,
-				046F107920104A090028C1AA /* TBOpenMapPlugin.swift in Sources */,
-				046F108020104A090028C1AA /* TBCityInfoModel.swift in Sources */,
-				046F108B20104A090028C1AA /* TBCityInfoRegisterHandler.swift in Sources */,
-				046F107E20104A090028C1AA /* TBCallPlugin.swift in Sources */,
-				046F108E20104A090028C1AA /* TBEvaluateJSHandler.swift in Sources */,
-				046F108C20104A090028C1AA /* TBUploadEventRegisterHandler.swift in Sources */,
-				046F107F20104A090028C1AA /* TBGoBackPlugin.swift in Sources */,
-				046F109220104A090028C1AA /* TBCallCommond.swift in Sources */,
-				046F107A20104A090028C1AA /* TBCallBackPlugin.swift in Sources */,
-				046F108F20104A090028C1AA /* TBShareDataCallHandler.swift in Sources */,
+				046F10C7201065540028C1AA /* TBOpenMapPlugin.swift in Sources */,
+				046F10CE201065540028C1AA /* TBCityInfoModel.swift in Sources */,
+				046F10D9201065540028C1AA /* TBCityInfoRegisterHandler.swift in Sources */,
+				046F10CC201065540028C1AA /* TBCallPlugin.swift in Sources */,
+				046F10DC201065540028C1AA /* TBEvaluateJSHandler.swift in Sources */,
+				046F10DA201065540028C1AA /* TBUploadEventRegisterHandler.swift in Sources */,
+				046F10CD201065540028C1AA /* TBGoBackPlugin.swift in Sources */,
+				046F10E0201065540028C1AA /* TBCallCommond.swift in Sources */,
+				046F10C8201065540028C1AA /* TBCallBackPlugin.swift in Sources */,
+				046F10DD201065540028C1AA /* TBShareDataCallHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

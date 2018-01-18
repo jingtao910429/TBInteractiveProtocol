@@ -104,13 +104,11 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/NJKWebViewProgress/NJKWebViewProgress.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/TBInteractiveProtocol/TBInteractiveProtocol.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TBWebViewJavascriptBridge/TBWebViewJavascriptBridge.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/NJKWebViewProgress/NJKWebViewProgress.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/TBInteractiveProtocol/TBInteractiveProtocol.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TBWebViewJavascriptBridge/TBWebViewJavascriptBridge.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
