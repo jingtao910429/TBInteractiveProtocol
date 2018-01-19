@@ -19,6 +19,7 @@ let kOpenMapPlugin     = "openMap"
 let kCallBackPlugin    = "callBack"
 let kCityInfoPlugin    = "getCityInfo"
 let kUploadEventPlugin = "uploadEvent"
+let kOpenUrlPlugin     = "openUrl"
 
 //getUserInfo
 public typealias LoginRegisterCallBack       = () -> Void
@@ -34,6 +35,8 @@ public typealias OpenMapRegisterCallBack     = (_ locationCoordinate2D: CLLocati
 public typealias CallBackRegisterCallBack    = (_ isClosePage: Int) -> Void
 //uploadEvent
 public typealias UploadEventRegisterCallBack = (_ eventId: String, _ params: [String: Any]) -> Void
+//openUrl
+public typealias OpenUrlRegisterCallBack = (_ url: String) -> Void
 
 public class TBRegisterPlugin: NSObject {
     
@@ -90,6 +93,13 @@ public class TBRegisterPlugin: NSObject {
         let uploadEvent = TBUploadEventPlugin()
         uploadEvent.uploadEventRegisterCallBack = uploadEventRegisterCallBack
         uploadEvent.registerHandler(manager: manager)
+    }
+    
+    //openUrl
+    public func registerOpenUrl(manager: TBWebViewManager, openUrlRegisterCallBack: OpenUrlRegisterCallBack?) {
+        let openUrl = TBOpenUrlPlugin()
+        openUrl.openUrlRegisterCallBack = openUrlRegisterCallBack
+        openUrl.registerHandler(manager: manager)
     }
     
 }

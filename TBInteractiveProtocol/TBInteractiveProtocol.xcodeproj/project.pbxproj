@@ -13,6 +13,8 @@
 		04248DAB200C7B170037C6B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04248DAA200C7B170037C6B3 /* Assets.xcassets */; };
 		04248DAE200C7B170037C6B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04248DAC200C7B170037C6B3 /* LaunchScreen.storyboard */; };
 		04248DB1200C7B170037C6B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04248DB0200C7B170037C6B3 /* main.m */; };
+		042C651E2011E751009C50BE /* TBOpenUrlRegisterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C651D2011E751009C50BE /* TBOpenUrlRegisterHandler.swift */; };
+		042C65202011E784009C50BE /* TBOpenUrlPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C651F2011E784009C50BE /* TBOpenUrlPlugin.swift */; };
 		046F10C1201065540028C1AA /* TBWebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F1095201065540028C1AA /* TBWebViewManager.swift */; };
 		046F10C2201065540028C1AA /* TBUserInfoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F1099201065540028C1AA /* TBUserInfoPlugin.swift */; };
 		046F10C3201065540028C1AA /* TBCityInfoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F109A201065540028C1AA /* TBCityInfoPlugin.swift */; };
@@ -61,6 +63,8 @@
 		04248DAD200C7B170037C6B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04248DAF200C7B170037C6B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04248DB0200C7B170037C6B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		042C651D2011E751009C50BE /* TBOpenUrlRegisterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBOpenUrlRegisterHandler.swift; sourceTree = "<group>"; };
+		042C651F2011E784009C50BE /* TBOpenUrlPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBOpenUrlPlugin.swift; sourceTree = "<group>"; };
 		046F1095201065540028C1AA /* TBWebViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBWebViewManager.swift; sourceTree = "<group>"; };
 		046F1099201065540028C1AA /* TBUserInfoPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBUserInfoPlugin.swift; sourceTree = "<group>"; };
 		046F109A201065540028C1AA /* TBCityInfoPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCityInfoPlugin.swift; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 				046F109E201065540028C1AA /* TBOpenMapPlugin.swift */,
 				046F109F201065540028C1AA /* TBCallBackPlugin.swift */,
 				046F10A0201065540028C1AA /* TBUploadEventPlugin.swift */,
+				042C651F2011E784009C50BE /* TBOpenUrlPlugin.swift */,
 				046F10A1201065540028C1AA /* TBRegisterPlugin.swift */,
 			);
 			path = RegisterHandlerPlugins;
@@ -247,6 +252,7 @@
 				046F10B5201065540028C1AA /* TBCityInfoRegisterHandler.swift */,
 				046F10B6201065540028C1AA /* TBUploadEventRegisterHandler.swift */,
 				046F10B7201065540028C1AA /* TBSharePicRegisterHandler.swift */,
+				042C651D2011E751009C50BE /* TBOpenUrlRegisterHandler.swift */,
 			);
 			path = RegisterHandlers;
 			sourceTree = "<group>";
@@ -446,6 +452,7 @@
 				046F10D8201065540028C1AA /* TBTitleRegisterHandler.swift in Sources */,
 				046F10D3201065540028C1AA /* TBCallBackRegisterHandler.swift in Sources */,
 				046F10C6201065540028C1AA /* TBTitlePlugin.swift in Sources */,
+				042C65202011E784009C50BE /* TBOpenUrlPlugin.swift in Sources */,
 				046F10C3201065540028C1AA /* TBCityInfoPlugin.swift in Sources */,
 				04985D02200C844100808D26 /* TestViewController.swift in Sources */,
 				046F10CF201065540028C1AA /* TBUserInfoModel.swift in Sources */,
@@ -464,6 +471,7 @@
 				04248DB1200C7B170037C6B3 /* main.m in Sources */,
 				046F10D6201065540028C1AA /* TBRegisterHandler.swift in Sources */,
 				04248DA3200C7B170037C6B3 /* AppDelegate.m in Sources */,
+				042C651E2011E751009C50BE /* TBOpenUrlRegisterHandler.swift in Sources */,
 				046F10C7201065540028C1AA /* TBOpenMapPlugin.swift in Sources */,
 				046F10CE201065540028C1AA /* TBCityInfoModel.swift in Sources */,
 				046F10D9201065540028C1AA /* TBCityInfoRegisterHandler.swift in Sources */,
