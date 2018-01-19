@@ -12,8 +12,8 @@ import NJKWebViewProgress
 
 public class TBWebProgressView: NSObject {
     
-    fileprivate(set) var progressView: NJKWebViewProgressView!
-    fileprivate(set) var progressProxy: NJKWebViewProgress!
+    public var progressView: NJKWebViewProgressView!
+    public var progressProxy: NJKWebViewProgress!
     
     fileprivate func createProgressView(webviewY: CGFloat, width: CGFloat) -> NJKWebViewProgressView {
         let progressBarHeight: CGFloat = 3

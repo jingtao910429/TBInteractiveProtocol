@@ -10,15 +10,18 @@ import UIKit
 import ObjectMapper
 
 public struct TBUserInfoModel: Mappable {
-    var userId = "0"
-    var msg = ""
-    var result = 0
-    var customerId = ""
-    var nickname = ""
-    var avatarUrl = ""
-    var mobile = ""
-    var accessToken = ""
-    var data: Any?
+    public var userId = "0"
+    public var msg = ""
+    public var result = 0
+    public var customerId = ""
+    public var nickname = ""
+    public var avatarUrl = ""
+    public var mobile = ""
+    public var accessToken = ""
+    public var data: Any?
+    
+    public init() {
+    }
     
     public init?(map: Map) {
     }

@@ -28,12 +28,18 @@ public class TBWebViewConfigurationManager: NSObject {
     }
     
     func decidePolicyDecisionHandler(url: String, prefixs: [(String, Bool)], callback: (String) -> Void, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        var handlerSuccess = false
         for prefix in prefixs {
-            if url.hasPrefix(prefix.0), prefix.1 {
-                callback(prefix.0)
-            } else {
+            if url.hasPrefix(prefix.0) {
+                handlerSuccess = true
+                if prefix.1 {
+                    callback(prefix.0)
+                }
                 decisionHandler(.cancel)
             }
+        }
+        if !handlerSuccess {
+            decisionHandler(.allow)
         }
     }
 }

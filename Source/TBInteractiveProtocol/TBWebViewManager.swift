@@ -23,26 +23,27 @@ public protocol TBWebViewNavigationDelegate {
 
 public protocol TBWebViewDelegate {
     func webViewUrlDefault() -> String
+    func webViewOriginUrlExacute(originUrl: URL)
     func fetchDecidePolicyPrefixs() -> [(String, Bool)]
     func decidePolicyCallBack(url: String, prefix: String)
 }
 
 public class TBWebViewManager: NSObject {
     
-    fileprivate(set) var webView: WKWebView!
-    fileprivate(set) var bridge: WKWebViewJavascriptBridge!
+    public var webView: WKWebView!
+    public var bridge: WKWebViewJavascriptBridge!
     
     public var navDelegate: TBWebViewNavigationDelegate?
     public var delegate: TBWebViewDelegate?
     
-    fileprivate var originUrl: URL!
-    fileprivate var url: String? {
+    public var originUrl: URL?
+    public var url: String? {
         didSet {
-            self.originUrl = TBWebViewHelper.handleUrl(url: url)
-            if let _ = self.originUrl {
-            } else {
-                self.originUrl = URL(string: (self.delegate?.webViewUrlDefault())!)!
+            originUrl = TBWebViewHelper.handleUrl(url: url)
+            if originUrl == nil {
+                originUrl = URL(string: (self.delegate?.webViewUrlDefault())!)!
             }
+            self.delegate?.webViewOriginUrlExacute(originUrl: originUrl!)
         }
     }
     
@@ -55,17 +56,28 @@ public class TBWebViewManager: NSObject {
         setWebViewAttribute()
     }
     
-    public func load(_ url: String?) -> WKNavigation? {
+    public func load(_ url: String?) {
         if self.webView == nil {
             print("请先加载WebView")
-            return nil
+            return
         }
         if url == nil || url == "" {
             print("URL为空！")
-            return nil
+            return
         }
-        self.url = url
-        return self.webView.load(URLRequest(url: self.originUrl))
+        if self.originUrl == nil {
+            self.url = url
+        }
+        self.webView.load(URLRequest(url: self.originUrl!))
+    }
+    
+    //原生evaluateJavaScript方法封装
+    public func evaluateJavaScript(_ javaScriptString: String, completionHandler: ((Any?, Error?) -> Swift.Void)? = nil) {
+        if javaScriptString == "" {
+            print("evaluateJavaScript 执行js字符串为空!")
+            return
+        }
+        self.webView.evaluateJavaScript(javaScriptString, completionHandler: completionHandler)
     }
     
     //执行JS
@@ -76,6 +88,7 @@ public class TBWebViewManager: NSObject {
         for handler in datas {
             evaluateJavaScript(handler: handler)
         }
+        
     }
     
     //执行单个JS
@@ -155,8 +168,6 @@ extension TBWebViewManager: WKNavigationDelegate {
     
     public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         
-        self.navDelegate?.webView(webView, decidePolicyFor: navigationAction, decisionHandler: decisionHandler)
-        
         if let urlString = navigationAction.request.url?.absoluteString {
             let prefixs = self.delegate?.fetchDecidePolicyPrefixs()
             if let prefixs = prefixs, prefixs.count != 0 {
@@ -169,6 +180,7 @@ extension TBWebViewManager: WKNavigationDelegate {
         } else {
             decisionHandler(.allow)
         }
+        self.navDelegate?.webView(webView, decidePolicyFor: navigationAction, decisionHandler: decisionHandler)
     }
     
     public func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {

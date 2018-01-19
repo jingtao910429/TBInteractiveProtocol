@@ -35,7 +35,7 @@ public class TBTitlePlugin: NSObject {
                         }
                     }
                     if let initTitleRegisterCallBack = self.initTitleRegisterCallBack {
-                        initTitleRegisterCallBack(titleResult, isShowShareResult)
+                        initTitleRegisterCallBack(info, titleResult, isShowShareResult)
                     }
                 }
             }

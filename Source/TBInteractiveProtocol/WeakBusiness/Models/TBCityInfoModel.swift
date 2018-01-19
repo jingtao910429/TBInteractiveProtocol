@@ -10,10 +10,13 @@ import UIKit
 import ObjectMapper
 
 public struct TBCityInfoModel: Mappable {
-    var msg = ""
-    var result = 0
-    var cityId = ""
-    var data: Any?
+    public var msg = ""
+    public var result = 0
+    public var cityId = ""
+    public var data: Any?
+    
+    public init() {
+    }
     
     public init?(map: Map) {
     }

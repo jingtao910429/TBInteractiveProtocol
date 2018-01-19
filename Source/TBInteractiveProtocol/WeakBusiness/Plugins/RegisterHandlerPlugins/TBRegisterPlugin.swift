@@ -23,7 +23,7 @@ let kUploadEventPlugin = "uploadEvent"
 //getUserInfo
 public typealias LoginRegisterCallBack       = () -> Void
 //title
-public typealias InitTitleRegisterCallBack   = (_ title: String, _ isShowShare: Int) -> Void
+public typealias InitTitleRegisterCallBack   = (_ info: [String: AnyObject]?, _ title: String, _ isShowShare: Int) -> Void
 //shareLink
 public typealias ShareLinkRegisterCallBack   = (_ title: String, _ content: String, _ link: String, _ icon: String, _ responseCallBack: WVJBResponseCallback?) -> Void
 //sharePic
