@@ -39,11 +39,13 @@ public class TBWebViewManager: NSObject {
     public var originUrl: URL?
     public var url: String? {
         didSet {
-            originUrl = TBWebViewHelper.handleUrl(url: url)
-            if originUrl == nil {
-                originUrl = URL(string: (self.delegate?.webViewUrlDefault())!)!
+            if let url = url {
+                originUrl = TBWebViewHelper.handleUrl(url: url)
+                if originUrl == nil {
+                    originUrl = URL(string: (self.delegate?.webViewUrlDefault())!)!
+                }
+                self.delegate?.webViewOriginUrlExacute(originUrl: originUrl!)
             }
-            self.delegate?.webViewOriginUrlExacute(originUrl: originUrl!)
         }
     }
     
