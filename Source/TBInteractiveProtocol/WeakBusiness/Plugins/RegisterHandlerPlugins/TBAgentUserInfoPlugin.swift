@@ -31,6 +31,27 @@ class TBAgentUserInfoPlugin: NSObject {
                         response("")
                         return
                     }
+                    let _data = data as! [String: AnyObject]
+                    if let isNeedLogin = _data["isNeedLogin"] {
+                        let _isNeedLogin = isNeedLogin as! Bool
+                        if _isNeedLogin {
+                            if let loginRegisterCallBack = self.loginRegisterCallBack {
+                                loginRegisterCallBack()
+                            }
+                            response("")
+                        } else {
+                            
+                            var data: [String: Any] = [:]
+                            data["userId"] = model.userId
+                            
+                            var result: [String: Any] = [:]
+                            result["result"] = model.result
+                            result["msg"] = model.msg
+                            result["data"] = data
+                            
+                            response(TBWebViewHelper.jsonToString(result))
+                        }
+                    }
                 } else {
                     
                     var data: [String: Any] = [:]
