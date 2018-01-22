@@ -47,6 +47,13 @@ public class TBRegisterPlugin: NSObject {
         userInfo.registerHandler(model: model, manager: manager)
     }
     
+    //agent-getUserInfo
+    public func registerAgentUserInfo(model: TBUserInfoModel, manager: TBWebViewManager, loginRegisterCallBack: LoginRegisterCallBack?) {
+        let userInfo = TBAgentUserInfoPlugin()
+        userInfo.loginRegisterCallBack = loginRegisterCallBack
+        userInfo.registerHandler(model: model, manager: manager)
+    }
+    
     //cityInfo
     public func registerCityInfo(model: TBCityInfoModel, manager: TBWebViewManager) {
         let cityInfo = TBCityInfoPlugin()

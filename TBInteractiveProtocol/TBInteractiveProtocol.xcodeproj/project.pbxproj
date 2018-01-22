@@ -48,6 +48,7 @@
 		046F10DF201065540028C1AA /* TBCallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10BD201065540028C1AA /* TBCallHandler.swift */; };
 		046F10E0201065540028C1AA /* TBCallCommond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10BE201065540028C1AA /* TBCallCommond.swift */; };
 		046F10E1201065540028C1AA /* TBWebProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F10C0201065540028C1AA /* TBWebProgressView.swift */; };
+		0482EEDE20157C0B00793DCC /* TBAgentUserInfoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482EEDD20157C0B00793DCC /* TBAgentUserInfoPlugin.swift */; };
 		04985D02200C844100808D26 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04985D01200C844100808D26 /* TestViewController.swift */; };
 		E08F18BDD96F7BAED7BC9454 /* Pods_TBInteractiveProtocol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF11CB0591DC99EA096299A7 /* Pods_TBInteractiveProtocol.framework */; };
 /* End PBXBuildFile section */
@@ -98,6 +99,7 @@
 		046F10BD201065540028C1AA /* TBCallHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallHandler.swift; sourceTree = "<group>"; };
 		046F10BE201065540028C1AA /* TBCallCommond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCallCommond.swift; sourceTree = "<group>"; };
 		046F10C0201065540028C1AA /* TBWebProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBWebProgressView.swift; sourceTree = "<group>"; };
+		0482EEDD20157C0B00793DCC /* TBAgentUserInfoPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBAgentUserInfoPlugin.swift; sourceTree = "<group>"; };
 		04985D00200C844000808D26 /* TBInteractiveProtocol-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBInteractiveProtocol-Bridging-Header.h"; sourceTree = "<group>"; };
 		04985D01200C844100808D26 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2280A055C4D1827C39A36A2B /* Pods-TBInteractiveProtocol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBInteractiveProtocol.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBInteractiveProtocol/Pods-TBInteractiveProtocol.release.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				046F10A0201065540028C1AA /* TBUploadEventPlugin.swift */,
 				042C651F2011E784009C50BE /* TBOpenUrlPlugin.swift */,
 				046F10A1201065540028C1AA /* TBRegisterPlugin.swift */,
+				0482EEDD20157C0B00793DCC /* TBAgentUserInfoPlugin.swift */,
 			);
 			path = RegisterHandlerPlugins;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				046F10E1201065540028C1AA /* TBWebProgressView.swift in Sources */,
 				046F10C4201065540028C1AA /* TBShareLinkPlugin.swift in Sources */,
 				046F10DE201065540028C1AA /* TBGoBackHandler.swift in Sources */,
+				0482EEDE20157C0B00793DCC /* TBAgentUserInfoPlugin.swift in Sources */,
 				046F10DF201065540028C1AA /* TBCallHandler.swift in Sources */,
 				046F10D8201065540028C1AA /* TBTitleRegisterHandler.swift in Sources */,
 				046F10D3201065540028C1AA /* TBCallBackRegisterHandler.swift in Sources */,
