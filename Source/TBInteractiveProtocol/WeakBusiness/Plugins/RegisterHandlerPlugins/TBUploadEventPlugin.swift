@@ -17,8 +17,7 @@ public class TBUploadEventPlugin: NSObject {
         let commond = TBRegisterCommond()
         commond.bridge = manager.bridge
         commond.handlerName = kUploadEventPlugin
-        commond.commondResponseData = { [weak self] (data) in
-            guard let `self` = self else { return }
+        commond.commondResponseData = { (data) in
             if let _data = data as? [String: AnyObject] {
                 if _data["eventId"] != nil, _data["params"] != nil {
                     let eventId = _data["eventId"] as! String

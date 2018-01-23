@@ -17,8 +17,7 @@ public class TBTitlePlugin: NSObject {
         let commond = TBRegisterCommond()
         commond.bridge = manager.bridge
         commond.handlerName = kTitlePlugin
-        commond.commondResponseData = { [weak self] (data) in
-            guard let `self` = self else { return }
+        commond.commondResponseData = { (data) in
             DispatchQueue.main.async {
                 if let _data = (data as AnyObject)["data"] {
                     let info = _data as! [String: AnyObject]

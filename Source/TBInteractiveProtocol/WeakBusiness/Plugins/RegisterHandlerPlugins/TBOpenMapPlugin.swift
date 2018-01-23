@@ -18,8 +18,7 @@ public class TBOpenMapPlugin: NSObject {
         let commond = TBRegisterCommond()
         commond.bridge = manager.bridge
         commond.handlerName = kOpenMapPlugin
-        commond.commondResponseData = { [weak self] (data) in
-            guard let `self` = self else { return }
+        commond.commondResponseData = { (data) in
             if let _data = data as? [String : AnyObject] {
                 var latitude: CGFloat = 0
                 if let _latitude = _data["latitude"] {

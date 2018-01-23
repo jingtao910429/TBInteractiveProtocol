@@ -18,8 +18,7 @@ public class TBUserInfoPlugin: NSObject {
         let commond = TBRegisterCommond()
         commond.bridge = manager.bridge
         commond.handlerName = kUserInfoPlugin
-        commond.commondResponseDataCallback = { [weak self] (data, responseCallback) in
-            guard let `self` = self else { return }
+        commond.commondResponseDataCallback = { (data, responseCallback) in
             if let _responseCallback = responseCallback {
                 let response = _responseCallback as WVJBResponseCallback
                 

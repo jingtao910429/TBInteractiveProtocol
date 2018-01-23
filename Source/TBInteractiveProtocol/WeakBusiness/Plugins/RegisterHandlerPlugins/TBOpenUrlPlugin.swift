@@ -17,8 +17,7 @@ class TBOpenUrlPlugin: NSObject {
         let commond = TBRegisterCommond()
         commond.bridge = manager.bridge
         commond.handlerName = kOpenUrlPlugin
-        commond.commondResponseData = { [weak self] (data) in
-            guard let `self` = self else { return }
+        commond.commondResponseData = { (data) in
             if let _data = data {
                 if let result = _data as? [String : AnyObject] {
                     if let url = result["url"] as? String {
