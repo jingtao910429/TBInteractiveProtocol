@@ -11,10 +11,10 @@ import TBWebViewJavascriptBridge
 
 public class TBShareDataPlugin: NSObject {
     
-    var shareLinkRegisterCallBack: ShareLinkRegisterCallBack?
-    var sharePicRegisterCallBack: SharePicRegisterCallBack?
+    public var shareLinkRegisterCallBack: ShareLinkRegisterCallBack?
+    public var sharePicRegisterCallBack: SharePicRegisterCallBack?
     
-    func registerHandler(manager: TBWebViewManager) {
+    public func registerHandler(manager: TBWebViewManager) {
         
         let shareLinkPlugin = TBShareLinkPlugin()
         shareLinkPlugin.shareLinkRegisterCallBack = shareLinkRegisterCallBack

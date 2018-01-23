@@ -15,14 +15,10 @@ class TBCallHandler: NSObject {
     
     func callHandler(commond: TBCallCommond) {
         self.bridge = commond.bridge
-        DispatchQueue.global().async {
-            DispatchQueue.main.async {
-                commond.bridge?.callHandler(commond.handlerName, data: commond.data, responseCallback: { (responseData) in
-                    if let callCommondResponseData = commond.callCommondResponseData {
-                        callCommondResponseData(responseData)
-                    }
-                })
+        commond.bridge?.callHandler(commond.handlerName, data: commond.data, responseCallback: { (responseData) in
+            if let callCommondResponseData = commond.callCommondResponseData {
+                callCommondResponseData(responseData)
             }
-        }
+        })
     }
 }

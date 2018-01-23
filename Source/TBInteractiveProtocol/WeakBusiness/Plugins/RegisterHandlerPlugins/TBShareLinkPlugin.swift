@@ -13,7 +13,7 @@ public class TBShareLinkPlugin: NSObject {
     
     var shareLinkRegisterCallBack: ShareLinkRegisterCallBack?
     
-    func registerHandler(manager: TBWebViewManager) {
+    public func registerHandler(manager: TBWebViewManager) {
         
         let commond = TBRegisterCommond()
         commond.bridge = manager.bridge
@@ -29,7 +29,7 @@ public class TBShareLinkPlugin: NSObject {
         shareLink.shareLinkRegisterHandler(commond: commond)
     }
     
-    func transformToShare(_ info: [String: AnyObject], responseCallBack: WVJBResponseCallback?) {
+    public func transformToShare(_ info: [String: AnyObject], responseCallBack: WVJBResponseCallback?) {
         
         var title = ""
         if let _title = info["title"] {

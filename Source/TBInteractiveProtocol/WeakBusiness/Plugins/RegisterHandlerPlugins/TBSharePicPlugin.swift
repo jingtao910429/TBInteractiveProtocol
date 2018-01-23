@@ -11,9 +11,9 @@ import TBWebViewJavascriptBridge
 
 public class TBSharePicPlugin: NSObject {
     
-    var sharePicRegisterCallBack: SharePicRegisterCallBack?
+    public var sharePicRegisterCallBack: SharePicRegisterCallBack?
     
-    func registerHandler(manager: TBWebViewManager) {
+    public func registerHandler(manager: TBWebViewManager) {
         let commond = TBRegisterCommond()
         commond.bridge = manager.bridge
         commond.handlerName = kSharePicPlugin
@@ -26,7 +26,7 @@ public class TBSharePicPlugin: NSObject {
         sharePic.sharePicRegisterHandler(commond: commond)
     }
     
-    func transformToSharePic(_ data: [String: AnyObject], responseCallBack: WVJBResponseCallback?) {
+    public func transformToSharePic(_ data: [String: AnyObject], responseCallBack: WVJBResponseCallback?) {
         let imageStr = data["picData"] as! String
         let imageData = NSData(base64Encoded: imageStr, options: NSData.Base64DecodingOptions())
         if imageData != nil {
