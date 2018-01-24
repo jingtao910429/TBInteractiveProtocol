@@ -8,5 +8,6 @@ target 'TBInteractiveProtocol' do
     pod 'TBWebViewJavascriptBridge'
     pod 'NJKWebViewProgress'
     pod 'ObjectMapper', '~> 2.0.0'
+#    pod 'RongCloudIMLibrary', '~> 0.0.7'
 #    pod 'TBInteractiveProtocol', '~> 0.0.1'
 end
