@@ -12,6 +12,10 @@ import UIKit
 let kShareDataPlugin    = "getShareData"
 let kGoBackPlugin       = "goBack"
 
+public class TBCallHandlerPlugin: NSObject {
+    var commond: TBCallCommond?
+}
+
 public class TBCallPlugin: NSObject {
     
     public func shareDataCallHandler(manager: TBWebViewManager, shareLinkRegisterCallBack: ShareLinkRegisterCallBack?, sharePicRegisterCallBack: SharePicRegisterCallBack?) {

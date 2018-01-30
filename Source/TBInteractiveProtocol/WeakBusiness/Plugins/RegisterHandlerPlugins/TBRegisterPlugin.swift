@@ -38,6 +38,10 @@ public typealias UploadEventRegisterCallBack = (_ eventId: String, _ params: [St
 //openUrl
 public typealias OpenUrlRegisterCallBack = (_ url: String) -> Void
 
+public class TBRegisterHandlerPlugin: NSObject {
+    var commond: TBRegisterCommond?
+}
+
 public class TBRegisterPlugin: NSObject {
     
     //getUserInfo

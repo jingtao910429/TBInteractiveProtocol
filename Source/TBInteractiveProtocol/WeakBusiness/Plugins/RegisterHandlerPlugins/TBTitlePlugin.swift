@@ -9,15 +9,15 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-public class TBTitlePlugin: NSObject {
+public class TBTitlePlugin: TBRegisterHandlerPlugin {
     
     var initTitleRegisterCallBack: InitTitleRegisterCallBack?
     
     func registerHandler(manager: TBWebViewManager) {
-        let commond = TBRegisterCommond()
-        commond.bridge = manager.bridge
-        commond.handlerName = kTitlePlugin
-        commond.commondResponseData = { (data) in
+        self.commond = TBRegisterCommond()
+        self.commond?.bridge = manager.bridge
+        self.commond?.handlerName = kTitlePlugin
+        self.commond?.commondResponseData = { (data) in
             DispatchQueue.main.async {
                 if let _data = (data as AnyObject)["data"] {
                     let info = _data as! [String: AnyObject]
@@ -40,7 +40,7 @@ public class TBTitlePlugin: NSObject {
             }
         }
         let title = TBTitleRegisterHandler()
-        title.titleRegisterHandler(commond: commond)
+        title.titleRegisterHandler(commond: self.commond!)
     }
     
 }

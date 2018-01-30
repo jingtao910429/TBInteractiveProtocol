@@ -9,15 +9,15 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-public class TBUploadEventPlugin: NSObject {
+public class TBUploadEventPlugin: TBRegisterHandlerPlugin {
     
     var uploadEventRegisterCallBack: UploadEventRegisterCallBack?
     
     func registerHandler(manager: TBWebViewManager) {
-        let commond = TBRegisterCommond()
-        commond.bridge = manager.bridge
-        commond.handlerName = kUploadEventPlugin
-        commond.commondResponseData = { (data) in
+        self.commond = TBRegisterCommond()
+        self.commond?.bridge = manager.bridge
+        self.commond?.handlerName = kUploadEventPlugin
+        self.commond?.commondResponseData = { (data) in
             if let _data = data as? [String: AnyObject] {
                 if _data["eventId"] != nil, _data["params"] != nil {
                     let eventId = _data["eventId"] as! String
@@ -29,6 +29,6 @@ public class TBUploadEventPlugin: NSObject {
             }
         }
         let uploadEvent = TBUploadEventRegisterHandler()
-        uploadEvent.uploadEventRegisterHandler(commond: commond)
+        uploadEvent.uploadEventRegisterHandler(commond: self.commond!)
     }
 }

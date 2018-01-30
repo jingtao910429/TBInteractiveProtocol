@@ -9,12 +9,12 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-public class TBCityInfoPlugin: NSObject {
+public class TBCityInfoPlugin: TBRegisterHandlerPlugin {
     func registerHandler(model: TBCityInfoModel, manager: TBWebViewManager) {
-        let commond = TBRegisterCommond()
-        commond.bridge = manager.bridge
-        commond.handlerName = kCityInfoPlugin
-        commond.commondResponseDataCallback = { (data, responseCallBack) in
+        self.commond = TBRegisterCommond()
+        self.commond?.bridge = manager.bridge
+        self.commond?.handlerName = kCityInfoPlugin
+        self.commond?.commondResponseDataCallback = { (data, responseCallBack) in
             if let _responseCallback = responseCallBack {
                 let response = _responseCallback as WVJBResponseCallback
                 
@@ -31,6 +31,6 @@ public class TBCityInfoPlugin: NSObject {
             }
         }
         let cityInfo = TBCityInfoRegisterHandler()
-        cityInfo.cityInfoRegisterHandler(commond: commond)
+        cityInfo.cityInfoRegisterHandler(commond: self.commond!)
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-public class TBShareDataPlugin: NSObject {
+public class TBShareDataPlugin: TBCallHandlerPlugin {
     
     public var shareLinkRegisterCallBack: ShareLinkRegisterCallBack?
     public var sharePicRegisterCallBack: SharePicRegisterCallBack?
@@ -22,11 +22,11 @@ public class TBShareDataPlugin: NSObject {
         let sharePicPlugin = TBSharePicPlugin()
         sharePicPlugin.sharePicRegisterCallBack = sharePicRegisterCallBack
         
-        let commond = TBCallCommond()
-        commond.bridge = manager.bridge
-        commond.handlerName = kShareDataPlugin
-        commond.data = ""
-        commond.callCommondResponseData = { (responseData) in
+        self.commond = TBCallCommond()
+        self.commond?.bridge = manager.bridge
+        self.commond?.handlerName = kShareDataPlugin
+        self.commond?.data = ""
+        self.commond?.callCommondResponseData = { (responseData) in
             if let _responseData = responseData {
                 let _responseDataJson = _responseData as! [String: AnyObject]
                 if let result = _responseDataJson["result"], result as! Int == 0 {
@@ -47,6 +47,6 @@ public class TBShareDataPlugin: NSObject {
             }
         }
         let shareData = TBShareDataCallHandler()
-        shareData.shareDataCallHandler(commond: commond)
+        shareData.shareDataCallHandler(commond: self.commond!)
     }
 }

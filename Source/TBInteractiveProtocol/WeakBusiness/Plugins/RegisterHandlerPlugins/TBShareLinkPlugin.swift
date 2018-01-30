@@ -9,16 +9,16 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-public class TBShareLinkPlugin: NSObject {
+public class TBShareLinkPlugin: TBRegisterHandlerPlugin {
     
     var shareLinkRegisterCallBack: ShareLinkRegisterCallBack?
     
     public func registerHandler(manager: TBWebViewManager) {
         
-        let commond = TBRegisterCommond()
-        commond.bridge = manager.bridge
-        commond.handlerName = kShareLinkPlugin
-        commond.commondResponseDataCallback = { [weak self] (data, responseCallBack) in
+        self.commond = TBRegisterCommond()
+        self.commond?.bridge = manager.bridge
+        self.commond?.handlerName = kShareLinkPlugin
+        self.commond?.commondResponseDataCallback = { [weak self] (data, responseCallBack) in
             guard let `self` = self else { return }
             if let _data = data {
                 let info = _data as! [String: AnyObject]
@@ -27,7 +27,7 @@ public class TBShareLinkPlugin: NSObject {
         }
         
         let shareLink = TBShareLinkRegisterHandler()
-        shareLink.shareLinkRegisterHandler(commond: commond)
+        shareLink.shareLinkRegisterHandler(commond: self.commond!)
     }
     
     public func transformToShare(_ info: [String: AnyObject], responseCallBack: WVJBResponseCallback?) {

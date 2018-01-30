@@ -10,15 +10,15 @@ import UIKit
 import CoreLocation
 import TBWebViewJavascriptBridge
 
-public class TBOpenMapPlugin: NSObject {
+public class TBOpenMapPlugin: TBRegisterHandlerPlugin {
     
     var openMapRegisterCallBack: OpenMapRegisterCallBack?
     
     func registerHandler(manager: TBWebViewManager) {
-        let commond = TBRegisterCommond()
-        commond.bridge = manager.bridge
-        commond.handlerName = kOpenMapPlugin
-        commond.commondResponseData = { (data) in
+        self.commond = TBRegisterCommond()
+        self.commond?.bridge = manager.bridge
+        self.commond?.handlerName = kOpenMapPlugin
+        self.commond?.commondResponseData = { (data) in
             if let _data = data as? [String : AnyObject] {
                 var latitude: CGFloat = 0
                 if let _latitude = _data["latitude"] {
@@ -39,6 +39,6 @@ public class TBOpenMapPlugin: NSObject {
             }
         }
         let openMap = TBOpenMapRegisterHandler()
-        openMap.openMapRegisterHandler(commond: commond)
+        openMap.openMapRegisterHandler(commond: self.commond!)
     }
 }

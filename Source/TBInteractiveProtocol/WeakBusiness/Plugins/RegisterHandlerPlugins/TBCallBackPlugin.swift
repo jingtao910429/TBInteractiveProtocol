@@ -9,15 +9,15 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-public class TBCallBackPlugin: NSObject {
+public class TBCallBackPlugin: TBRegisterHandlerPlugin {
     
     var callBackRegisterCallBack: CallBackRegisterCallBack?
     
     func registerHandler(manager: TBWebViewManager) {
-        let commond = TBRegisterCommond()
-        commond.bridge = manager.bridge
-        commond.handlerName = kCallBackPlugin
-        commond.commondResponseData = { [weak self] (data) in
+        self.commond = TBRegisterCommond()
+        self.commond?.bridge = manager.bridge
+        self.commond?.handlerName = kCallBackPlugin
+        self.commond?.commondResponseData = { [weak self] (data) in
             guard let `self` = self else { return }
             if let isClosePage = (data as AnyObject)["isClosePage"] {
                 if isClosePage != nil {
@@ -43,7 +43,7 @@ public class TBCallBackPlugin: NSObject {
             }
         }
         let callBack = TBCallBackRegisterHandler()
-        callBack.callBackRegisterHandler(commond: commond)
+        callBack.callBackRegisterHandler(commond: self.commond!)
     }
     
     func goback(manager: TBWebViewManager) {

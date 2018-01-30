@@ -9,15 +9,15 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-class TBOpenUrlPlugin: NSObject {
+class TBOpenUrlPlugin: TBRegisterHandlerPlugin {
     
     var openUrlRegisterCallBack: OpenUrlRegisterCallBack?
     
     func registerHandler(manager: TBWebViewManager) {
-        let commond = TBRegisterCommond()
-        commond.bridge = manager.bridge
-        commond.handlerName = kOpenUrlPlugin
-        commond.commondResponseData = { (data) in
+        self.commond = TBRegisterCommond()
+        self.commond?.bridge = manager.bridge
+        self.commond?.handlerName = kOpenUrlPlugin
+        self.commond?.commondResponseData = { (data) in
             if let _data = data {
                 if let result = _data as? [String : AnyObject] {
                     if let url = result["url"] as? String {
@@ -32,7 +32,7 @@ class TBOpenUrlPlugin: NSObject {
             }
         }
         let openUrl = TBOpenUrlRegisterHandler()
-        openUrl.openUrlRegisterHandler(commond: commond)
+        openUrl.openUrlRegisterHandler(commond: self.commond!)
     }
     
 }

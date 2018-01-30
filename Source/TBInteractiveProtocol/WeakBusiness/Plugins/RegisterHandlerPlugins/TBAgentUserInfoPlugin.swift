@@ -10,15 +10,15 @@ import UIKit
 import ObjectMapper
 import TBWebViewJavascriptBridge
 
-class TBAgentUserInfoPlugin: NSObject {
+class TBAgentUserInfoPlugin: TBRegisterHandlerPlugin {
     
     var loginRegisterCallBack: LoginRegisterCallBack?
     
     func registerHandler(model: TBUserInfoModel, manager: TBWebViewManager) {
-        let commond = TBRegisterCommond()
-        commond.bridge = manager.bridge
-        commond.handlerName = kUserInfoPlugin
-        commond.commondResponseDataCallback = { (data, responseCallback) in
+        self.commond = TBRegisterCommond()
+        self.commond?.bridge = manager.bridge
+        self.commond?.handlerName = kUserInfoPlugin
+        self.commond?.commondResponseDataCallback = { (data, responseCallback) in
             if let _responseCallback = responseCallback {
                 let response = _responseCallback as WVJBResponseCallback
                 
@@ -70,6 +70,6 @@ class TBAgentUserInfoPlugin: NSObject {
             }
         }
         let userInfo = TBUserInfoRegisterHandler()
-        userInfo.userInfoRegisterHandler(commond: commond)
+        userInfo.userInfoRegisterHandler(commond: self.commond!)
     }
 }

@@ -9,15 +9,15 @@
 import UIKit
 import TBWebViewJavascriptBridge
 
-public class TBGoBackPlugin: NSObject {
+public class TBGoBackPlugin: TBCallHandlerPlugin {
     func registerHandler(manager: TBWebViewManager) {
         
         var cancelGoBack = true
-        let commond = TBCallCommond()
-        commond.bridge = manager.bridge
-        commond.handlerName = kGoBackPlugin
-        commond.data = ""
-        commond.callCommondResponseData = { [weak self] (responseData) in
+        self.commond = TBCallCommond()
+        self.commond?.bridge = manager.bridge
+        self.commond?.handlerName = kGoBackPlugin
+        self.commond?.data = ""
+        self.commond?.callCommondResponseData = { [weak self] (responseData) in
             guard let `self` = self else { return }
             if let _responseData = responseData {
                 //取消返回操作
@@ -43,7 +43,7 @@ public class TBGoBackPlugin: NSObject {
             }
         }
         let goback = TBGoBackHandler()
-        goback.gobackCallHandler(commond: commond)
+        goback.gobackCallHandler(commond: self.commond!)
         
         let time: TimeInterval = 0.1
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + time) {
