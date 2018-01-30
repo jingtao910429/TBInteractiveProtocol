@@ -18,7 +18,8 @@ public class TBShareLinkPlugin: NSObject {
         let commond = TBRegisterCommond()
         commond.bridge = manager.bridge
         commond.handlerName = kShareLinkPlugin
-        commond.commondResponseDataCallback = { (data, responseCallBack) in
+        commond.commondResponseDataCallback = { [weak self] (data, responseCallBack) in
+            guard let `self` = self else { return }
             if let _data = data {
                 let info = _data as! [String: AnyObject]
                 self.transformToShare(info, responseCallBack: responseCallBack)

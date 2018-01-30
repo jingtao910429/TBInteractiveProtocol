@@ -17,7 +17,8 @@ public class TBGoBackPlugin: NSObject {
         commond.bridge = manager.bridge
         commond.handlerName = kGoBackPlugin
         commond.data = ""
-        commond.callCommondResponseData = { (responseData) in
+        commond.callCommondResponseData = { [weak self] (responseData) in
+            guard let `self` = self else { return }
             if let _responseData = responseData {
                 //取消返回操作
                 cancelGoBack = false

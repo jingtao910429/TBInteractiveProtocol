@@ -17,7 +17,8 @@ public class TBSharePicPlugin: NSObject {
         let commond = TBRegisterCommond()
         commond.bridge = manager.bridge
         commond.handlerName = kSharePicPlugin
-        commond.commondResponseDataCallback = { (data, responseCallBack) in
+        commond.commondResponseDataCallback = { [weak self] (data, responseCallBack) in
+            guard let `self` = self else { return }
             if let _data = data as? [String : AnyObject] {
                 self.transformToSharePic(_data, responseCallBack: responseCallBack)
             }

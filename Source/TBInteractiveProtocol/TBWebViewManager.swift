@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 import TBWebViewJavascriptBridge
 
-public protocol TBWebViewNavigationDelegate {
+public protocol TBWebViewNavigationDelegate: NSObjectProtocol {
     
     //WKNavigationDelegate
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!)
@@ -21,7 +21,7 @@ public protocol TBWebViewNavigationDelegate {
     func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)
 }
 
-public protocol TBWebViewDelegate {
+public protocol TBWebViewDelegate: NSObjectProtocol {
     func webViewUrlDefault() -> String
     func webViewOriginUrlExacute(originUrl: URL)
     func fetchDecidePolicyPrefixs() -> [(String, Bool)]
@@ -31,10 +31,10 @@ public protocol TBWebViewDelegate {
 public class TBWebViewManager: NSObject {
     
     public var webView: WKWebView!
-    public var bridge: WKWebViewJavascriptBridge!
+    public var bridge: WKWebViewJavascriptBridge?
     
-    public var navDelegate: TBWebViewNavigationDelegate?
-    public var delegate: TBWebViewDelegate?
+    public weak var navDelegate: TBWebViewNavigationDelegate?
+    public weak var delegate: TBWebViewDelegate?
     
     public var originUrl: URL?
     public var url: String? {
@@ -128,7 +128,7 @@ public class TBWebViewManager: NSObject {
     fileprivate func setJsBridge() {
         WKWebViewJavascriptBridge.enableLogging()
         self.bridge = WKWebViewJavascriptBridge(for: self.webView)
-        self.bridge.setWebViewDelegate(self)
+        self.bridge?.setWebViewDelegate(self)
     }
     
     public required init?(coder: NSCoder) {
@@ -136,6 +136,7 @@ public class TBWebViewManager: NSObject {
     }
     
     deinit {
+        print("Fuck-TBWebViewManager")
         if #available(iOS 9.0, *) {
             if webView != nil {
                 if webView.navigationDelegate != nil {
@@ -147,6 +148,7 @@ public class TBWebViewManager: NSObject {
                 webView = nil
             }
         }
+        bridge = nil
     }
 }
 

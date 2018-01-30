@@ -18,7 +18,8 @@ class TBRegisterHandler: NSObject {
         if bridge != nil {
             DispatchQueue.global().async {
                 DispatchQueue.main.async {
-                    commond.bridge?.registerHandler(commond.handlerName) { (data, responseCallback) in
+                    commond.bridge?.registerHandler(commond.handlerName) { [weak commond] (data, responseCallback) in
+                        guard let `commond` = commond else { return }
                         if let commondResponseData = commond.commondResponseData {
                             if let _data = data {
                                 commondResponseData(_data)

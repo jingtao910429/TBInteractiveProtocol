@@ -16,4 +16,9 @@ class TBCallCommond: NSObject {
     var handlerName = ""
     var data: Any?
     var callCommondResponseData: CallCommondResponseData?
+    
+    deinit {
+        bridge = nil
+        callCommondResponseData = nil
+    }
 }

@@ -17,4 +17,10 @@ class TBRegisterCommond: NSObject {
     var handlerName = ""
     var commondResponseDataCallback: CommondResponseDataCallback?
     var commondResponseData: CommondResponseData?
+    
+    deinit {
+        bridge = nil
+        commondResponseDataCallback = nil
+        commondResponseData = nil
+    }
 }

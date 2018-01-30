@@ -15,7 +15,8 @@ class TBCallHandler: NSObject {
     
     func callHandler(commond: TBCallCommond) {
         self.bridge = commond.bridge
-        commond.bridge?.callHandler(commond.handlerName, data: commond.data, responseCallback: { (responseData) in
+        commond.bridge?.callHandler(commond.handlerName, data: commond.data, responseCallback: { [weak commond] (responseData) in
+            guard let `commond` = commond else { return }
             if let callCommondResponseData = commond.callCommondResponseData {
                 callCommondResponseData(responseData)
             }

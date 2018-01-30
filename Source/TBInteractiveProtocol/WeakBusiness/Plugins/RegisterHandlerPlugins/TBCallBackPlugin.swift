@@ -17,7 +17,8 @@ public class TBCallBackPlugin: NSObject {
         let commond = TBRegisterCommond()
         commond.bridge = manager.bridge
         commond.handlerName = kCallBackPlugin
-        commond.commondResponseData = { (data) in
+        commond.commondResponseData = { [weak self] (data) in
+            guard let `self` = self else { return }
             if let isClosePage = (data as AnyObject)["isClosePage"] {
                 if isClosePage != nil {
                     if isClosePage as? Int == 1 {
