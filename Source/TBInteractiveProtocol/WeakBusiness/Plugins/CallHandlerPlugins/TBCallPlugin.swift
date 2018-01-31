@@ -18,16 +18,18 @@ public class TBCallHandlerPlugin: NSObject {
 
 public class TBCallPlugin: NSObject {
     
+    var shareData: TBShareDataPlugin?
+    var goback: TBGoBackPlugin?
+    
     public func shareDataCallHandler(manager: TBWebViewManager, shareLinkRegisterCallBack: ShareLinkRegisterCallBack?, sharePicRegisterCallBack: SharePicRegisterCallBack?) {
-        let shareData = TBShareDataPlugin()
-        shareData.shareLinkRegisterCallBack = shareLinkRegisterCallBack
-        shareData.sharePicRegisterCallBack = sharePicRegisterCallBack
-        shareData.registerHandler(manager: manager)
+        shareData = TBShareDataPlugin()
+        shareData?.shareLinkRegisterCallBack = shareLinkRegisterCallBack
+        shareData?.sharePicRegisterCallBack = sharePicRegisterCallBack
+        shareData?.registerHandler(manager: manager)
     }
     
     public func gobackCallHandler(manager: TBWebViewManager) {
-        let goback = TBGoBackPlugin()
-        goback.registerHandler(manager: manager)
+        goback = TBGoBackPlugin()
+        goback?.registerHandler(manager: manager)
     }
-    
 }
