@@ -30,9 +30,9 @@ public class TBGoBackPlugin: TBCallHandlerPlugin {
                         let _jsonData = _data as! [String: AnyObject]
                         //获取类型
                         if let type = _jsonData["backAction"] {
-                            if type as! Int == 0 {
+                            if type as? Int == 0 {
                                 self.goback(manager: manager)
-                            } else if type as! Int == 1 {//分享图片
+                            } else if type as? Int == 1 {//分享图片
                                 TBWebViewHelper.currentViewController()?.navigationController?.popViewController(animated: false)
                             }
                         }

@@ -29,16 +29,16 @@ public class TBShareDataPlugin: TBCallHandlerPlugin {
         self.commond?.callCommondResponseData = { (responseData) in
             if let _responseData = responseData {
                 let _responseDataJson = _responseData as! [String: AnyObject]
-                if let result = _responseDataJson["result"], result as! Int == 0 {
+                if let result = _responseDataJson["result"], result as? Int == 0 {
                     //获取内容
                     if let _data = _responseDataJson["data"] {
                         let _jsonData = _data as! [String: AnyObject]
                         //获取类型
                         if let type = _jsonData["type"] {
                             //type == 1 分享链接 type == 2 分享图片
-                            if type as! Int == 1 {
+                            if type as? Int == 1 {
                                 shareLinkPlugin.transformToShare(_jsonData, responseCallBack: nil)
-                            } else if type as! Int == 2 {
+                            } else if type as? Int == 2 {
                                 sharePicPlugin.transformToSharePic(_jsonData, responseCallBack: nil)
                             }
                         }

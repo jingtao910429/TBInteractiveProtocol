@@ -21,20 +21,22 @@ public class TBOpenMapPlugin: TBRegisterHandlerPlugin {
         self.commond?.commondResponseData = { (data) in
             if let _data = data as? [String : AnyObject] {
                 var latitude: CGFloat = 0
-                if let _latitude = _data["latitude"] {
-                    latitude = _latitude as! CGFloat
+                if let _latitude = _data["latitude"] as? CGFloat {
+                    latitude = _latitude
                 }
                 var longitude: CGFloat = 0
-                if let _longitude = _data["longitude"] {
-                    longitude = _longitude as! CGFloat
+                if let _longitude = _data["longitude"] as? CGFloat {
+                    longitude = _longitude
                 }
                 var locationName = ""
-                if let _locationName = _data["locationName"] {
-                    locationName = _locationName as! String
+                if let _locationName = _data["locationName"] as? String {
+                    locationName = _locationName
                 }
-                let locationCoordinate2D = CLLocationCoordinate2D(latitude: CLLocationDegrees(latitude), longitude: CLLocationDegrees(longitude))
-                if let openMapRegisterCallBack = self.openMapRegisterCallBack {
-                    openMapRegisterCallBack(locationCoordinate2D, locationName)
+                if latitude != 0 && longitude != 0 {
+                    let locationCoordinate2D = CLLocationCoordinate2D(latitude: CLLocationDegrees(latitude), longitude: CLLocationDegrees(longitude))
+                    if let openMapRegisterCallBack = self.openMapRegisterCallBack {
+                        openMapRegisterCallBack(locationCoordinate2D, locationName)
+                    }
                 }
             }
         }
