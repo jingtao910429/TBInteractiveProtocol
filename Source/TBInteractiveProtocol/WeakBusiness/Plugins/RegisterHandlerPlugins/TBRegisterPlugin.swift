@@ -34,7 +34,7 @@ public typealias OpenMapRegisterCallBack     = (_ locationCoordinate2D: CLLocati
 //callBack
 public typealias CallBackRegisterCallBack    = (_ isClosePage: Int) -> Void
 //uploadEvent
-public typealias UploadEventRegisterCallBack = (_ eventId: String, _ params: [String: Any]) -> Void
+public typealias UploadEventRegisterCallBack = (_ eventId: String, _ uri: String, _ params: [String: Any]) -> Void
 //openUrl
 public typealias OpenUrlRegisterCallBack = (_ url: String) -> Void
 

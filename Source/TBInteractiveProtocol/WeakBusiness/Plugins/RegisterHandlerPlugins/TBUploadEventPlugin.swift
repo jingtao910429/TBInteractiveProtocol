@@ -20,8 +20,12 @@ public class TBUploadEventPlugin: TBRegisterHandlerPlugin {
         self.commond?.commondResponseData = { (data) in
             if let _data = data as? [String: AnyObject] {
                 if _data["eventId"] != nil, _data["params"] != nil, let eventId = _data["eventId"] {
+                    var uri = ""
+                    if let tpUri = _data["pageUri"] as? String {
+                        uri = tpUri
+                    }
                     if let uploadEventRegisterCallBack = self.uploadEventRegisterCallBack {
-                        uploadEventRegisterCallBack("\(eventId)", _data["params"] as! [String : Any])
+                        uploadEventRegisterCallBack("\(eventId)", uri, _data["params"] as! [String : Any])
                     }
                     return
                 }

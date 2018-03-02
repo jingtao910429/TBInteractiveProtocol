@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TBInteractiveProtocol"
-  s.version      = "0.1.6"
+  s.version      = "0.1.7"
   s.summary      = "TBInteractiveProtocol"
   s.description  = <<-DESC
                    兔博士H5交互协议相关封装
